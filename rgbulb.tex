@@ -1,24 +1,34 @@
 \documentclass[12pt,a4paper,notitlepage]{article}
-\usepackage[utf8x]{inputenc}
-\usepackage[a4paper,textwidth=17cm, top=2cm, bottom=3.5cm]{geometry}
-\usepackage{eurosym}
-%\usepackage{url}
-\usepackage[T1]{fontenc}
-\usepackage{ucs}
-\usepackage{ngerman} 
+
+\usepackage{fontspec}
+\usepackage{minted}
+\usepackage{xunicode}
+\usepackage{amsmath}
+
+%\usepackage[pdftex]{graphicx,color}
+%\usepackage[utf8x]{inputenc}
+%\usepackage{amssymb,amsmath}
+%\usepackage{wasysym}
+%\usepackage[T1]{fontenc}
+%\usepackage{ucs}
+%\usepackage{eurosym}
+
+\usepackage{ngerman}
 \usepackage{setspace}
-%\usepackage{fourier}
-\usepackage{amssymb,amsmath}
-\usepackage{wasysym}
 \usepackage{cite}
 \usepackage{fancybox}
-%\usepackage{marvosym}
 \usepackage[notree,order=word,acronym]{glossaries}
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage{hyperref}
-\usepackage[pdftex]{graphicx,color}
 \usepackage{todo}
+\usepackage{pdflscape}
+
+\usepackage[a4paper,textwidth=17cm, top=2cm, bottom=3.5cm]{geometry}
+
+%\usepackage{url}
+%\usepackage{fourier}
+%\usepackage{marvosym}
 \definecolor{p-green}{rgb}{0.12,0.57,0.11}
 \newcommand{\bitem}{\item[--]}
 \newcommand{\litem}[2]{\item[#1 --] #2}
@@ -46,7 +56,9 @@
 \title{Die intelligente Lampe}
 \begin{document}
 \maketitle
+\thispagestyle{empty}
 \newpage
+\pagenumbering{arabic}
 \tableofcontents
 \newpage
 \section{Konzept}
@@ -60,7 +72,7 @@
 Die Strom-Spannungs-Kennlinie einer \gls{LED} zeigt recht deutlich, dass es nicht möglich ist, diese ohne externe Regelung an einer Spannungsquelle -- wie den meisten handelsüblichen Netzteilen -- zu betreiben. Eine direkt an eine niederohmige Spannungsquelle angeschlossene \gls{LED} würde sofort von einem extrem hohem Strom durchflossen werden, durch den bei gegebener \gls{Flussspannung} $\Delta U$ der \gls{LED} nach $P=U\cdot I$ eine große Leistung an der \gls{LED} anfallen würde, die die \gls{LED} erhitzen und letztlich innerhalb eines Sekundenbruchteils thermisch zerstören würde. Die \gls{Sperrschicht} einer Hochleistungs-\gls{LED} darf nicht über 150°C erhitzt werden\cite{PHILIPS1,PHILIPS2}.
 
 Die zwei gängigsten Methoden der Stromregelung sind Vorwiderstände und Konstantstromquellen. Vorwiderstände werden nach $R=\frac{U}{I}$ bemessen, wobei $I$ der gewünschte Strom an der \gls{LED} ist und sich $U$ als Differenz der Betriebsspannung $V_{CC}$ und der \gls{Flussspannung} der \gls{LED}:
-\begin{equation}
+\begin{equation}150
 R=\frac{V_{CC}-\Delta U_{LED}}{I_{LED}}
 \end{equation}
 Die überschüssige Leistung fällt am Vorwiderstand ab, weshalb sich diese Ansteuerung nicht für hohe Spannungsdifferenzen oder hohe Ströme eignet.
@@ -75,7 +87,7 @@ Weitere Nachteile der Verwendung von Vorwiderständen sind, dass Hochleistungswi
 Alternativ und bei der Ansteuerung von Hochleistungs-\glspl{LED} weiter verbreitet ist die Konstantstromquelle. Eine Konstantstromquelle besteht aus einem Strom-Spannungs-Wandler, einem Stromregler, einer Referenz und einem Fehlerverstärker. Unabhängig von Last und Betriebsspannung sowie Innenwiderstand der Spannungsquelle stellt sich durch die Konstantstromquelle dem Namen gemäß ein sehr konstanter, von der Genauigkeit des Strom-Spannungs-Wandlers (meist ein spezieller, niederohmiger Messwiderstand -- \gls{Shunt} genannt) abhängiger Strom ein. Im Gegensatz zum Vorwiderstand lässt sich die Konstantstromquelle relativ einfach mit einem Trimmpotentiometer kalibrieren.
 %FIXME Wikipedia (source/bibtex), schematics
 
-\newglossaryentry{DAC}{name={DAC}, description={Digital Analog Converter, Digital-Analog-Umsetzer, in deutscher Fachliteratur teilweise als DAU bezeichnet}, first={Digital-Analog-Umsetzer (DAC)}, firstplural={Digital-Analog-Umsetzer (DACs)}, text={DAC}, plural={DACs}}
+\newglossaryentry{DAC}{name={DAC}, description={Digital Analog Converter, Digital-Analog-Umsetzer, in deutscher Fachliteratur teilweise als DAU bezeichnet}, first={Digital-Analog-Umsetzer (DAC)}, firstplural={Digital-Analog-Umsetzer (DACs)}, text={DAC}, plural={DACs}, type=\acronymtype}
 \subsubsection{Dimmen - Techniken}
 Das Dimmen bezeichent die Einstellung der Helligkeit der Lampe. \glspl{LED} lassen sich gut dimmen, indem man den Strom reguliert. Man kann den Strom prinzipiell analog oder digital steuern. Eine analoge Regelung besteht aus einer Modifikation der Stromquelle, im Falle der Konstantstromquelle kann dies durch ein analoges oder digitales Potentiometer\footnote{So genannte digitale Potentiometer verhalten sich genau genommen nicht wie Potentiometer. Technisch sind sie \glspl{DAC}, die einen digitalen Wert in einen Widerstand umwandeln.} oder das Inkorporieren eines einem \gls{DAC} entnommenen analogen Signals im Fehlerverstärker.
 %Quellen
@@ -113,41 +125,33 @@ Das menschliche Auge hat eine nichtlineare Wahrnehmungscharakteristik. Nicht nur
 
 Effekt dieser nichtlinearen Kennlinie ist, dass eine einfache lineare Steigerung der abgestrahlten Leistung wie sie bei einer nach dem oben beschriebenen Prinzip arbeitenden \gls{PWM} durch ein Erhöhen des Leistungswertes um einen konstanten Summanden von Zyklus zu Zyklus erreicht werden könnte, in dunkleren Bereichen als wesentlich schneller ändernd als in helleren erscheint. Während die Helligkeitsänderung im Bereich maximaler Helligkeit über einen gegebenen Zeitraum als nichtexistent erscheinen kann, dimmt dieser Algorithmus im gleichen Zeitraum von $0\%$ auf scheinbar halbe Helligkeit.
 
-Abhilfe für diesen Umstand lässt sich durch die Transformation eines rohen Helligkeitswertes, der der optisch wahrgenommenen Helligkeit entspricht nach einer logarithmischen Skala auf den Wertebereich der \gls{PWM}. Dies kann z.B.\ nach folgender Formel geschehen:
-\begin{equation}
-2^{\left(\frac{v}{2^n}\cdot k\right)}
-\end{equation}
-\begin{align}
-v&:=\text{Eingabewert auf einer linearen Skala}\\
-n&:=\text{\glqq Breite\grqq\ des Eingabewertes in Bit}\\
-k&:=\text{\glqq Breite\grqq\  des Ausgabewertes in Bit}
-\end{align}
-%Diagramm
-
-\begin{figure}
-\small
-\begin{verbatim}
+%\begin{figure}
+\begin{minted}[linenos,
+               numbersep=5pt,
+               gobble=2,
+               frame=lines,
+               framesep=2mm]{ruby}
 #!/usr/bin/env ruby
 
 inbits = 8
 outbits = 16
 
 puts <<eos
-/*
+/* 
 * Logarithmic #{outbits}-bit pwm #{inbits}-bit lookup table
-*
+* 
 * Copyright 2010 by Jan Sebastian Götte (s@twopi.eu)
 *  - - - - - - - - - - - - LICENSE INFORMATION - - - - - - - - - - - -
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
 * the Free Software Foundation, either 1.1 3 of the License, or
 * (at your option) any later 1.1.
-*
+* 
 * This program is distributed in the hope that it will be useful,
 * but WITHOUT ANY WARRANTY; without even the implied warranty of
 * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 * GNU General Public License for more details.
-*
+* 
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -166,9 +170,21 @@ const uint16_t log_pwm_lut[] PROGMEM = {
 #endif//__GENERATED_PWM_LUT_LOG_#{inbits}_#{outbits}__
 
 eos
-\end{verbatim}
-\caption{Ein Ruby-Script, dass auf Basis dieser Formel eine C-Headerdatei mit einer Lookup-Tabelle für alle Eingabehelligkeitswerte generiert}
-\end{figure}
+\end{minted}
+%\caption{Ein Ruby-Script, dass auf Basis dieser Formel eine C-Headerdatei mit einer Lookup-Tabelle für alle Eingabehelligkeitswerte generiert}
+%\end{figure}
+
+Abhilfe für diesen Umstand lässt sich durch die Transformation eines rohen Helligkeitswertes, der der optisch wahrgenommenen Helligkeit entspricht nach einer logarithmischen Skala auf den Wertebereich der \gls{PWM}. Dies kann z.B.\ nach folgender Formel geschehen:
+\begin{equation}
+2^{\left(\frac{v}{2^n}\cdot k\right)}
+\end{equation}
+\begin{align}
+v&:=\text{Eingabewert auf einer linearen Skala}\\
+n&:=\text{\glqq Breite\grqq\ des Eingabewertes in Bit}\\
+k&:=\text{\glqq Breite\grqq\  des Ausgabewertes in Bit}
+\end{align}
+Hierzu siehe auch \cite{MAXIM41,MAXIM57,SIART1}.
+%Diagramm
 
 \subsection{Kommunikationsprotokoll}
 \subsubsection{Master}
@@ -185,9 +201,38 @@ Da an besagter Messschaltung ein Mensch angeschlossen ist\footnote{dessen Schalt
 %Graphik/Schaltplan
 
 %Schaltplan
-\acronym{EEG}{EEG}{Elektroenzephalograph}
-Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signale zur Weiterverarbeitung umwandelt wird als \glqq analoges Front-End\grqq\ bezeichnet. Das analoge Front-End eines \gls{EEG} sieht prinzipiell folgendermaßen aus:
+\newacronym{EEG}{EEG}{Elektroenzephalograph}
+\newglossaryentry{ADC}{name={ADC}, description={Analog Digital Converter, Analog-Digital-Umsetzer, in deutscher Fachliteratur teilweise als ADU bezeichnet}, first={Analog-Digital-Umsetzer (ADC)}, firstplural={Analog-Digital-Umsetzer (ADCs)}, text={ADC}, plural={ADCs}, type=\acronymtype}
+Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signale zur Weiterverarbeitung umwandelt wird als \glqq analoges Front-End\grqq\ bezeichnet. Das analoge Front-End eines \gls{EEG} sieht prinzipiell folgendermaßen aus: Auf die Elektroden folgt zunächst eine Schutzschaltung, die verhindert, dass auf den Benutzer des Gerätes bedenkliche Spannungen respektive Ströme einwirken. Auf diese Schutzschaltung folgt der Vorverstärker, der das Messsignal konditioniert und auf ein zur Weiterverarbeitung fähiges Spannungslevel bei geringem Spannungsquelleninnenwiderstand transformiert. Im Vorverstärker integriert sowie unmittelbar dahinter folgen analoge Filter, die das Signal auf die für die weitere Analyse interessante Bandbreite reduzieren. Schließlich folgt noch der \gls{ADC}, durch den die abschließende Umwandlung des aufbereiteten Messsignals in eine Folge digitaler Werte erfolgt.
 
+\newglossaryentry{IC}{name={IC}, description={Integrated Circuit, Integrierter Schaltkreis, umgangssprachlich Mikrochip}, first={Mikrochip (IC)}, firstplural={Mikrochips (ICs)}, text={IC}, plural={ICs}, type=\acronymtype}
+Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen.
+
+\begin{landscape}
+\begin{figure}
+\includegraphics{images/adc_schematic_01.png}
+\label{adc_schematic}
+\caption{Der Schaltplan des EEG-Moduls}
+\end{figure}
+\end{landscape}
+
+\newglossaryentry{Sampling}{name={Sampling}, description={Umwandlung eines kontinuierlichen, meist analogen Signals in diskrete Werte und -- im Falle eines ADC oder DAC -- die Umwandlung desselben in digitale Signale}}
+\newglossaryentry{Nyquist-Theorem}{name={Nyquist-Theorem}, description={}}
+\newglossaryentry{Offsetkorrektur}{name={Offsetkorrektur}, description={}}
+%TODO: gls entries
+Die \gls{Sampling}-Rate liegt im Bereich einiger hundert bis tausend $\frac{Sp}{s}$, die höchste für die Messung signifikante Frequenz liegt weit unter $100Hz$. Das \glslink{Nyquist-Theorem}{Nyquist-Shannonsche Abtasttheorem} ist somit erfüllt und bei den gegebenen Frequenzen sind keine Probleme zu erwarten.
+Die Auflösung des \gls{ADC} ist mit 16 Bit groß genug, um \gls{Offsetkorrektur} und weitere Filtermaßnahmen in Software zu implementieren, wodurch keine weiteren analogen eingangsseitigen Filter notwendig sind.
+%Quelle: Nyquist
+
+%BEGIN OF TODOS
+% --- PAPER ---
+%Include: in the PWM section: Duty cycle
+% --- SOURCES ---
+%AN4348 Pg. 5: Error? The tolerance calculation seems to be mixing up ppms and percents.
+% --- ELECTRONICS ---
+%Incorporate a MAX5490 or similar calibrated R-R ladder as reference voltage divider
+%Input decoupling necessary?
+%END OF TODOS
 \subsection{Mathematisch und Informatisch}
 \section{Arbeitsprozess der Platinenherstellung und Ergebnisse}
 \appendix
@@ -199,6 +244,7 @@ Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signa
 \nocite{*}
 \bibliographystyle{plain}
 \renewcommand{\refname}{}
+%TODO \footnotesize
 \bibliography{rgbulb}
 \section{Updates}
 \begin{center}
