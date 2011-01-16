@@ -17,6 +17,7 @@
 \usepackage{tabularx}
 \usepackage{multicol}
 \usepackage[dvips]{hyperref}
+\usepackage{subfigure}
 %\usepackage[pdftex]{graphicx,color}
 \usepackage{todo}
 \usepackage{pdflscape}
@@ -73,6 +74,13 @@ Zum sanften Wecken mit Licht ist die wichtigste Voraussetzung eine regelbare Lic
 
 Bei der Wahl des Leuchtmittels gibt drei grobe Kategorien: Glühlampen, Leuchtstofflampen und \glslink{LED}{LEDs (Leuchtdioden)}. Glühlampen sind aufgrund ihrer geringen Effizienz und komplizierter werdenden Verfügbarkeit sowie des eher im rötlichen liegenden Spektrums unattraktiv. Leuchtstofflampen -- also Leuchtstoffröhren sowie verschiedene \glqq Energiesparlampen\grqq\ sind in einem weiten Bereich von Farbtemperaturen zu bekommen und recht effizient, jedoch sind nicht alle Typen dimmbar, die Ansteuerung von nicht als Energiesparlampen ausgeführten Leuchtmitteln mit externer Startelektronik ist kompliziert und es muss mit Netzspannung gearbeitet werden.
 
+\begin{figure}
+\centering
+\includegraphics[width=7.5cm]{images/led_closeup.eps}
+\label{rgb_led}
+\caption{Eine der RGB-LEDs, auf einen Kühlkörper montiert.}
+\end{figure}
+
 Ich entschied mich für \glslink{LED}{LEDs} als Leuchtmittel, da diese mit Kleinspannungen arbeiten, nach Belieben dimmbar sind und letztlich im abgestrahlten Farbspektrum bei Verwendung von RGB-LEDs -- technisch gesehen drei separate LEDs für rot, grün und blau -- nach der additiven Farbmischung\cite{WP10} sogar im Betrieb vollständig einstellbar.
 
 \newglossaryentry{Sperrschicht}{name={Sperrschicht}, description={Übergang von positiv zu negativ dotiertem Halbleitermaterial}}
@@ -81,7 +89,7 @@ Ich entschied mich für \glslink{LED}{LEDs} als Leuchtmittel, da diese mit Klein
 \subsubsection{Notwendigkeit der Stromregelung}
 \begin{figure}
 \begin{center}
-\includegraphics{images/diode-iv-curve.eps}
+\includegraphics{images/diode-iv-curve_bw.eps}
 \label{diode-iv-curve}
 \caption{Die Strom-Spannungs-Kennlinie einer LED}
 \end{center}
@@ -167,9 +175,55 @@ Hierzu siehe auch \cite{MAXIM41,MAXIM57,SIART1}.
 %Diagramm
 
 \subsubsection{Umsetzung}
-Für das Dimmen der Hochleistungs-LEDs verwende ich in der ersten Version des Prototyps eine Kombination aus analog geregelter Konstantstromquelle, die den für den Dauerbetrieb maximal möglichen Strom von ca. 330mA pro Kanal/LED einstellt und der Modulation per 16-Bit-PWM von einem AVR-Mikrocontroller gesteuert. Für Details der Pulsweitenmodulation ist das Datenblatt der AT90PWM-Reihe sehr hilfreich, da dieser speziell für solcherlei Einsatzzwecke designt wurde\cite{ATMEL2}. Die konkret verwendeten Controller sind in der ersten Version der Steuerplatine zwei ATMega8-AVRs zuständig, die jeweils über zwei 16-bit-PWM-Kanäle verfügen und die per serieller Schnittstelle (TTL-Pegel) koordiniert werden. Die Auflösung der PWM habe ich auf 16 Bit festgelegt, da die benötigte logarithmische Kurve bei einer 8-Bit-PWM erkennbare Abstufungen zeigt. Die Firmware unterstützt mit dem im vorherigen Abschnitt %TODO NOTE: this could be incorrect since the arrangement could be changed.
+Für das Dimmen der Hochleistungs-LEDs verwende ich in der ersten Version des Prototyps eine Kombination aus einer analog geregelten Konstantstromquelle auf Basis des LM317\cite{NATIONAL3}, die den für den Dauerbetrieb maximal möglichen Strom von ca. 330mA pro Kanal/LED einstellt und der Modulation per 16-Bit-PWM, erzeugt von einem AVR-Mikrocontroller.
+Pro LED habe ich drei Kanäle umgesetzt, da die RGB-LEDs, die ich günstig aus China importierte,%note: WTF?!
+eine gemeinsame Anode besitzen.
+
+\begin{figure}
+\centering
+\subfigure[Revision 1 des LED-Treibers einer LED]{
+\includegraphics[scale=1.7]{images/led_driver_rev1.eps}
+\label{driver_rev1}
+}
+\subfigure[Ein Entwurf von Revision 3 des LED-Treibers einer LED]{
+\includegraphics[scale=2.2]{images/led_driver_rev3.eps}
+\label{driver_rev3}
+}
+\label{driver_revs}
+\caption{Die Designs der regelbaren Stromquelle}
+\end{figure}
+
+Für Details der Pulsweitenmodulation ist das Datenblatt der AT90PWM-Reihe sehr hilfreich, da dieser speziell für solcherlei Einsatzzwecke designt wurde\cite{ATMEL2}. Die konkret verwendeten Controller sind in der ersten Version der Steuerplatine zwei ATMega8-AVRs zuständig, die jeweils über zwei 16-bit-PWM-Kanäle verfügen und die per serieller Schnittstelle (TTL-Pegel) koordiniert werden. Die Auflösung der PWM habe ich auf 16 Bit festgelegt, da die benötigte logarithmische Kurve bei einer 8-Bit-PWM erkennbare Abstufungen zeigt. Die Firmware unterstützt mit dem im vorherigen Abschnitt %TODO NOTE: this could be incorrect since the arrangement could be changed.
 generierte Tabellen in nur durch die auf 16 Bit beschränkte Ausgangsauflösung und den im AVR nur begrenzt vorhandenen Programmspeicher, in dem die Tabellen abgelegt würden, eingeschränkte Eingabebitbreiten. 12 Bit haben sich hier als sinnvoll erwiesen, da sie auch bei %``da sie'' oder ``da dies''
 niedrigen Helligkeitseinstellungen keine Stufen sichtbar werden lassen.
+
+\begin{figure}
+\centering
+\subfigure{
+\includegraphics[width=8cm]{images/dual_core_controller_top_small.eps}
+\label{controller_rev1_top}
+}
+\subfigure{
+\includegraphics[width=8cm]{images/dual_core_controller_bottom_small.eps}
+\label{controller_rev1_bottom}
+}
+\label{controller_rev1}
+\caption{Revision 1 der Steuerplatine mit zwei AVR-Mikrocontrollern, die über einen seriellen Bus kommunizieren}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure{
+\includegraphics[width=8cm]{images/ethersex_top_small.eps}
+\label{buz2_converter_ethernet_top}
+}
+\subfigure{
+\includegraphics[width=8cm]{images/ethersex_bottom_small.eps}
+\label{buz2_converter_ethernet_bottom}
+}
+\label{buz2_converter_ethernet}
+\caption{Die Converterplatine von BUZ2 auf Ethernet}
+\end{figure}
 
 Revision 2 der Prototypenhardware sieht einen ATMega16U4-Mikrocontroller vor, der über vier nutzbare 16-Bit-PWM-Kanäle verfügt und somit die Serielle Koordination beider Prozessoren überflüssig macht. Außerdem verfügt er neben zwei seriellen Schnittstellen (die zur Kommunikation mit anderen Systemen genutzt werden) auch über eine USB-Schnitstelle, sodass die Lampe auch direkt an einen modernen Computer angeschlossen werden kann.
 
@@ -202,6 +256,13 @@ Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signa
 
 \newglossaryentry{IC}{name={IC}, description={Integrated Circuit, Integrierter Schaltkreis, umgangssprachlich Mikrochip}, first={Mikrochip (IC)}, firstplural={Mikrochips (ICs)}, text={IC}, plural={ICs}, type=\acronymtype}
 Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen.
+
+\begin{figure}
+\centering
+\includegraphics[width=12cm]{images/chips_smaller.eps}
+\label{ics_used}
+\caption{Die in EEG und LED-Treiber verwendeten ICs. Vorne links sind zwei ADS1194 zu erkennen, die letzendlich die EEG-Messung durchführen. Vorne mittig ist der mit vier 16-Bit-PWM-Kanälen ausgestattete ATMega32U4 zu sehen (eine größere Variante des ATMega16U4), der die PWM-Regelung übernimmt. Hinten im Bild sind verschiedene Bauformen des ATMega8 zu sehen, der in Revision 1 der PWM-Controllerplatine zum Einsatz kommt.}
+\end{figure}
 
 \begin{landscape}
 \begin{figure}

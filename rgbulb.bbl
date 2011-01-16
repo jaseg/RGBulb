@@ -584,6 +584,11 @@ ST~Microelectronics.
   Schottky Diode}, 2004.
 \newblock \\\url{http://www.st.com/stonline/books/pdf/docs/10312.pdf}.
 
+\bibitem{NATIONAL3}
+{National Semiconductor}.
+\newblock {LM117/LM317A/LM137 3-Terminal Adjustable Regulator}, 2010.
+\newblock \\\url{http://www.national.com/profile/snip.cgi/openDS=LM317}.
+
 \bibitem{PHILIPS6}
 {NXP (Philips)}.
 \newblock {1PS70SB10; 1PS70SB14; 1PS70SB15; 1PS70SB16 Schottky barrier (double)

@@ -1,0 +1,960 @@
+@MISC{WP1,
+	author={Wikipedia},
+	title={{Pulse-density Modulation}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Pulse-density_modulation}}
+}
+
+@MISC{WP2,
+	author={Wikipedia},
+	title={{Fast Fourier Transformation}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/FFT}}
+}
+
+@MISC{WP3,
+	author={Wikipedia},
+	title={{Delta-Sigma Modulator}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Delta-sigma_modulator}}
+}
+
+@MISC{WP4,
+	author={Wikipedia},
+	title={{Koffein: Pharmakologische Wirkungen}},
+	year=2011,
+	note={\\\url{http://tinyurl.com/5vf8ukj}(\url{http://de.wikipedia.org/wiki/Koffein})}
+}
+
+@MISC{WP5,
+	author={Wikipedia},
+	title={{Schlaf}},
+	year=2011,
+	note={\\\url{http://de.wikipedia.org/wiki/Schlaf}},
+}
+
+@MISC{WP6,
+	author={Wikipedia},
+	title={Sleep},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Sleep}}
+}
+
+@MISC{WP7,
+	author={Wikipedia},
+	title={{Circadiane Rhythmik}},
+	year=2011,
+	note={\\\url{http://de.wikipedia.org/wiki/Circadiane_Rhythmik}}
+}
+
+@MISC{WP8,
+	author={Wikipedia},
+	title={{Circadian Rhythm}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Circadian_rhythm}}
+}
+
+@MISC{WP9,
+	author={Wikipedia},
+	title={{Melatonin}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Melatonin}}
+}
+
+@MISC{WP10,
+	author={Wikpedia},
+	title={{Additive Farbmischung}},
+	year=2011,
+	note={\\\url{http://de.wikipedia.org/wiki/Additive_Farbmischung}}
+}
+
+@MISC{WP11,
+	author={Wikipedia},
+	title={{Naive Bayes Classifier}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Naive_Bayes_classifier}}
+}
+
+@MISC{WP12,
+	author={Wikipedia},
+	title={{Hidden Markov Model}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Hidden_Markov_model}}
+}
+
+@MISC{WP13,
+	author={Wikipedia},
+	title={{Speech Recognition}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Speech_recognition}}
+}
+
+@MISC{PHILIPS1,
+	author={Philips},
+	title={{LUXEON® Rebel ES Technical Datasheet DS61}},
+	year=2010,
+	note={\\\url{http://www.philipslumileds.com/uploads/17/DS61-pdf}}
+}
+
+@MISC{PHILIPS2,
+	author={Philips},
+	title={{Power Light Source LUXEON K2 Technical Datasheet DS51}},
+	year=2008,
+	note={\\\url{http://www.philipslumileds.com/uploads/54/DS51-pdf}}
+}
+
+@MISC{TEXAS1,
+	author={Texas Instruments},
+	title={{ADS1194/ADS1196/ADS1197 Low-Power, 8-Channel, 16-Bit Analog Front-End for Biopotential Measurements}},
+	year=2010,
+	note={\\\url{http://www.ti.com/lit/gpn/ads1294}}
+}
+
+@MISC{LINEAR1,
+	author={Jim Williams},
+	title={{20-bit DAC demonstrates the art of digitizing 1 ppm Part 1: exploring design options}},
+	year=2001,
+	note={\\\url{http://www.edn.com/file/21715-74453.pdf}}
+}
+
+@MISC{LINEAR2,
+	author={Kevin R. Hoskins},
+	title={{Data Acquisition Circuit Collection}},
+	year=1994,
+	note={\\\url{http://cds.linear.com/docs/Application%20Note/an62.pdf}}
+}
+
+@MISC{SIART1,
+	author={Uwe Siart},
+	title={{Das Dezibel -- Definition und Anwendung}},
+	year=2009,
+	note={\\\url{http://www.siart.de/lehre/dezibel.pdf}}
+}
+
+@MISC{MAXIM1,
+	author={Maxim IC},
+	title={{MAX4238/MAX4239 Ultra-Low Offset/Drift, Low-Noise, Precision SOT23 Amplifiers}},
+	year=2006,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX4238-MAX4239.pdf}}
+}
+
+@MISC{ANALOG1,
+	author={{Analog Devices (Walt Kester, James Bryant, Mike Byrne)}},
+	title={{Grounding Data Converters and Solving the Mystery of ``AGND'' and ``DGND''}},
+	year=2009,
+	note={\\\url{http://www.analog.com/static/imported-files/tutorials/MT-031.pdf}}
+}
+
+@MISC{ANALOG2,
+	author={Analog Devices},
+	title={{Decoupling Techniques}},
+	year=2009,
+	note={\\\url{http://www.analog.com/static/imported-files/tutorials/MT-101.pdf}}
+}
+
+@MISC{NATIONAL1,
+	author={National Semiconductor},
+	title={{Current-Feedback Myths Debunked}},
+	year=1992,
+	note={\\\url{http://www.national.com/an/OA/OA-20.pdf}}
+}
+
+@MISC{STELTZ1,
+	author={E. Steltz, M. Seeman, S. Avadhanula and R.S. Fearing},
+	title={{Power Electronics Design Choice for Piezoelectric Microrobots}},
+	year=2006,
+	note={\\\url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.88.5538&rep=rep1&type=pdf}check.}
+}
+
+@MISC{TEXAS2,
+	author={{Texas Instruments (former Burr Brown)}},
+	title={{Single-Supply Operation of Operational Amplifiers}},
+	year=1986,
+	note={\\\url{http://focus.tij.co.jp/jp/general/docs/lit/getliterature.tsp?literatureNumber=sboa059&fileType=pdf}}
+}
+
+@MISC{TEXAS3,
+	author={{Bonnie Baker (Texas Instruments, former Burr Brown)}},
+	title={{Tuning in Amplifiers}},
+	year=1996,
+	note={\\\url{http://www.ti.com/litv/pdf/sboa067}}
+}
+
+@MISC{ANALOG3,
+	author={Analog Devices},
+	title={{Getting Started With SHARC Processors}},
+	year=2010,
+	note={\\\url{http://www.analog.com/static/imported-files/tech_docs/GettingStartedwithSharcProcessors.pdf}}
+}
+
+@MISC{TEXAS4,
+	author={Texas Instruments},
+	title={{Amplifier and Data Converter Selection Guide}},
+	year=2009,
+	note={\\\url{http://www.arrownac.com/mktg/medical-source/ad-converter-guide.pdf}Link?}
+}
+
+@MISC{TEXAS5,
+	author={{Texas Instruments (former Burr Brown)}},
+	title={{INA116 Ultra Low Input Bias Current Instrumentation Amplifier}},
+	year=1995,
+	note={\\\url{http://focus.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=ina116&fileType=pdf&track=no}}
+}
+
+@MISC{TEXAS6,
+	author={{Texas Instruments (former Burr Brown)}},
+	title={{OPA128 Difet Electrometer-Grade Operational Amplifier}},
+	year=1995,
+	note={\\\url{http://focus.ti.com/lit/ds/symlink/opa128.pdf}}
+}
+
+@MISC{TEXAS7,
+	author={{Texas Instruments (former Burr Brown)}},
+	title={{OPA129 Ultra-Low Bias Current Difet Operational Amplifier}},
+	year=2007,
+	note={\\\url{http://www.ti.com/lit/gpn/opa129}}
+}
+
+@MISC{TEXAS8,	
+	author={{Texas Instruments (former Burr Brown)}},
+	title={{OPA445 High Voltage FET-Input Operational Amplifier}},
+	year=2008,
+	note={\\\url{http://focus.ti.com/lit/ds/symlink/opa445.pdf}}
+}
+
+@MISC{TEXAS9,
+	author={Texas Instruments},
+	title={{OPA615 Wide-Bandwidth, DC Restoration Circuit}},
+	year=2009,
+	note={\\\url{http://focus.ti.com/general/docs/lit/getliterature.tsp?genericPartNumber=opa615&fileType=pdf}}
+}
+
+@MISC{TEXAS10,
+	author={{Texas Instruments (former Burr Brown)}},
+	title={{TMS320F243/TMS320F241 DSP Controllers}},
+	year=2006,
+	note={\\\url{http://focus.ti.com/lit/ds/symlink/tms320f243.pdf}}
+}
+
+@MISC{LINEAR3,
+	author={{William C. Rempfer (Linear Technology)}},
+	title={{The Care and Feeding of High Performance ADCs: Get All the Bits You Paid For}},
+	year=1997,
+	note={\\\url{http://cds.linear.com/docs/Application%20Note/an71.pdf}}
+}
+
+@MISC{LINEAR4,
+	author={{Jim Williams (Linear Technology)}},
+	title={{Component and Measurement Advances Ensure 16-Bit DAC Settling Time}},
+	year=1998,
+	note={\\\url{http://cds.linear.com/docs/Application%20Note/an74f.pdf}}
+}
+
+@MISC{LINEAR5,
+	author={{Jim Williams, J. Brubaker, P. Copley and J. Guerrero and F. Oprescu (Linear Technology)}},
+	title={{A Standards Lab Grade 20-Bit DAC with 0.1ppm/°C Drift}},
+	year=2001,
+	note={\\\url{http://cds.linear.com/docs/Application%20Note/an86f.pdf}}
+}
+
+@MISC{ANALOG4,
+	author={Analog Devices},
+	title={{AD5227 64-Position Up/Down Control Digital Potentiometer}},
+	year=2009,
+	note={\\\url{http://www.analog.com/static/imported-files/data_sheets/AD5227.pdf}}
+}
+
+@MISC{ANALOG5,
+	author={Analog Devices},
+	title={{AD5235 Nonvolatile Memory, Dual 1024-Position Digital Potentiometer}},
+	year=2009,
+	note={\\\url{http://www.analog.com/static/imported-files/data_sheets/AD5235.pdf}}
+}
+
+
+@MISC{MAXIM2,
+	author={Maxim IC},
+	title={{Programmable-Gain Amplifier, Using the MAX532 DAC}},
+	year=2000,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN429.pdf}}
+}
+
+@MISC{MAXIM3,
+	author={Maxim IC},
+	title={{ADC and DAC Glossary}},
+	year=2000,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN641.pdf}}
+}
+
+@MISC{MAXIM4,
+	author={Maxim IC},
+	title={{Proper Layout and Component Selection Controls EMI}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN716.pdf}}
+}
+
+@MISC{MAXIM5,
+	author={Maxim IC},
+	title={{Operational Amplifier Inputs}},
+	year=2000,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN717.pdf}}
+}
+
+@MISC{MAXIM6,
+	author={Maxim IC},
+	title={{Understanding Voltage-Reference Topologies and Specifications}},
+	year=2000,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN719.pdf}}
+}
+
+@MISC{MAXIM7,
+	author={Maxim IC},
+	title={{A Filter Primer}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN733.pdf}}
+}
+
+@MISC{MAXIM8,
+	author={Maxim IC},
+	title={{Minimizing Component-Variation Sensitivity in Single Op Amp Filters}},
+	year=2001,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN738.pdf}}
+}
+
+@MISC{MAXIM9,
+	author={Maxim IC},
+	title={{The ABCs of ADCs: Understanding How ADC Errors Affect System Performance}},
+	year=2001,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN748.pdf}}
+}
+
+@MISC{MAXIM10,
+	author={Maxim IC},
+	title={{Frequently Asked Questions about Data Converters}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN801.pdf}}
+}
+
+@MISC{MAXIM11,
+	author={Maxim IC},
+	title={{Force/Sense DAC Applications}},
+	year=2001,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN807.pdf}}
+}
+
+@MISC{MAXIM12,
+	author={Maxim IC},
+	title={{Filter Basics: Anti-Aliasing}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN928.pdf}}
+}
+
+@MISC{MAXIM13,
+	author={Maxim IC},
+	title={{Digital-Analog Converters Are a ``Bit'' Analog}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1055.pdf}}
+}
+
+@MISC{MAXIM14,
+	author={Maxim IC},
+	title={{DAC and Op Amp Generate Variable Negative Control Voltage}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1074.pdf}}
+}
+
+@MISC{MAXIM15,
+	author={Maxim IC},
+	title={{A Quick Guide To Voltage References}},
+	year=2001,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1182.pdf}}
+}
+
+@MISC{MAXIM16,
+	author={Maxim IC},
+	title={{Effects of Digital Crosstalk in Data Converters}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1842.pdf}}
+}
+
+@MISC{MAXIM17,
+	author={Maxim IC},
+	title={{A Beginner's Guide to Filter Topologies}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1762.pdf}}
+}
+
+@MISC{MAXIM18,
+	author={Maxim IC},
+	title={{Analog Filter Design Demystified}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1795.pdf}}
+}
+
+@MISC{MAXIM19,
+	author={Maxim IC},
+	title={{Effects of Digital Crosstalk in Data Converters Part 2: Crosstalk on the Clock}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1841.pdf}}
+}
+
+@MISC{MAXIM20,
+	author={Maxim IC},
+	title={{Effects of Digital Crosstalk in Data Converters Part 3: Digital Data Signal Crosstalk on the Clock}},
+	year=2002,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1842.pdf}}
+}
+
+@MISC{MAXIM21,
+	author={Maxim IC},
+	title={{Demystifying Sigma-Delta ADCs}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1870.pdf}}
+}
+
+@MISC{MAXIM22,
+	author={Maxim IC},
+	title={{Building a Power Supply That Works}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1897.pdf}}
+}
+
+@MISC{MAXIM23,
+	author={Maxim IC},
+	title={{Tips to Remember When Designing with Digital Potentiometers}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1956.pdf}}
+}
+
+@MISC{MAXIM24,
+	author={Maxim IC},
+	title={{Boost Converter Generates Three Analog Rails}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN2026.pdf}}
+}
+
+@MISC{MAXIM25,
+	author={Maxim IC},
+	title={{Simple Methods Reduce Input Ripple for All Charge Pumps}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN2027.pdf}}
+}
+
+@MISC{MAXIM26,
+	author={Maxim IC},
+	title={{Introduction to Common Printed Circuit Transmission Lines}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN2093.pdf}}
+}
+
+@MISC{MAXIM27,
+	author={Maxim IC},
+	title={{Understanding Integral Non-Linearity Errors}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN2395.pdf}}
+}
+
+@MISC{MAXIM28,
+	author={Maxim IC},
+	title={{Selecting the Optimum Voltage Reference}},
+	year=2003,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN2879.pdf}}
+}
+
+@MISC{MAXIM29,
+	author={Maxim IC},
+	title={{Basic Switching-Regulator-Layout Techniques}},
+	year=2004,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN2997.pdf}}
+}
+
+@MISC{MAXIM30,
+	author={Maxim IC},
+	title={{How to Increase the Bandwidth of Digital Potentiometers 10x to 100x}},
+	year=2004,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3081.pdf}}
+}
+
+@MISC{MAXIM31,
+	author={Maxim IC},
+	title={{Digital-to-Analog Converters (DACs) for High-Performance Communications}},
+	year=2004,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3176.pdf}}
+}
+
+@MISC{MAXIM32,
+	author={Maxim IC},
+	title={{Exposed Pads: A Brief Introduction}},
+	year=2004,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3273.pdf}}
+}
+
+@MISC{MAXIM33,
+	author={Maxim IC},
+	title={{The Basics of Anti-Aliasing: Using Switched-Capacitor Filters}},
+	year=2005,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3494.pdf}}
+}
+
+@MISC{MAXIM34,
+	author={Maxim IC},
+	title={{Integrated DC Logarithmic Amplifiers}},
+	year=2005,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3611.pdf}}
+}
+
+@MISC{MAXIM35,
+	author={Maxim IC},
+	title={{Add USB to Anything}},
+	year=2005,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3637.pdf}}
+}
+
+@MISC{MAXIM36,
+	author={Maxim IC},
+	title={{Choosing a Low-Noise Amplifier}},
+	year=2005,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3642.pdf}}
+}
+
+@MISC{MAXIM37,
+	author={Maxim IC},
+	title={{How to Divide and Conquer the Divider: Practical Resistive Dividers, Made Easy}},
+	year=2005,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3646.pdf}}
+}
+
+@MISC{MAXIM38,
+	author={Maxim IC},
+	title={{Practical USB Terminology}},
+	year=2006,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3803.pdf}}
+}
+
+@MISC{MAXIM39,
+	author={Maxim IC},
+	title={{Equalizing Techniques Flatten DAC Frequency Response}},
+	year=2006,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3853.pdf}}
+}
+
+@MISC{MAXIM40,
+	author={Maxim IC},
+	title={{Isolating USB}},
+	year=2006,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3891.pdf}}
+}
+
+@MISC{MAXIM41,
+	author={Maxim IC},
+	title={{Logging the Linear Digital Potentiometer}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN3996.pdf}}
+}
+
+@MISC{MAXIM42,
+	author={Maxim IC},
+	title={{DACs vs. Digital Potentiometers: Which Is Right for My Application?}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4025.pdf}}
+}
+
+@MISC{MAXIM43,
+	author={Maxim IC},
+	title={{Analog Multiplier Improves the Accuracy of High-Side-Sense Measurements}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4030.pdf}}
+}
+
+@MISC{MAXIM44,
+	author={Maxim IC},
+	title={{Three is a Crowd for Instrumentation Amplifiers}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4034.pdf}}
+}
+
+@MISC{MAXIM45,
+	author={Maxim IC},
+	title={{Overvoltage Protection (OVP) for Sensitive Amplifier Applications}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4035.pdf}}
+}
+
+@MISC{MAXIM46,
+	author={Maxim IC},
+	title={{Current Sensing on a Negative Voltage Supply Rail, using a Precision Instrumentation Amplifier}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4050.pdf}}
+}
+
+@MISC{MAXIM47,
+	author={Maxim IC},
+	title={{Setup and Hold Times for High-Speed Digital-to-Analog Converters (DACs) Demystified}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4053.pdf}}
+}
+
+@MISC{MAXIM48,
+	author={Maxim IC},
+	title={{Extend Current-Sense Amplifier's Input Range Down to 0V}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4078.pdf}}
+}
+
+@MISC{MAXIM49,
+	author={Maxim IC},
+	title={{An Introduction to Switch-Mode Power Supplies}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4087.pdf}}
+}
+
+@MISC{MAXIM50,
+	author={Maxim IC},
+	title={{Operational Amplifiers Glossary of Key Terms}},
+	year=2007,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4107.pdf}}
+}
+
+@MISC{MAXIM51,
+	author={Maxim IC},
+	title={{Autozero Noise Filtering Improves Instrumentation Amplifier Output}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4179.pdf}}
+}
+
+@MISC{MAXIM52,
+	author={Maxim IC},
+	title={{Where Is Ground?}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4292.pdf}}
+}
+
+@MISC{MAXIM53,
+	author={Maxim IC},
+	title={{Calculating the Error Budget in Precision Digital-to-Analog Converter (DAC) Applications}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4300.pdf}}
+}
+
+@MISC{MAXIM54,
+	author={Maxim IC},
+	title={{Saving Energy: Little Things Mean a Lot}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4335.pdf}}
+}
+
+@MISC{MAXIM55,
+	author={Maxim IC},
+	title={{Rail Splitter, from Abraham Lincoln to Virtual Ground}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4344.pdf}}
+}
+
+@MISC{MAXIM56,
+	author={Maxim IC},
+	title={{Well Grounded, Digital Is Analog}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4345.pdf}}
+}
+
+@MISC{MAXIM57,
+	author={Maxim IC},
+	title={{Pots, Pans, Logs, and Linear Digital Pots Create Arbitrary Voltage Curves}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4346.pdf}}
+}
+
+@MISC{MAXIM58,
+	author={Maxim IC},
+	title={{Minimize Voltage Offsets in Precision Amplifiers}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4348.pdf}}
+}
+
+@MISC{MAXIM59,
+	author={Maxim IC},
+	title={{Design Guidelines for High-Performance, Multichannel, Simultaneous-Sampling ADCs in Data-Acquisition Systems (DAS)}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4359.pdf}}
+}
+
+@MISC{MAXIM60,
+	author={Maxim IC},
+	title={{Integrated Solutions Make Analog Filter Design Easy}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4422.pdf}}
+}
+
+@MISC{MAXIM61,
+	author={Maxim IC},
+	title={{Same? Really the Same? Maybe? The Cross-Reference Challenge}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4425.pdf}}
+}
+
+@MISC{MAXIM62,
+	author={Maxim IC},
+	title={{Murphy's Law and the Risks of Designing ``Off Data Sheet''}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4429.pdf}}
+}
+
+@MISC{MAXIM63,
+	author={Maxim IC},
+	title={{Logarithmic LED Panel Display Has 72dB Range}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4442.pdf}}
+}
+
+@MISC{MAXIM65,
+	author={Maxim IC},
+	title={{Methods for Calibrating Gain Error in Data-Converter Systems}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4494.pdf}}
+}
+
+@MISC{MAXIM66,
+	author={Maxim IC},
+	title={{MAX6143 High-Precision Voltage Reference with Temperature Sensor}},
+	year=2004,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX6143.pdf}}
+}
+
+@MISC{MAXIM67,
+	author={Maxim IC},
+	title={{MAX7409/7410/7413/7414 5th-Order, Lowpass, Switched-Capacitor Filters}},
+	year=1998,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/ds/MAX7409-MAX7414.pdf}}
+}
+
+@MISC{CHEEVER1,
+	author={Erik Cheever},
+	title={{Switched Capacitor Circuits}},
+	year={Accessed 2010},
+	note={\\\url{http://www.swarthmore.edu/NatSci/echeeve1/Ref/FilterBkgrnd/SwitchedCap.html}}
+}
+
+@MISC{NATIONAL2,
+	author={National Semiconductor},
+	title={{LMF100 High Performance Dual Switched Capacitor Filter}},
+	year=1999,
+	note={\\\url{http://www.national.com/pf/LM/LMF100.html}}
+}
+
+@MISC{LINEAR6,
+	author={Linear Technology},
+	title={{LT1021 Precision Reference}},
+	year=1995,
+	note={\\\url{http://cds.linear.com/docs/Datasheet/1021fc.pdf}}
+}
+
+@MISC{ANALOG6,
+	author={Analog Devices},
+	title={{AD586 High Precision 5V Reference}},
+	year=2005,
+	note={\\\url{http://www.analog.com/static/imported-files/data_sheets/AD586.pdf}}
+}
+
+@MISC{BUNGARD1,
+	author={Bungard},
+	title={{Datenblatt Fotobeschichtetes Bungard FR4 Basismaterial}},
+	note={\\\url{http://bungard.de/downloads/IPC4101D.pdf}}
+}
+
+@MISC{STM1,
+	author={ST Microelectronics},
+	title={{BAT20J High Efficiency Switching and Ultra Low Leakage Current Schottky Diode}},
+	year=2004,
+	note={\\\url{http://www.st.com/stonline/books/pdf/docs/10312.pdf}}
+}
+
+@MISC{PHILIPS3,
+	author={{NXP (Philips)}},
+	title={{BAS416 Low-leakage diode}},
+	year=2004,
+	note={\\\url{http://www.nxp.com/documents/data_sheet/BAS416.pdf}}
+}
+
+@MISC{PHILIPS4,
+	author={{NXP (Philips)}},
+	title={{BAS45AL Low-leakage diode}},
+	year=2010,
+	note={\\\url{http://www.nxp.com/documents/data_sheet/BAS45AL.pdf}}
+}
+
+@MISC{PHILIPS5,
+	author={{NXP (Philips)}},
+	title={{BAV199 Low-leakage double diode}},
+	year=2001,
+	note={\\\url{http://www.nxp.com/documents/data_sheet/BAV199.pdf}}
+}
+
+@MISC{PHILIPS6,
+	author={{NXP (Philips)}},
+	title={{1PS70SB10; 1PS70SB14; 1PS70SB15; 1PS70SB16 Schottky barrier (double) diodes}},
+	year=1999,
+	note={\\\url{http://www.nxp.com/documents/data_sheet/1PS70SB10_14_15_16.pdf}}
+}
+
+@MISC{WIMA1,
+	author={WIMA},
+	title={{WIMA FKP 1 Datenblatt}},
+	note={\\\url{http://www.wima.com/EN/WIMA_FKP_1.pdf}}
+}
+
+@MISC{TEXAS11,
+	author={Texas Instruments},
+	title={{ADS1198ECG-FE ECG Front-End Performance Demonstration Kit User's Guide}},
+	year=2010,
+	note={\\\url{http://www.ti.com/litv/pdf/sbau180}}
+}
+
+@MISC{MAXIM68,
+	author={Maxim IC},
+	title={{MAX4194-MAX4197 Micropower, Single-Supply, Rail-to-Rail, Precision Instrumentation Amplifiers}},
+	year=2003,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX4194-MAX4197.pdf}}
+}
+
+@MISC{MAXIM69,
+	author={Maxim IC},
+	title={{MAX4208/MAX4209 Ultra-Low Offset/Drift, Precision Instrumentation Amplifiers with REF Buffer}},
+	year=2009,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX4208-MAX4209.pdf}}
+}
+
+@MISC{MAXIM70,
+	author={Maxim IC},	
+	title={{MAX1553/MAX1554 High-Efficiency, 40V Step-Up Converters for 2 to 10 White LEDs}},
+	year=2003,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX1553-MAX1554.pdf}}
+}
+
+@MISC{TEXAS12,
+	author={Texas Instruments},
+	title={{Analog Front-End Design for ECG Systems Using Delta-Sigma ADCs}},
+	year=2010,
+	note={\\\url{http://www.ti.com/litv/pdf/sbaa160a}}
+}
+
+@MISC{MAXIM71,
+	author={Maxim IC},
+	title={{3-Pin Silicon Oscillator}},
+	year=2007,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX7375.pdf}}
+}
+
+@MISC{MAXIM72,
+	author={Maxim IC},
+	title={{DS1085L 3.3V EconOscillator Frequency Synthesizer}},
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/DS1085L.pdf}}
+}
+
+@MISC{MAXIM73,
+	author={Maxim IC},
+	title={{Inexpensive (Almost Free) Probe/Tweezers for Testing SMD Components}},
+	year=2009,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN4459.pdf}}
+}
+
+@MISC{MAXIM74,
+	author={Maxim IC},
+	title={{Wafer-level packaging (WLP) and its applications}},
+	year=2008,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN1891.pdf}}
+}
+
+@MISC{MAXIM75,
+	author={Maxim IC},
+	title={{Automatic Test Equipment on a Budget}},
+	year=2001,
+	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN761.pdf}}
+}
+
+@MISC{ATMEL1,
+	author={Atmel Corporation},
+	title={{ATMega8/ATMega8L 8-bit AVR with 8K Bytes In-System Programmable Flash}},
+	year=2010,
+	note={\\\url{http://www.atmel.com/dyn/resources/prod_documents/doc2486.pdf}}
+}
+
+@MISC{ATMEL2,
+	author={Atmel Corporation},
+	title={{AT90PWM216/AT90PWM316 8-bit AVR Microcontroller with 16K Bytes In-System Programmable Flash}},
+	year=2010,
+	note={\\\url{http://www.atmel.com/dyn/resources/prod_documents/doc7710.pdf}}
+}
+
+@MISC{ATMEL3,
+	author={Atmel Corporation},
+	title={{ATMega16U4/ATMega32U4 8-bit AVR Microcontroller with 16/32K Bytes of ISP Flash and USB Controller}},
+	year=2010,
+	note={\\\url{http://www.atmel.com/dyn/resources/prod_documents/doc7766.pdf}}
+}
+
+@MISC{WERBUNG1,
+	year=2011,
+	note={\\\url{http://www.lightalarmclock.co.uk/}}
+}
+
+@MISC{WERBUNG2,
+	year=2011,
+	note={\\\url{http://www.amazon.co.uk/dp/B002LVUNDK/ref=nosim?tag=pricestaircase-21}}
+}
+
+@MISC{WERBUNG3,
+	year=2011,
+	note={\\\url{http://www.lichtwecker-test.de/}}
+}
+
+@MISC{WERBUNG4,
+	year=2011,
+	note={\\\url{http://www.solvital-lichttherapie.de/lichtwecker.php}}
+}
+
+@MISC{WERBUNG5,
+	year=2011,
+	note={\\\url{http://www.serenityhealth.com/sun_alarm_clock.html}}
+}
+
+@MISC{WERBUNG6,
+	year=2011,
+	note={\\\url{http://www.davita.de/lichtwecker.html}}
+}
+
+@MISC{WERBUNG7,
+	year=2011,
+	note={\\\url{http://www.solvital-lichttherapie.de/wie-funktioniert-lichtwecker.php}}
+}
+
+@MISC{WERBUNG8,
+	year=2011,
+	note={\\\url{http://www.lumie.com/shop/categories/dawn-simulators}}
+}
+
+@MISC{SIESTA1,
+	year=2006,
+	author={infactory innovations and trade gmbh},
+	title={{Studie zur Wirksamkeit eines bewegungsprofilbasierten Schlafphasenweckers}},
+	note={\\\url{http://87.106.221.113/axbo/CustomUpload/374O357O340O370O356O369O350O352O375O353O366O/zusammenfassung_studie.pdf}}
+}
+
+@MISC{MAYER1,
+	author={{Karl C. Mayer}},
+	title={{EEG}},
+	note={\\\url{http://www.neuro24.de/eeg.htm}}
+}
+
+@MISC{NATIONAL3,
+	author={{National Semiconductor}},
+	title={{LM117/LM317A/LM137 3-Terminal Adjustable Regulator}},
+	year=2010,
+	note={\\\url{http://www.national.com/profile/snip.cgi/openDS=LM317}}
+}
+
+@MISC{MICROCHIP1,
+	author={{Microchip Technology inc.}},
+	title={{ENC28J60 Datasheet -- Stand-Alone Ethernet Controller with SPI Interface}},
+	year=2008,
+	note={\\\url{http://ww1.microchip.com/downloads/en/DeviceDoc/39662c.pdf}}
+}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  16 JAN 2011 16:56
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  16 JAN 2011 20:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -438,10 +438,30 @@ File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
 \pdf@defaulttoks=\toks40
 \Fld@listcount=\count125
 ))
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip61
+\subfigcapskip=\skip62
+\subfigcaptopadj=\dimen148
+\subfigbottomskip=\skip63
+\subfigcapmargin=\dimen149
+\subfiglabelskip=\skip64
+\c@subfigure=\count126
+\c@lofdepth=\count127
+\c@subtable=\count128
+\c@lotdepth=\count129
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip65
+\subfig@bottom=\skip66
+)
 (/usr/share/texmf-texlive/tex/latex/todo/todo.sty
 Package: todo 2002/07/25 v1.1 To-do list (Federico Garcia)
 \@todotoks=\toks41
-\c@todo=\count126
+\c@todo=\count130
 )
 (/usr/share/texmf-texlive/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Landscape pages in PDF (HO)
@@ -481,22 +501,22 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen148
-\Gin@req@width=\dimen149
+\Gin@req@height=\dimen150
+\Gin@req@width=\dimen151
 )
-\epsfxsize=\dimen150
-\epsfysize=\dimen151
+\epsfxsize=\dimen152
+\epsfysize=\dimen153
 )
 (/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count127
+\FV@CodeLineNo=\count131
 \FV@InFile=\read2
 \FV@TabBox=\box63
-\c@FancyVerbLine=\count128
-\FV@StepNumber=\count129
+\c@FancyVerbLine=\count132
+\FV@StepNumber=\count133
 \FV@OutFile=\write5
 )
 \@input{pygmentizedefs.aux}
@@ -506,28 +526,28 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \glo@main@file=\write6
 \openout6 = `rgbulb.glo'.
 
-Package glossaries Info: Writing glossary file rgbulb.glo on input line 48.
+Package glossaries Info: Writing glossary file rgbulb.glo on input line 49.
 \glo@acronym@file=\write7
 \openout7 = `rgbulb.acn'.
 
-Package glossaries Info: Writing glossary file rgbulb.acn on input line 48.
+Package glossaries Info: Writing glossary file rgbulb.acn on input line 49.
  (./rgbulb.aux (./log_lut_gen.rb.aux))
 \openout1 = `rgbulb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 53.
-LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
 
 (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
@@ -573,33 +593,33 @@ driver: dvips
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-Package hyperref Info: Link coloring OFF on input line 53.
+Package hyperref Info: Link coloring OFF on input line 54.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count130
+\c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 53.
-LaTeX Info: Redefining \pageref on input line 53.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
  (./rgbulb.out)
 (./rgbulb.out)
 \@outlinefile=\write8
 \openout8 = `rgbulb.out'.
 
 \AtBeginShipoutBox=\box64
-LaTeX Font Info:    Try loading font information for U+msa on input line 54.
+LaTeX Font Info:    Try loading font information for U+msa on input line 55.
  (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 54.
+LaTeX Font Info:    Try loading font information for U+msb on input line 55.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 54.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 55.
 
 (/usr/share/texmf-texlive/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
@@ -617,87 +637,13 @@ File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 \openout9 = `rgbulb.toc'.
 
 
-[1]
-
-LaTeX Warning: Citation `WP4' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG1' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG2' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG3' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG4' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG5' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG6' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG7' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WERBUNG8' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `SIESTA1' on page 2 undefined on input line 62.
-
-
-LaTeX Warning: Citation `WP9' on page 2 undefined on input line 67.
-
-
-LaTeX Warning: Citation `WP5' on page 2 undefined on input line 68.
-
-
-LaTeX Warning: Citation `WP6' on page 2 undefined on input line 68.
-
-
-LaTeX Warning: Citation `WP7' on page 2 undefined on input line 68.
-
-
-LaTeX Warning: Citation `WP8' on page 2 undefined on input line 68.
-
-[2]
-
-LaTeX Warning: Citation `WP10' on page 3 undefined on input line 76.
-
-File: images/diode-iv-curve.eps Graphic file (type eps)
-<images/diode-iv-curve.eps>
-
-LaTeX Warning: Citation `PHILIPS1' on page 3 undefined on input line 89.
-
-
-LaTeX Warning: Citation `PHILIPS2' on page 3 undefined on input line 89.
-
-[3] [4]
-
-LaTeX Warning: Citation `ATMEL1' on page 5 undefined on input line 134.
-
-
-LaTeX Warning: Citation `ATMEL2' on page 5 undefined on input line 134.
-
-
-LaTeX Warning: Citation `ATMEL3' on page 5 undefined on input line 134.
-
-
-LaTeX Warning: Citation `MAXIM21' on page 5 undefined on input line 137.
-
-
-LaTeX Warning: Citation `MAXIM10' on page 5 undefined on input line 137.
-
-
-LaTeX Warning: Citation `WP1' on page 5 undefined on input line 137.
-
-
-LaTeX Warning: Citation `WP3' on page 5 undefined on input line 137.
-
+[1] [2]
+File: images/led_closeup.eps Graphic file (type eps)
+ <images/led_closeup.eps>
+File: images/diode-iv-curve_bw.eps Graphic file (type eps)
+ <images/diode-iv-curve_bw.eps> [3] [4]
 File: images/delta-sigma-adc.eps Graphic file (type eps)
+
 <images/delta-sigma-adc.eps> [5]
 \openout2 = `log_lut_gen.rb.aux'.
 
@@ -706,46 +652,31 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
 
 (/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-))
-
-LaTeX Warning: Citation `MAXIM41' on page 6 undefined on input line 166.
+)) [6] [7
 
 
-LaTeX Warning: Citation `MAXIM57' on page 6 undefined on input line 166.
+]
+File: images/led_driver_rev1.eps Graphic file (type eps)
 
+<images/led_driver_rev1.eps>
+File: images/led_driver_rev3.eps Graphic file (type eps)
+ <images/led_driver_rev3.eps> [8]
+File: images/dual_core_controller_top_small.eps Graphic file (type eps)
 
-LaTeX Warning: Citation `SIART1' on page 6 undefined on input line 166.
+<images/dual_core_controller_top_small.eps>
+File: images/dual_core_controller_bottom_small.eps Graphic file (type eps)
 
+<images/dual_core_controller_bottom_small.eps>
+File: images/ethersex_top_small.eps Graphic file (type eps)
+ <images/ethersex_top_small.eps>
+File: images/ethersex_bottom_small.eps Graphic file (type eps)
 
-LaTeX Warning: Citation `ATMEL2' on page 6 undefined on input line 170.
-
-[6] [7
-
-
-] [8]
-
-LaTeX Warning: Citation `MAYER1' on page 9 undefined on input line 192.
-
-
-LaTeX Warning: Citation `TEXAS1' on page 9 undefined on input line 204.
-
-[9]
+<images/ethersex_bottom_small.eps> [9] [10] [11]
 File: images/adc_schematic_01.eps Graphic file (type eps)
- <images/adc_schematic_01.eps> [10]
-
-LaTeX Warning: Citation `WP2' on page 11 undefined on input line 238.
-
-
-LaTeX Warning: Citation `WP11' on page 11 undefined on input line 238.
-
-
-LaTeX Warning: Citation `WP12' on page 11 undefined on input line 238.
-
-
-LaTeX Warning: Citation `WP13' on page 11 undefined on input line 238.
-
+ <images/adc_schematic_01.eps>
+[12]
 No file rgbulb.gls.
-(./rgbulb.acr) (./rgbulb.bbl [11
+(./rgbulb.acr) (./rgbulb.bbl [13
 
 
 ]
@@ -753,7 +684,7 @@ Overfull \hbox (12.59996pt too wide) in paragraph at lines 57--62
 [][][][]\T1/cmr/m/n/12 . 
  []
 
-[12]
+[14]
 Overfull \hbox (111.87584pt too wide) in paragraph at lines 110--115
 [][][][]\T1/cmr/m/n/12 . 
  []
@@ -763,7 +694,7 @@ Overfull \hbox (83.55066pt too wide) in paragraph at lines 117--123
 [][][][]\T1/cmr/m/n/12 check. 
  []
 
-[13] [14] [15] [16]
+[15] [16] [17] [18]
 Overfull \hbox (234.84569pt too wide) in paragraph at lines 525--531
 [][][][]\T1/cmr/m/n/12 . 
  []
@@ -773,53 +704,46 @@ Overfull \hbox (117.54933pt too wide) in paragraph at lines 540--545
 [][][][]\T1/cmr/m/n/12 . 
  []
 
-[17]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 616.
+[19]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 621.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 616.
- [18]
-Overfull \hbox (154.59029pt too wide) in paragraph at lines 640--645
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 621.
+ [20]
+Overfull \hbox (154.59029pt too wide) in paragraph at lines 645--650
 [][][][]\T1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (173.11076pt too wide) in paragraph at lines 647--653
+Overfull \hbox (173.11076pt too wide) in paragraph at lines 652--658
 [][][][]\T1/cmr/m/n/12 . 
  []
 
-[19])
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 256.
+[21])
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 310.
 
  (/usr/share/texmf-texlive/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 268.
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 322.
 
 
-Underfull \hbox (badness 10000) in alignment at lines 274--274
+Underfull \hbox (badness 10000) in alignment at lines 328--328
 [][] 
  []
 
-[20] [21] (./rgbulb.aux (./log_lut_gen.rb.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[22] [23] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
 Here is how much of TeX's memory you used:
- 9437 strings out of 495022
- 132034 string characters out of 1181058
- 221266 words of memory out of 3000000
- 12383 multiletter control sequences out of 15000+50000
+ 9621 strings out of 495022
+ 134891 string characters out of 1181058
+ 228104 words of memory out of 3000000
+ 12554 multiletter control sequences out of 15000+50000
  23567 words of font info for 68 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,10n,50p,2181b,655s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rgbulb.dvi (22 pages, 154164 bytes).
+Output written on rgbulb.dvi (24 pages, 166748 bytes).

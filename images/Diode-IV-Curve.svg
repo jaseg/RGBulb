@@ -163,6 +163,51 @@
        inkscape:vp_y="0 : 1000 : 0"
        inkscape:vp_x="0 : 100 : 1"
        sodipodi:type="inkscape:persp3d" />
+    <filter
+       id="filter2919"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix2921"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter2923"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix2925"
+         type="saturate"
+         values="0" />
+    </filter>
+    <filter
+       id="filter2927"
+       inkscape:label="Desaturate"
+       x="0"
+       y="0"
+       width="1"
+       height="1"
+       inkscape:menu="Color"
+       inkscape:menu-tooltip="Render in shades of gray by reducing saturation to zero"
+       color-interpolation-filters="sRGB">
+      <feColorMatrix
+         id="feColorMatrix2929"
+         type="saturate"
+         values="0" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -176,9 +221,9 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2"
      inkscape:cx="313.90113"
-     inkscape:cy="196.3194"
+     inkscape:cy="156.3194"
      inkscape:document-units="px"
-     inkscape:current-layer="labels"
+     inkscape:current-layer="background-colors"
      inkscape:window-width="1440"
      inkscape:window-height="899"
      inkscape:window-x="0"
@@ -201,7 +246,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -211,21 +256,21 @@
      inkscape:label="background-colors"
      style="display: inline;">
     <rect
-       style="opacity: 1; fill: rgb(204, 0, 0); fill-opacity: 0.209302; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       style="opacity:1;fill:#4d4d4d;fill-opacity:0.20930199999999999;stroke:none;stroke-width:1;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0pt;stroke-opacity:1;display:inline;filter:url(#filter2923)"
        id="breakdown"
        width="99.409607"
        height="299.86124"
        x="0.59039307"
        y="0.13876343" />
     <rect
-       style="opacity: 1; fill: rgb(34, 139, 34); fill-opacity: 0.215116; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       style="fill:#ffffff;fill-opacity:0.21511601000000000;stroke:none;display:inline;filter:url(#filter2919)"
        id="reverse"
        width="250"
        height="300"
-       x="250"
+       x="249"
        y="-5.6843419e-14" />
     <rect
-       style="opacity: 1; fill: rgb(70, 131, 181); fill-opacity: 0.255814; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       style="opacity:1;fill:#b3b3b3;fill-opacity:0.25581399999999999;stroke:none;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0pt;stroke-opacity:1;display:inline;filter:url(#filter2927)"
        id="forward"
        width="151"
        height="300"
