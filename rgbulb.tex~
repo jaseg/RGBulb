@@ -258,8 +258,9 @@ Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signa
 Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen.
 
 \begin{figure}
-
-% \label{ics_used}
+\centering
+\includegraphics[width=12cm]{images/chips_smaller.eps}
+\label{ics_used}
 \caption{Die in EEG und LED-Treiber verwendeten ICs. Vorne links sind zwei ADS1194 zu erkennen, die letzendlich die EEG-Messung durchführen. Vorne mittig ist der mit vier 16-Bit-PWM-Kanälen ausgestattete ATMega32U4 zu sehen (eine größere Variante des ATMega16U4), der die PWM-Regelung übernimmt. Hinten im Bild sind verschiedene Bauformen des ATMega8 zu sehen, der in Revision 1 der PWM-Controllerplatine zum Einsatz kommt.}
 \end{figure}
 

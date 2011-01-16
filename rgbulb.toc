@@ -15,9 +15,9 @@
 \contentsline {section}{\numberline {4}Grundlagen der Elektroenzephalographie}{10}{section.4}
 \contentsline {subsection}{\numberline {4.1}Biologisch}{10}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Elektrisch}{10}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Mathematisch und Informatisch}{13}{subsection.4.3}
-\contentsline {section}{\numberline {5}Arbeitsprozess der Platinenherstellung und Ergebnisse}{13}{section.5}
-\contentsline {section}{\numberline {A}Glossar}{13}{appendix.A}
-\contentsline {section}{\numberline {B}Literatur, Quellen etc.}{13}{appendix.B}
-\contentsline {section}{\numberline {C}Updates}{22}{appendix.C}
-\contentsline {section}{\numberline {D}Changelog}{23}{appendix.D}
+\contentsline {subsection}{\numberline {4.3}Mathematisch und Informatisch}{14}{subsection.4.3}
+\contentsline {section}{\numberline {5}Arbeitsprozess der Platinenherstellung und Ergebnisse}{14}{section.5}
+\contentsline {section}{\numberline {A}Glossar}{14}{appendix.A}
+\contentsline {section}{\numberline {B}Literatur, Quellen etc.}{14}{appendix.B}
+\contentsline {section}{\numberline {C}Updates}{24}{appendix.C}
+\contentsline {section}{\numberline {D}Changelog}{24}{appendix.D}

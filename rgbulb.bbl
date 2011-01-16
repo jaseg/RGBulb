@@ -578,6 +578,12 @@ Texas Instruments.
 \newblock {EEG}.
 \newblock \\\url{http://www.neuro24.de/eeg.htm}.
 
+\bibitem{MICROCHIP1}
+{Microchip Technology inc.}
+\newblock {ENC28J60 Datasheet -- Stand-Alone Ethernet Controller with SPI
+  Interface}, 2008.
+\newblock \\\url{http://ww1.microchip.com/downloads/en/DeviceDoc/39662c.pdf}.
+
 \bibitem{STM1}
 ST~Microelectronics.
 \newblock {BAT20J High Efficiency Switching and Ultra Low Leakage Current
