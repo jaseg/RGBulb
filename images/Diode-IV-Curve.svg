@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="300"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="Diode-IV-Curve.svg"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="arrow-defs">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 150 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="500 : 150 : 1"
+       inkscape:persp3d-origin="250 : 100 : 1"
+       id="perspective2553" />
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mstart"
+       style="overflow: visible;">
+      <path
+         id="path2927"
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z "
+         style="fill-rule: evenodd; stroke: black; stroke-width: 1pt; marker-start: none;"
+         transform="matrix(0.4, 0, 0, 0.4, 4, 0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Mend"
+       style="overflow: visible;">
+      <path
+         id="path2924"
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z "
+         style="fill-rule: evenodd; stroke: black; stroke-width: 1pt; marker-start: none;"
+         transform="matrix(-0.4, 0, 0, -0.4, -4, 0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lstart"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow: visible;">
+      <path
+         id="path2933"
+         d="M 0,0 L 5,-5 L -12.5,0 L 5,5 L 0,0 z "
+         style="fill-rule: evenodd; stroke: black; stroke-width: 1pt; marker-start: none;"
+         transform="matrix(0.8, 0, 0, 0.8, 10, 0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective2454"
+       inkscape:persp3d-origin="24 : 16 : 1"
+       inkscape:vp_z="48 : 24 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 24 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective3114" />
+    <inkscape:perspective
+       id="perspective3128"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective5429" />
+    <inkscape:perspective
+       id="perspective5461"
+       inkscape:persp3d-origin="32 : 33.333333 : 1"
+       inkscape:vp_z="64 : 50 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 50 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       id="perspective3244"
+       inkscape:persp3d-origin="16 : 10.666667 : 1"
+       inkscape:vp_z="32 : 16 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 16 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective4532" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective4498" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective4473" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective4445" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective4841" />
+    <inkscape:perspective
+       id="perspective4839"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       id="perspective4386" />
+    <inkscape:perspective
+       id="perspective4364"
+       inkscape:persp3d-origin="237.5 : 66.666667 : 1"
+       inkscape:vp_z="475 : 100 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 100 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="313.90113"
+     inkscape:cy="196.3194"
+     inkscape:document-units="px"
+     inkscape:current-layer="labels"
+     inkscape:window-width="1440"
+     inkscape:window-height="899"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     width="500px"
+     height="300px"
+     showgrid="false"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2555"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="background-colors"
+     inkscape:label="background-colors"
+     style="display: inline;">
+    <rect
+       style="opacity: 1; fill: rgb(204, 0, 0); fill-opacity: 0.209302; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       id="breakdown"
+       width="99.409607"
+       height="299.86124"
+       x="0.59039307"
+       y="0.13876343" />
+    <rect
+       style="opacity: 1; fill: rgb(34, 139, 34); fill-opacity: 0.215116; stroke: none; stroke-width: 1; stroke-linecap: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       id="reverse"
+       width="250"
+       height="300"
+       x="250"
+       y="-5.6843419e-14" />
+    <rect
+       style="opacity: 1; fill: rgb(70, 131, 181); fill-opacity: 0.255814; stroke: none; stroke-width: 2; stroke-linecap: round; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       id="forward"
+       width="151"
+       height="300"
+       x="99"
+       y="0" />
+    <g
+       transform="matrix(0, -1, 1, 0, 192.138, 332.5)"
+       id="g4553"
+       inkscape:label="Layer 1">
+      <path
+         sodipodi:nodetypes="cccc"
+         id="path2790"
+         d="M 95,167.36218 L 120,167.36218 L 107.5,184.86218 L 95,167.36218 z"
+         style="fill: rgb(225, 240, 240); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1;" />
+      <path
+         id="path2792"
+         d="M 119.5,185.86218 L 95.36206,185.86218"
+         style="fill: none; stroke: rgb(0, 0, 0); stroke-width: 4; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1;" />
+    </g>
+    <path
+       style="opacity: 1; fill: rgb(34, 139, 34); fill-opacity: 0.498039; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1;"
+       d="M 375,225 L 415,225"
+       id="path4557"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity: 1; fill: rgb(34, 139, 34); fill-opacity: 0.498039; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1;"
+       d="M 360,225 L 325,225"
+       id="path4559" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text4565"
+       y="203.40199"
+       x="374.03101"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Serif"
+       xml:space="preserve"><tspan
+         y="203.40199"
+         x="374.03101"
+         id="tspan4567"
+         sodipodi:role="line">u</tspan></text>
+    <g
+       inkscape:label="Layer 1"
+       id="g4655"
+       transform="matrix(-1, 0, 0, 1, 380, 170)">
+      <g
+         id="g3181-1"
+         transform="translate(165, -19)"
+         style="fill: rgb(0, 127, 127); fill-opacity: 0.117647;">
+        <path
+           id="path4604-4-1"
+           d="M -115,44 L -115,54"
+           style="font-size: 14.6667px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: start; line-height: 100%; text-anchor: start; fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: DejaVu Serif;" />
+        <path
+           id="path4606-0-5"
+           d="M -110,49 L -120,49"
+           style="font-size: 14.6667px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: start; line-height: 100%; text-anchor: start; fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: DejaVu Serif;" />
+      </g>
+      <path
+         style="font-size: 14.6667px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: start; line-height: 100%; text-anchor: start; fill: none; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: DejaVu Serif;"
+         d="M -25,30 L -35,30"
+         id="path4608-9-2" />
+    </g>
+    <path
+       style="opacity: 1; fill: rgb(34, 139, 34); fill-opacity: 0.498039; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1;"
+       d="M 335,250 L 395,250"
+       id="path4663" />
+    <text
+       sodipodi:linespacing="100%"
+       id="text4669"
+       y="265"
+       x="371.625"
+       style="font-size: 16px; font-style: italic; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: end; line-height: 100%; text-anchor: end; opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; display: inline; font-family: DejaVu Serif;"
+       xml:space="preserve"><tspan
+         y="265"
+         x="371.625"
+         id="tspan4671"
+         sodipodi:role="line">i</tspan></text>
+    <g
+       inkscape:label="Layer 1"
+       id="g4710"
+       transform="translate(405, 210.5)">
+      <path
+         d="M 15,14.5 C 15,15.880712 13.880712,17 12.5,17 11.119288,17 10,15.880712 10,14.5 10,13.119288 11.119288,12 12.5,12 c 1.380712,0 2.5,1.119288 2.5,2.5 z"
+         sodipodi:ry="2.5"
+         sodipodi:rx="2.5"
+         sodipodi:cy="14.5"
+         sodipodi:cx="12.5"
+         id="path3252"
+         style="opacity: 1; fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: square; stroke-linejoin: miter; marker: none; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;"
+         sodipodi:type="arc" />
+    </g>
+    <g
+       style="display: inline;"
+       inkscape:label="Layer 1"
+       id="g4713"
+       transform="translate(310, 210.5)">
+      <path
+         d="M 15,14.5 C 15,15.880712 13.880712,17 12.5,17 11.119288,17 10,15.880712 10,14.5 10,13.119288 11.119288,12 12.5,12 c 1.380712,0 2.5,1.119288 2.5,2.5 z"
+         sodipodi:ry="2.5"
+         sodipodi:rx="2.5"
+         sodipodi:cy="14.5"
+         sodipodi:cx="12.5"
+         id="path4715"
+         style="opacity: 1; fill: none; fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: square; stroke-linejoin: miter; marker: none; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;"
+         sodipodi:type="arc" />
+    </g>
+    <text
+       sodipodi:linespacing="100%"
+       id="text4717"
+       y="15"
+       x="263.625"
+       style="font-size: 16px; font-style: italic; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: end; line-height: 100%; text-anchor: end; opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; display: inline; font-family: DejaVu Serif;"
+       xml:space="preserve"><tspan
+         y="15"
+         x="263.625"
+         id="tspan4719"
+         sodipodi:role="line">i</tspan></text>
+    <path
+       style="opacity: 1; fill: rgb(34, 139, 34); fill-opacity: 0.498039; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0pt; stroke-opacity: 1;"
+       d="M 500,60 L 0,60"
+       id="path4464" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="diode-diagram"
+     inkscape:label="diode-diagram"
+     style="display: inline;" />
+  <g
+     inkscape:label="plot"
+     inkscape:groupmode="layer"
+     id="plot"
+     transform="translate(-75.3377, -78.5543)"
+     style="opacity: 1; display: inline;">
+    <path
+       style="opacity: 1; fill: none; fill-rule: evenodd; stroke: black; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; marker: none; stroke-opacity: 1; display: inline; stroke-miterlimit: 4; stroke-dasharray: none;"
+       d="M 570.33766,228.55425 L 75.33766,228.55425"
+       id="x-axis"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity: 1; fill: none; fill-rule: evenodd; stroke: black; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; marker: none; stroke-opacity: 1; display: inline; stroke-miterlimit: 4; stroke-dasharray: none;"
+       d="M 325.33766,83.55425 L 325.33766,378.55425"
+       id="y-axis"
+       sodipodi:nodetypes="cc" />
+    <path
+       id="iv-curve"
+       style="fill: none; fill-rule: evenodd; stroke: rgb(52, 101, 164); stroke-width: 3; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;"
+       d="M 326.44022,227.58134 C 326.44022,227.58134 430.34128,228.26996 436.94315,227.26162 C 443.78716,226.21628 459.18271,227.16206 466.75296,216.14621 C 474.13155,205.40925 474.49487,199.88053 476.50976,185.5892 C 481.54849,149.85037 481.573,81.05425 481.573,81.05425 M 326.44244,227.61856 C 326.44244,227.61856 319.26012,232.91698 315.58194,234.06529 C 311.74471,235.26326 305.83016,235.95262 302.93232,236.11751 C 272.86288,237.82847 209.99574,239.98388 197.28574,240.85902 C 184.58708,241.73338 178.43222,243.97571 174.90831,247.19868 C 171.56399,250.2574 169.23878,252.54895 167.96853,263.16898 C 163.74754,298.4589 157.87717,377.92091 157.87717,377.92091"
+       sodipodi:nodetypes="csssccsssssc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="labels"
+     inkscape:label="labels"
+     style="opacity: 1; display: inline;"
+     transform="translate(-75.3377, -78.5543)">
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: start; line-height: 125%; text-anchor: start; opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; display: inline; font-family: DejaVu Serif;"
+       x="84.2271"
+       y="135.315"
+       id="breakdown-label"
+       transform="scale(1.01319, 0.986986)"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3172"
+         x="84.2271"
+         y="135.315">Breakdown</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: start; line-height: 125%; text-anchor: start; opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; display: inline; font-family: DejaVu Serif;"
+       x="222.237"
+       y="135.417"
+       id="reverse-label"
+       transform="scale(1.01395, 0.986241)"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3168"
+         x="222.237"
+         y="135.417">Reverse</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: start; line-height: 125%; text-anchor: start; opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; display: inline; font-family: DejaVu Serif;"
+       x="385.258"
+       y="135.315"
+       id="forward-label"
+       transform="scale(1.01319, 0.986986)"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3176"
+         x="385.258"
+         y="135.315">Forward</tspan></text>
+    <path
+       style="opacity: 1; fill: none; fill-rule: evenodd; stroke: black; stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; marker: none; stroke-miterlimit: 4; stroke-dasharray: 4, 4; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       d="M 175.33766,78.55425 L 175.33766,378.55425"
+       id="v-br-vertical-line"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="opacity: 1; fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 2; stroke-linecap: butt; stroke-linejoin: miter; marker: none; stroke-miterlimit: 4; stroke-dasharray: 4, 4; stroke-dashoffset: 0pt; stroke-opacity: 1; display: inline;"
+       d="M 476.33766,78.55425 L 476.33766,228.55425"
+       id="v-on-vertical-line"
+       sodipodi:nodetypes="cc" />
+    <g
+       inkscape:label="Layer 1"
+       id="layer1"
+       transform="translate(547.195, 208.269)">
+      <path
+         id="path2444"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+    <g
+       style="opacity: 1; display: inline;"
+       inkscape:label="Layer 1"
+       id="g4456"
+       transform="matrix(0, -1, 1, 0, 305.052, 106.697)">
+      <path
+         id="path4458"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+    <g
+       style="opacity: 1; display: inline;"
+       inkscape:label="Layer 1"
+       id="g4460"
+       transform="matrix(-1, 0, 0, -1, 348.481, 158.84)">
+      <path
+         id="path4462"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+    <g
+       style="opacity: 1; display: inline;"
+       inkscape:label="Layer 1"
+       id="g4466"
+       transform="matrix(-1, 0, 0, -1, 198.481, 158.84)">
+      <path
+         id="path4468"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+    <g
+       style="opacity: 1; display: inline;"
+       inkscape:label="Layer 1"
+       id="g4470"
+       transform="translate(152.195, 118.269)">
+      <path
+         id="path4472"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+    <g
+       style="opacity: 1; display: inline;"
+       inkscape:label="Layer 1"
+       id="g4474"
+       transform="translate(302.195, 118.269)">
+      <path
+         id="path4476"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+    <g
+       id="g4486"
+       transform="translate(55.7617, -38)">
+      <text
+         transform="translate(75.3377,78.5543)"
+         sodipodi:linespacing="100%"
+         id="text4478"
+         y="181"
+         x="31.25"
+         style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Serif"
+         xml:space="preserve"><tspan
+           y="181"
+           x="31.25"
+           id="tspan4480"
+           sodipodi:role="line">u</tspan></text>
+      <text
+         sodipodi:linespacing="100%"
+         id="text4482"
+         y="263.054"
+         x="116.767"
+         style="font-size: 10px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: end; line-height: 100%; text-anchor: end; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: DejaVu Serif;"
+         xml:space="preserve"><tspan
+           y="263.054"
+           x="116.767"
+           id="tspan4484"
+           sodipodi:role="line">br</tspan></text>
+    </g>
+    <g
+       style="opacity: 1; display: inline;"
+       id="g4492"
+       transform="translate(368.781, -19.5)">
+      <text
+         sodipodi:linespacing="100%"
+         id="text4494"
+         y="259.55399"
+         x="108.588"
+         style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:DejaVu Serif"
+         xml:space="preserve"><tspan
+           y="259.55399"
+           x="108.588"
+           id="tspan4496"
+           sodipodi:role="line">u</tspan></text>
+      <text
+         sodipodi:linespacing="100%"
+         id="text4498"
+         y="263.054"
+         x="113.767"
+         style="font-size: 10px; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; text-align: end; line-height: 100%; text-anchor: end; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1; font-family: DejaVu Serif;"
+         xml:space="preserve"><tspan
+           y="263.054"
+           x="113.767"
+           id="tspan4500"
+           sodipodi:role="line">d</tspan></text>
+    </g>
+    <text
+       sodipodi:linespacing="100%"
+       id="text4561"
+       y="244.707"
+       x="570.63501"
+       style="font-size:16px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:end;line-height:100%;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;display:inline;font-family:DejaVu Serif"
+       xml:space="preserve"><tspan
+         y="244.707"
+         x="570.63501"
+         id="tspan4563"
+         sodipodi:role="line">u</tspan></text>
+    <g
+       style="opacity: 1; display: inline;"
+       inkscape:label="Layer 1"
+       id="g4665"
+       transform="translate(452.195, 308.269)">
+      <path
+         id="path4667"
+         d="M 15.142857,18.285714 L 15.142857,22.285714 L 23.142857,20.285714 L 15.142857,18.285714"
+         style="opacity: 1; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: rgb(0, 0, 0); stroke-width: 2; marker: none; stroke-opacity: 1; visibility: visible; display: inline; overflow: visible;" />
+    </g>
+  </g>
+</svg>

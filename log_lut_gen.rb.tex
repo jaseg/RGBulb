@@ -1,0 +1,41 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PY{c+c1}{#!/usr/bin/env ruby}
+
+\PY{n}{inbits} \PY{o}{=} \PY{l+m+mi}{8}
+\PY{n}{outbits} \PY{o}{=} \PY{l+m+mi}{16}
+
+\PY{n+nb}{puts} \PY{o}{<<}\PY{n+no}{eos}
+\PY{l+s+sh}{/* }
+\PY{l+s+sh}{* Logarithmic #\PYZob{}outbits\PYZcb{}-bit pwm #\PYZob{}inbits\PYZcb{}-bit lookup table}
+\PY{l+s+sh}{* }
+\PY{l+s+sh}{* Copyright 2010 by Jan Sebastian Götte (s@twopi.eu)}
+\PY{l+s+sh}{*  - - - - - - - - - - - - LICENSE INFORMATION - - - - - - - - - - - -}
+\PY{l+s+sh}{* This program is free software: you can redistribute it and/or modify}
+\PY{l+s+sh}{* it under the terms of the GNU General Public License as published by}
+\PY{l+s+sh}{* the Free Software Foundation, either 1.1 3 of the License, or}
+\PY{l+s+sh}{* (at your option) any later 1.1.}
+\PY{l+s+sh}{* }
+\PY{l+s+sh}{* This program is distributed in the hope that it will be useful,}
+\PY{l+s+sh}{* but WITHOUT ANY WARRANTY; without even the implied warranty of}
+\PY{l+s+sh}{* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the}
+\PY{l+s+sh}{* GNU General Public License for more details.}
+\PY{l+s+sh}{* }
+\PY{l+s+sh}{* You should have received a copy of the GNU General Public License}
+\PY{l+s+sh}{* along with this program.  If not, see <http://www.gnu.org/licenses/>.}
+\PY{l+s+sh}{*  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -}
+\PY{l+s+sh}{*}
+\PY{l+s+sh}{*/}
+
+\PY{l+s+sh}{#ifndef \PYZus{}\PYZus{}GENERATED\PYZus{}PWM\PYZus{}LUT\PYZus{}LOG\PYZus{}#\PYZob{}inbits\PYZcb{}\PYZus{}#\PYZob{}outbits\PYZcb{}\PYZus{}\PYZus{}}
+\PY{l+s+sh}{#define \PYZus{}\PYZus{}GENERATED\PYZus{}PWM\PYZus{}LUT\PYZus{}LOG\PYZus{}#\PYZob{}inbits\PYZcb{}\PYZus{}#\PYZob{}outbits\PYZcb{}\PYZus{}\PYZus{}}
+
+\PY{l+s+sh}{#include <avr/pgmspace.h>}
+
+\PY{l+s+sh}{const uint16\PYZus{}t log\PYZus{}pwm\PYZus{}lut[] PROGMEM = \PYZob{}}
+\PY{l+s+sh}{#\PYZob{}(0...2**inbits).map \PYZob{}|i| (2.0**(i/(2**inbits.to\PYZus{}f)*outbits)).round \PYZcb{}.join(", ")\PYZcb{}}
+\PY{l+s+sh}{\PYZcb{};}
+
+\PY{l+s+sh}{#endif//\PYZus{}\PYZus{}GENERATED\PYZus{}PWM\PYZus{}LUT\PYZus{}LOG\PYZus{}#\PYZob{}inbits\PYZcb{}\PYZus{}#\PYZob{}outbits\PYZcb{}\PYZus{}\PYZus{}}
+
+\PY{n+no}{eos}
+\end{Verbatim}

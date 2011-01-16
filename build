@@ -1,0 +1,6 @@
+#!/bin/bash
+bibtex rgbulb.aux
+latex rgbulb.tex
+bibtex rgbulb.aux
+dvips rgbulb.dvi
+ps2pdf rgbulb.ps

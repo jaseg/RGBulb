@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: rgbulb.aux
+A level-1 auxiliary file: log_lut_gen.rb.aux
+The style file: plain.bst
+Database file #1: rgbulb.bib
+Warning--to sort, need author or key in WERBUNG1
+Warning--to sort, need author or key in WERBUNG2
+Warning--to sort, need author or key in WERBUNG3
+Warning--to sort, need author or key in WERBUNG4
+Warning--to sort, need author or key in WERBUNG5
+Warning--to sort, need author or key in WERBUNG6
+Warning--to sort, need author or key in WERBUNG7
+Warning--to sort, need author or key in WERBUNG8
+You've used 138 entries,
+            2118 wiz_defined-function locations,
+            1087 strings with 20955 characters,
+and the built_in function-call counts, 28092 in all, are:
+= -- 2576
+> -- 930
+< -- 0
++ -- 402
+- -- 264
+* -- 826
+:= -- 4569
+add.period$ -- 406
+call.type$ -- 138
+change.case$ -- 538
+chr.to.int$ -- 0
+cite$ -- 146
+duplicate$ -- 966
+empty$ -- 3045
+format.name$ -- 264
+if$ -- 6165
+int.to.chr$ -- 0
+int.to.str$ -- 138
+missing$ -- 0
+newline$ -- 685
+num.names$ -- 260
+pop$ -- 1260
+preamble$ -- 1
+purify$ -- 408
+quote$ -- 0
+skip$ -- 962
+stack$ -- 0
+substring$ -- 690
+swap$ -- 138
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 552
+warning$ -- 8
+while$ -- 260
+width$ -- 141
+write$ -- 1354
+(There were 8 warnings)
