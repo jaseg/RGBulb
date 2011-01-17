@@ -89,7 +89,7 @@ Ich entschied mich für \glslink{LED}{LEDs} als Leuchtmittel, da diese mit Klein
 \subsubsection{Notwendigkeit der Stromregelung}
 \begin{figure}
 \begin{center}
-\includegraphics{images/diode-iv-curve.eps}
+\includegraphics{images/diode-iv-curve_bw.eps}
 \label{diode-iv-curve}
 \caption{Die Strom-Spannungs-Kennlinie einer LED}
 \end{center}
@@ -189,12 +189,41 @@ eine gemeinsame Anode besitzen.
 \includegraphics[scale=2.2]{images/led_driver_rev3.eps}
 \label{driver_rev3}
 }
+\label{driver_revs}
 \caption{Die Designs der regelbaren Stromquelle}
 \end{figure}
 
 Für Details der Pulsweitenmodulation ist das Datenblatt der AT90PWM-Reihe sehr hilfreich, da dieser speziell für solcherlei Einsatzzwecke designt wurde\cite{ATMEL2}. Die konkret verwendeten Controller sind in der ersten Version der Steuerplatine zwei ATMega8-AVRs zuständig, die jeweils über zwei 16-bit-PWM-Kanäle verfügen und die per serieller Schnittstelle (TTL-Pegel) koordiniert werden. Die Auflösung der PWM habe ich auf 16 Bit festgelegt, da die benötigte logarithmische Kurve bei einer 8-Bit-PWM erkennbare Abstufungen zeigt. Die Firmware unterstützt mit dem im vorherigen Abschnitt %TODO NOTE: this could be incorrect since the arrangement could be changed.
 generierte Tabellen in nur durch die auf 16 Bit beschränkte Ausgangsauflösung und den im AVR nur begrenzt vorhandenen Programmspeicher, in dem die Tabellen abgelegt würden, eingeschränkte Eingabebitbreiten. 12 Bit haben sich hier als sinnvoll erwiesen, da sie auch bei %``da sie'' oder ``da dies''
 niedrigen Helligkeitseinstellungen keine Stufen sichtbar werden lassen.
+
+\begin{figure}
+\centering
+\subfigure{
+\includegraphics[width=8cm]{images/dual_core_controller_top_small.eps}
+\label{controller_rev1_top}
+}
+\subfigure{
+\includegraphics[width=8cm]{images/dual_core_controller_bottom_small.eps}
+\label{controller_rev1_bottom}
+}
+\label{controller_rev1}
+\caption{Revision 1 der Steuerplatine mit zwei AVR-Mikrocontrollern, die über einen seriellen Bus kommunizieren}
+\end{figure}
+
+\begin{figure}
+\centering
+\subfigure{
+\includegraphics[width=8cm]{images/ethersex_top_small.eps}
+\label{buz2_converter_ethernet_top}
+}
+\subfigure{
+\includegraphics[width=8cm]{images/ethersex_bottom_small.eps}
+\label{buz2_converter_ethernet_bottom}
+}
+\label{buz2_converter_ethernet}
+\caption{Die Converterplatine von BUZ2 auf Ethernet}
+\end{figure}
 
 Revision 2 der Prototypenhardware sieht einen ATMega16U4-Mikrocontroller vor, der über vier nutzbare 16-Bit-PWM-Kanäle verfügt und somit die Serielle Koordination beider Prozessoren überflüssig macht. Außerdem verfügt er neben zwei seriellen Schnittstellen (die zur Kommunikation mit anderen Systemen genutzt werden) auch über eine USB-Schnitstelle, sodass die Lampe auch direkt an einen modernen Computer angeschlossen werden kann.
 
@@ -218,15 +247,22 @@ Hirnströme lassen sich auf der Kopfhaut noch mit einer Amplitude von ca.\ $10-1
 
 %TODO gls entry
 \newglossaryentry{Fehlerstrom}{name={Fehlerstrom}, description={Unerwünschter, häufige gefährlicher, auf nicht intendiertem Wege fließender Strom, meist durch Lebewesen}}
-Da an besagter Messschaltung ein Mensch angeschlossen ist\footnote{dessen Schaltbild in eingängiger Fachliteratur tatsächlich ein Strichmännchen ist} sind besondere---wiewohl nicht unbedingt notwendige---Schutzschaltungen einzuplanen. In der konkreten Umsetzung sind das einige $100k\Omega$-Schutzwiderstände, die den maximalen \gls{Fehlerstrom} auf unbedenkliche Werte begrenzen.
-%Graphik/Schaltplan
+Da an besagter Messschaltung ein Mensch angeschlossen ist\footnote{dessen Schaltbild in eingängiger Fachliteratur tatsächlich ein Strichmännchen ist} sind besondere---wiewohl nicht unbedingt notwendige---Schutzschaltungen einzuplanen. In der konkreten Umsetzung sind das einige $100k\Omega$-Schutzwiderstände, die den maximalen \gls{Fehlerstrom} auf unbedenkliche Werte begrenzen. Im Schaltplan des EEGs sind diese als \glqq Patient Protection Resistors\grqq\ gekennzeichnet.
 
 %Schaltplan
 \newglossaryentry{ADC}{name={ADC}, description={Analog Digital Converter, Analog-Digital-Umsetzer, in deutscher Fachliteratur teilweise als ADU bezeichnet}, first={Analog-Digital-Umsetzer (ADC)}, firstplural={Analog-Digital-Umsetzer (ADCs)}, text={ADC}, plural={ADCs}, type=\acronymtype}
 Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signale zur Weiterverarbeitung umwandelt wird als \glqq analoges Front-End\grqq\ bezeichnet. Das analoge Front-End eines \gls{EEG} sieht prinzipiell folgendermaßen aus: Auf die Elektroden folgt zunächst eine Schutzschaltung, die verhindert, dass auf den Benutzer des Gerätes bedenkliche Spannungen respektive Ströme einwirken. Auf diese Schutzschaltung folgt der Vorverstärker, der das Messsignal konditioniert und auf ein zur Weiterverarbeitung fähiges Spannungslevel bei geringem Spannungsquelleninnenwiderstand transformiert. Im Vorverstärker integriert sowie unmittelbar dahinter folgen analoge Filter, die das Signal auf die für die weitere Analyse interessante Bandbreite reduzieren. Schließlich folgt noch der \gls{ADC}, durch den die abschließende Umwandlung des aufbereiteten Messsignals in eine Folge digitaler Werte erfolgt.
 
 \newglossaryentry{IC}{name={IC}, description={Integrated Circuit, Integrierter Schaltkreis, umgangssprachlich Mikrochip}, first={Mikrochip (IC)}, firstplural={Mikrochips (ICs)}, text={IC}, plural={ICs}, type=\acronymtype}
-Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen.
+\newglossaryentry{LSB}{name={LSB}, description={\annot{FIXME}}}
+Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen. Nach dem Datenblatt des Herstellers liegt die maximal mögliche Auflösung bei einem PGA\footnote{PGA steht für \glqq Programmable Gain Amplifier\grqq\ und bezeichnet einen im ADC integrierten Verstärker mit digital einstellbarer Verstärkung}-Wert von 12 bei ca. 2 \gls{LSB}\cite{TEXAS1}.
+
+\begin{figure}
+\centering
+\includegraphics[width=15cm]{images/chips_smaller.eps}
+\label{ics_used}
+\caption{Die in EEG und LED-Treiber verwendeten ICs. Vorne links sind zwei ADS1194 zu erkennen, die letzendlich die EEG-Messung durchführen. Vorne mittig ist der mit vier 16-Bit-PWM-Kanälen ausgestattete ATMega32U4 zu sehen (eine größere Variante des ATMega16U4), der die PWM-Regelung übernimmt. Hinten im Bild sind verschiedene Bauformen des ATMega8 zu sehen, der in Revision 1 der PWM-Controllerplatine zum Einsatz kommt.}
+\end{figure}
 
 \begin{landscape}
 \begin{figure}
