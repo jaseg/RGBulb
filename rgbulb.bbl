@@ -36,6 +36,12 @@
 2011.
 \newblock \\\url{http://www.lumie.com/shop/categories/dawn-simulators}.
 
+\bibitem{LOMBARD1}
+{Adrian Lombard}.
+\newblock {AVR FFT Code}, 2010.
+\newblock
+  \\\url{http://www.adrianlombard.com/physical-computing/avr-fft-code/}.
+
 \bibitem{ANALOG1}
 {Analog Devices (Walt Kester, James Bryant, Mike Byrne)}.
 \newblock {Grounding Data Converters and Solving the Mystery of ``AGND'' and
@@ -496,6 +502,12 @@ Maxim IC.
   Amplifiers with REF Buffer}, 2009.
 \newblock \\\url{http://datasheets.maxim-ic.com/en/ds/MAX4208-MAX4209.pdf}.
 
+\bibitem{MAXIM76}
+Maxim IC.
+\newblock {MAX481/MAX483/MAX485/MAX487–MAX491/MAX1487 Low-Power,
+  Slew-Rate-Limited RS-485/RS-422 Transceivers}, 2009.
+\newblock \\\url{http://datasheets.maxim-ic.com/en/ds/MAX1487-MAX491.pdf}.
+
 \bibitem{MAXIM65}
 Maxim IC.
 \newblock {Methods for Calibrating Gain Error in Data-Converter Systems}, 2009.
@@ -682,6 +694,21 @@ ber=ina116&fileType=pdf&track=no}.
 \newblock {OPA445 High Voltage FET-Input Operational Amplifier}, 2008.
 \newblock \\\url{http://focus.ti.com/lit/ds/symlink/opa445.pdf}.
 
+\bibitem{WP19}
+Wikipedia.
+\newblock {Action potential}, 2011.
+\newblock \\\url{http://en.wikipedia.org/wiki/Action_potential}.
+
+\bibitem{WP16}
+Wikipedia.
+\newblock {Aktionspotential}, 2011.
+\newblock \\\url{http://de.wikipedia.org/wiki/Aktionspotential}.
+
+\bibitem{WP17}
+Wikipedia.
+\newblock {Brain}, 2011.
+\newblock \\\url{http://en.wikipedia.org/wiki/Brain}.
+
 \bibitem{WP8}
 Wikipedia.
 \newblock {Circadian Rhythm}, 2011.
@@ -701,6 +728,11 @@ Wikipedia.
 Wikipedia.
 \newblock {Fast Fourier Transformation}, 2011.
 \newblock \\\url{http://en.wikipedia.org/wiki/FFT}.
+
+\bibitem{WP14}
+Wikipedia.
+\newblock {Gehirn}, 2011.
+\newblock \\\url{http://de.wikipedia.org/wiki/Gehirn}.
 
 \bibitem{WP12}
 Wikipedia.
@@ -723,6 +755,16 @@ Wikipedia.
 Wikipedia.
 \newblock {Naive Bayes Classifier}, 2011.
 \newblock \\\url{http://en.wikipedia.org/wiki/Naive_Bayes_classifier}.
+
+\bibitem{WP15}
+Wikipedia.
+\newblock {Neuron}, 2011.
+\newblock \\\url{http://de.wikipedia.org/wiki/Neuron}.
+
+\bibitem{WP18}
+Wikipedia.
+\newblock {Neuron}, 2011.
+\newblock \\\url{http://en.wikipedia.org/wiki/Neuron}.
 
 \bibitem{WP1}
 Wikipedia.

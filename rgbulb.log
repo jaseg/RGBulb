@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  17 JAN 2011 08:35
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  17 JAN 2011 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -656,14 +656,18 @@ File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 
 
 ]
-File: images/led_driver_rev1.eps Graphic file (type eps)
+File: images/led_driver_rev1_02.eps Graphic file (type eps)
 
-<images/led_driver_rev1.eps>
-File: images/led_driver_rev3.eps Graphic file (type eps)
- <images/led_driver_rev3.eps> [8]
+<images/led_driver_rev1_02.eps>
+File: images/led_driver_rev3_02.eps Graphic file (type eps)
+ <images/led_driver_rev3_02.eps>
+Underfull \hbox (badness 1377) in paragraph at lines 191--191
+[]\T1/cmr/m/n/10 (b) Ein Ent-wurf von Re-vi-si-on 3 des LED-
+ []
+
+[8]
 File: images/dual_core_controller_top_small.eps Graphic file (type eps)
-
-<images/dual_core_controller_top_small.eps>
+ <images/dual_core_controller_top_small.eps>
 File: images/dual_core_controller_bottom_small.eps Graphic file (type eps)
 
 <images/dual_core_controller_bottom_small.eps>
@@ -678,80 +682,82 @@ File: images/chips_smaller.eps Graphic file (type eps)
 File: images/adc_schematic_02.eps Graphic file (type eps)
  <images/adc_schematic_02.eps>
 
-LaTeX Warning: Float too large for page by 0.79718pt on input line 274.
+LaTeX Warning: Float too large for page by 0.79718pt on input line 280.
 
 [13]
 File: images/adc_board_03.eps Graphic file (type eps)
- <images/adc_board_03.eps>
+ <images/adc_board_03.eps> [14
+
+
+]
 No file rgbulb.gls.
-(./rgbulb.acr [14
+(./rgbulb.acr) (./rgbulb.bbl [15]
+Overfull \hbox (12.59996pt too wide) in paragraph at lines 63--68
+[][][][]\T1/cmr/m/n/12 . 
+ []
 
-
-]) (./rgbulb.bbl [15]
-Overfull \hbox (12.59996pt too wide) in paragraph at lines 57--62
+[16]
+Overfull \hbox (111.87584pt too wide) in paragraph at lines 116--121
 [][][][]\T1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (111.87584pt too wide) in paragraph at lines 110--115
-[][][][]\T1/cmr/m/n/12 . 
- []
-
-
-Overfull \hbox (83.55066pt too wide) in paragraph at lines 117--123
+Overfull \hbox (83.55066pt too wide) in paragraph at lines 123--129
 [][][][]\T1/cmr/m/n/12 check. 
  []
 
-[16] [17] [18] [19] [20]
-Overfull \hbox (234.84569pt too wide) in paragraph at lines 525--531
+[17] [18] [19] [20] (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
+)
+Overfull \hbox (234.84569pt too wide) in paragraph at lines 537--543
 [][][][]\T1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (117.54933pt too wide) in paragraph at lines 540--545
+Overfull \hbox (117.54933pt too wide) in paragraph at lines 552--557
 [][][][]\T1/cmr/m/n/12 . 
  []
 
 [21]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 627.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 639.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 627.
-
-Overfull \hbox (154.59029pt too wide) in paragraph at lines 651--656
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 639.
+ [22]
+Overfull \hbox (154.59029pt too wide) in paragraph at lines 663--668
 [][][][]\T1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (173.11076pt too wide) in paragraph at lines 658--664
+Overfull \hbox (173.11076pt too wide) in paragraph at lines 670--676
 [][][][]\T1/cmr/m/n/12 . 
  []
 
-[22] [23])
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 324.
+[23])
+LaTeX Font Info:    Try loading font information for T1+cmss on input line 335.
 
  (/usr/share/texmf-texlive/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 336.
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 347.
 
-
-Underfull \hbox (badness 10000) in alignment at lines 342--342
+[24]
+Underfull \hbox (badness 10000) in alignment at lines 353--353
 [][] 
  []
 
-[24] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
+[25] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
 Here is how much of TeX's memory you used:
- 9646 strings out of 495022
- 135260 string characters out of 1181058
- 228210 words of memory out of 3000000
- 12577 multiletter control sequences out of 15000+50000
+ 9917 strings out of 495022
+ 138473 string characters out of 1181058
+ 231177 words of memory out of 3000000
+ 12845 multiletter control sequences out of 15000+50000
  23567 words of font info for 68 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 39i,10n,52p,2181b,655s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,10n,51p,2181b,655s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rgbulb.dvi (25 pages, 170216 bytes).
+Output written on rgbulb.dvi (26 pages, 178960 bytes).

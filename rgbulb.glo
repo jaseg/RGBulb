@@ -5,6 +5,7 @@
 \glossaryentry{Hertz?\glossaryentryfield{Hertz}{\glsnamefont{Hertz}}{Einheit der Frequenz, entspricht nach dem SI (Système Internationale) $\frac {1}{s}$}{\relax }|setentrycounter{page}\glsnumberformat}{5}
 \glossaryentry{Flipflop?\glossaryentryfield{Flipflop}{\glsnamefont{Flipflop}}{Eine elektronische Speicherschaltung, siehe hierzu \annot {FIXME}}{\relax }|setentrycounter{page}\glsnumberformat}{5}
 \glossaryentry{Überlauf?\glossaryentryfield{Ueberlauf}{\glsnamefont{Überlauf}}{Aktion eines Zählers oder einer Variable, beim Inkrement über sein/ihr Maximum auf sein/ihr Minimum zu Springen}{\relax }|setentrycounter{page}\glsnumberformat}{5}
+\glossaryentry{Halbduplex?\glossaryentryfield{Halbduplex}{\glsnamefont{Halbduplex}}{Zeitlich gemultiplexte Verwendung desselben Kommunikationskanals in Sende- und Empfangsrichtung}{\relax }|setentrycounter{page}\glsnumberformat}{10}
 \glossaryentry{Fehlerstrom?\glossaryentryfield{Fehlerstrom}{\glsnamefont{Fehlerstrom}}{Unerwünschter, häufige gefährlicher, auf nicht intendiertem Wege fließender Strom, meist durch Lebewesen}{\relax }|setentrycounter{page}\glsnumberformat}{11}
 \glossaryentry{LSB?\glossaryentryfield{LSB}{\glsnamefont{LSB}}{\annot {FIXME}}{\relax }|setentrycounter{page}\glsnumberformat}{11}
 \glossaryentry{Sampling?\glossaryentryfield{Sampling}{\glsnamefont{Sampling}}{Umwandlung eines kontinuierlichen, meist analogen Signals in diskrete Werte und -- im Falle eines ADC oder DAC -- die Umwandlung desselben in digitale Signale}{\relax }|setentrycounter{page}\glsnumberformat}{14}
@@ -17,6 +18,7 @@
 \glossaryentry{Hertz?\glossaryentryfield{Hertz}{\glsnamefont{Hertz}}{Einheit der Frequenz, entspricht nach dem SI (Système Internationale) $\frac {1}{s}$}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{Flipflop?\glossaryentryfield{Flipflop}{\glsnamefont{Flipflop}}{Eine elektronische Speicherschaltung, siehe hierzu \annot {FIXME}}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{Überlauf?\glossaryentryfield{Ueberlauf}{\glsnamefont{Überlauf}}{Aktion eines Zählers oder einer Variable, beim Inkrement über sein/ihr Maximum auf sein/ihr Minimum zu Springen}{\relax }|setentrycounter{page}\glsnumberformat}{15}
+\glossaryentry{Halbduplex?\glossaryentryfield{Halbduplex}{\glsnamefont{Halbduplex}}{Zeitlich gemultiplexte Verwendung desselben Kommunikationskanals in Sende- und Empfangsrichtung}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{Fehlerstrom?\glossaryentryfield{Fehlerstrom}{\glsnamefont{Fehlerstrom}}{Unerwünschter, häufige gefährlicher, auf nicht intendiertem Wege fließender Strom, meist durch Lebewesen}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{LSB?\glossaryentryfield{LSB}{\glsnamefont{LSB}}{\annot {FIXME}}{\relax }|setentrycounter{page}\glsnumberformat}{15}
 \glossaryentry{Sampling?\glossaryentryfield{Sampling}{\glsnamefont{Sampling}}{Umwandlung eines kontinuierlichen, meist analogen Signals in diskrete Werte und -- im Falle eines ADC oder DAC -- die Umwandlung desselben in digitale Signale}{\relax }|setentrycounter{page}\glsnumberformat}{15}

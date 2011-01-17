@@ -182,11 +182,11 @@ eine gemeinsame Anode besitzen.
 \begin{figure}
 \centering
 \subfigure[Revision 1 des LED-Treibers einer LED]{
-\includegraphics[scale=1.7]{images/led_driver_rev1_02.eps}
+\includegraphics[scale=0.8]{images/led_driver_rev1_02.eps}%scale=1.7
 \label{driver_rev1}
 }
 \subfigure[Ein Entwurf von Revision 3 des LED-Treibers einer LED]{
-\includegraphics[scale=2.2]{images/led_driver_rev3_02.eps}
+\includegraphics[scale=0.8]{images/led_driver_rev3_02.eps}%scale=2.2
 \label{driver_rev3}
 }
 \label{driver_revs}
@@ -231,19 +231,25 @@ Für Revision 3 der Prototypenhardware habe ich eine rein \glqq digitale\grqq\ S
 der durch eine vom AVR generierte 16-Bit-PWM angesteuert wird. Der Strom durch die LED wird mit einem der in den AVR-µC integrierten 10-Bit-ADCs gemessen. Das Messignal wird aus dem Spannungsabfall über einen Shunt%glossary
 mit einem logarithmischen Differenzverstärker generiert.
 
+\newglossaryentry{Halbduplex}{name={Halbduplex}, description={Zeitlich gemultiplexte Verwendung desselben Kommunikationskanals in Sende- und Empfangsrichtung}}
 \subsection{Kommunikationsprotokoll}
-Zur Kommunikation verschiedener Beleuchtungsmodule untereinander entwickelte ich einen Bus mit dem Namen BUZ2, der auf Basis eindeutiger 16-bittiger Geräteadressen durch einen Master koordinierte, kollisionsfreie Kommunikation auf einem RS485-Bus erlaubt. Das Kommunikationsprotokoll ist paketbasiert, wobei Pakete durch vom Master ausgesendete Escapesequenzen eingeleitet werden. Die Verwendung solcher Escapesequenzen erspart die Verwendung eines dedizierten Steuerkanals oder eines neunten Datenbits um Kommandos zu markieren. Ein an den Bus angeschlossenes Gerät kann eine Transaktion nicht selbstständig beginnen, stattdessen wird es periodisch mvom Master adressiert. Nach dem Standardalgorithmus wird es so lange erneut adressiert, bis es keine zu übertragenden Daten mehr in der Queue hat. Bisher stellte dieses Verhalten kein Problem dar, sollte das Bussystem jedoch später für größere Netzwerke Verwendung finden, wäre hier ein intelligenterer Scheduling-Algorithmus angebracht. Die Datenintegrität wird durch eine CRC-16-Prüfsumme sichergesteellt. Kann der Empfänger ein Paket nicht als fehlerfrei empfangen quittieren wird der Sendevorgang bis zum Erreichen einer einstellbaren maximalen Anzahl der Versuche wiederholt.
+Zur Kommunikation verschiedener Beleuchtungsmodule untereinander entwickelte ich einen Bus mit dem Namen BUZ2, der auf Basis eindeutiger 16-bittiger Geräteadressen durch einen Master koordinierte, kollisionsfreie Kommunikation auf einem im \gls{Halbduplex} betriebenen RS-485-Bus\footnote{Auch EIA-485. Die elektrische Spezifikation eines differentiellen Bus der hohe Leitungslängen bei einer großen topologischen Flexibilität erlaubt und für den günstige Treiberbausteine verfügbar sind}\cite{MAXIM76} erlaubt. Das Kommunikationsprotokoll ist paketbasiert, wobei Pakete durch vom Master ausgesendete Escapesequenzen eingeleitet werden. Die Verwendung solcher Escapesequenzen erspart die Verwendung eines dedizierten Steuerkanals oder eines neunten Datenbits um Kommandos zu markieren. Ein an den Bus angeschlossenes Gerät kann eine Transaktion nicht selbstständig beginnen, stattdessen wird es periodisch mvom Master adressiert. Nach dem Standardalgorithmus wird es so lange erneut adressiert, bis es keine zu übertragenden Daten mehr in der Queue hat. Bisher stellte dieses Verhalten kein Problem dar, sollte das Bussystem jedoch später für größere Netzwerke Verwendung finden, wäre hier ein intelligenterer Scheduling-Algorithmus angebracht. Die Datenintegrität wird durch eine CRC-16-Prüfsumme sichergesteellt. Kann der Empfänger ein Paket nicht als fehlerfrei empfangen quittieren wird der Sendevorgang bis zum Erreichen einer einstellbaren maximalen Anzahl der Versuche wiederholt.
 
 Die Software ist in C für AVR-Mikrocontroller geschrieben, sollte jedoch relativ einfach auf andere Plattformen portierbar sein insofern diese C oder Assembler bzw.\ eine andere Sprache, zu der sich C einfach konvertieren lässt wie Java unterstützen. Das Softwaremodul kann in jede Anwendung einkompiliert werden und es ist möglich, Kommandos selbst nach Belieben zu spezifizieren.
 
-\subsubsection{Master}
-Der Master ist das einzige Device auf dem Bus, das eigenständig Transaktionen beginnen darf. Der Master gibt für die Pakete aller anderen Devices di\glqq Rahmen\grqq\ vor und adressiert reihum das jeweils sendende Device. Der Master übernimmt zudem die Entdeckung neuer Devices mit einem speziellem Paket, dem \glqq Discovery Packet\grqq.
-\subsubsection{Slave}
+Der Master ist das einzige Device auf dem Bus, das eigenständig Transaktionen beginnen darf. Der Master gibt für die Pakete aller anderen Devices die \glqq Rahmen\grqq\ vor und adressiert reihum das jeweils sendende Device. Der Master übernimmt zudem die Entdeckung neuer Devices mit einem speziellem Paket, dem \glqq Discovery Packet\grqq. Die Daten werden mit einer State Machine geparsed.
+
+%\subsubsection{Master}
+%\subsubsection{Slave}
+
 \subsection{Kompatible Steuergeräte}
+Außer über das Brain-Computer-Interface kann die Lampe auch über ein Webinterface von einem normalen Computer oder einem internetfähigen Mobiltelefon gesteuert werden. Herkömmliche Lichtschalter können mit etwas Elektronik zum Anschluss an den BUZ2-Bus oder Ethernet zur Steuerung verwendet werden. Eine Converterplatine, die einen normalen Lichtschalter an den BUZ2-Bus anbindet ist klein genug machbar, um zusätzlich zu einem Schalter in eine standard-Unterputzdose zu passen.
+%Color-chooser?
 \section{Grundlagen der Elektroenzephalographie}
 \subsection{Biologisch}
+Das menschliche Gehirn ist eine Ansammlung von schätzungsweise $10^{11}$ Nervenzellen die über $10^{14}$ Synapsen untereinandere Vernetzt sind. Die Kommunikation der Neuronen geschieht mithilfe von elektrischen Impulsen, deren Amplitude um 100 mV liegt und als \glqq Aktionsopotential\grqq\ bezeichnet wird. Die Summe der Aktionspotentiale der Nervenzellen in einzelnen Regionen des Gehirns hat eine periodische Charakteristik. Anhandder vorherrschenden Frequenzen und einiger charakteristischer Merkmale der Wellenform kann man Rückschlüsse auf den generellen kognitiven Zustand des untersuchten Gehirns ziehen. Anhand des Spektrums der Hirnströme lässt sich zwischen verschiedenen Schlafphasen und Wachheit unterscheiden\cite{WP14,WP15,WP16,WP17,WP18,WP19}.
 \subsection{Elektrisch}
-Hirnströme lassen sich auf der Kopfhaut noch mit einer Amplitude von ca.\ $10-100µV$ messen\cite{MAYER1}. Die Messung solcher Spannungen ist kein allzu einfaches Unterfangen. Problematisch an der Messung solch kleiner Hirnströme ist noch, dass durch den hohen scheinbaren Innenwiderstand die zur Messung nutzbare Stromstärke extrem gering ist ($nA$-Bereich) und somit der Innenwiderstand der Messschaltung extrem hoch sein muss.
+Hirnströme lassen sich als Summe der Aktionspotentiale von Millionen von Nervenezllen auf der Kopfhaut noch mit einer Amplitude von ca.\ $10-100\mu V$ messen\cite{MAYER1}. Die Messung solcher Spannungen ist kein allzu einfaches Unterfangen. Problematisch an der Messung solch kleiner Hirnströme ist noch, dass durch den hohen scheinbaren Innenwiderstand die zur Messung nutzbare Stromstärke extrem gering ist ($nA$-Bereich) und somit der Innenwiderstand der Messschaltung extrem hoch sein muss.
 
 %TODO gls entry
 \newglossaryentry{Fehlerstrom}{name={Fehlerstrom}, description={Unerwünschter, häufige gefährlicher, auf nicht intendiertem Wege fließender Strom, meist durch Lebewesen}}
@@ -302,9 +308,15 @@ Die Auflösung des \gls{ADC} ist mit 16 Bit groß genug, um \gls{Offsetkorrektur
 \newglossaryentry{FFT}{name={FFT}, description={FIXME}}
 \subsection{Mathematisch und Informatisch}
 Die Auswertung der Messergebnisse kann auf verschiedene Arten geschehen. Da die Messelektronik noch nicht vollständig läuft, habe ich noch keinen Algorithmus umgesetzt.
-Grundsätzlich bietet es sich an, das Messignal z.B.\ mit einer \gls{FFT} in den Frequenzraum zu übertragen. Zur Erkennung der 
-\cite{WP2,WP11,WP12,WP13}
+Grundsätzlich bietet es sich an, das Messignal z.B.\ mit einer \gls{FFT} in den Frequenzraum zu übertragen. Zur Erkennung der einzelnen Schlafphasen ist ein einfacher Schwellwertbasierter Algorithmus möglich, jedoch erscheinen mir aus der automatischen Spracherkennung bekannte Methoden für den Fall, dass dieser nicht die gewünschten Ergebnisse liefert interessant
+\cite{WP2,WP11,WP12,WP13}.
+
+Eine FFT lässt sich bei nicht zu hoher Anzahl an Stützstellen sogar auf einem 8-Bit-AVR\footnote{RISC-Architektur, in den \glqq ATMega\grqq-Varianten mit in Hardware ausgeführtem Multiplizierer} bei den mit einem solchen Controller möglichen Taktfrequenzen (z.B.\ 16MHz) noch berechnen\cite{LOMBARD1}. Sollte die Rechenleistung des in das EEG-Board integrierten AVRs (der eine standardmäßig mit der in Abhängigkeit der Betriebsspannung maximal möglichen Taktfrequenz von 8MHz getaktete Low-Voltage-Version ist) nicht ausreichen, können die Daten über die Erweiterungsschnitstelle des Boards auch roh herausgeführt werden und in der Versuchsphase zunächst per serieller Schnittstelle z.B.\ an einen Computer weitergereicht werden oder im \glqq produktiven Einsatz\grqq\ z.B.\ über ein Bluetooth-Modul mit serieller Schnittstelle an die Außenwelt übertragen werden.
+
+Für einen Computer stellt die Datenmenge von ca.\ 1kSps bei 1-4 Kanälen selbst bei rechenzeitintensiver Weiterverarbeitung keinerlei Probleme dar.
+
 \section{Arbeitsprozess der Platinenherstellung und Ergebnisse}
+Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen machen. Ich verwendete für Version 1 der Prototypenboards der Lampe Loch- und Streifenrasterplatinen, da ich noch nie zuvor selbst Platinen hergestellt habe und angesichts der geringen Komplexität der Schaltungen auch nicht die Notwendigkeit dazu sah. Die EEG-Platine wird aufgrund der feinen Strukturen und der empfindlichen Signale auf einer eigenen Platine aufgebaut, die ich selbst herstelle. Ich verwende dazu doppelseitiges, fotopositiv beschichtetes Bungard-Basismaterial mit 35µm-Kupferauflage.
 \appendix
 \section{Glossar}
 %FIXME

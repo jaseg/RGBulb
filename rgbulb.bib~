@@ -89,6 +89,48 @@
 	note={\\\url{http://en.wikipedia.org/wiki/Speech_recognition}}
 }
 
+@MISC{WP14,
+	author={Wikipedia},
+	title={{Gehirn}},
+	year=2011,
+	note={\\\url{http://de.wikipedia.org/wiki/Gehirn}}
+}
+
+@MISC{WP15,
+	author={Wikipedia},
+	title={{Neuron}},
+	year=2011,
+	note={\\\url{http://de.wikipedia.org/wiki/Neuron}}
+}
+
+@MISC{WP16,
+	author={Wikipedia},
+	title={{Aktionspotential}},
+	year=2011,
+	note={\\\url{http://de.wikipedia.org/wiki/Aktionspotential}}
+}
+
+@MISC{WP17,
+	author={Wikipedia},
+	title={{Brain}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Brain}}
+}
+
+@MISC{WP18,
+	author={Wikipedia},
+	title={{Neuron}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Neuron}}
+}
+
+@MISC{WP19,
+	author={Wikipedia},
+	title={{Action potential}},
+	year=2011,
+	note={\\\url{http://en.wikipedia.org/wiki/Action_potential}}
+}
+
 @MISC{PHILIPS1,
 	author={Philips},
 	title={{LUXEON® Rebel ES Technical Datasheet DS61}},
@@ -869,6 +911,13 @@
 	title={{Automatic Test Equipment on a Budget}},
 	year=2001,
 	note={\\\url{http://pdfserv.maxim-ic.com/en/an/AN761.pdf}}
+}
+
+@MISC{MAXIM76,
+	author={Maxim IC},
+	title={{MAX481/MAX483/MAX485/MAX487–MAX491/MAX1487 Low-Power, Slew-Rate-Limited RS-485/RS-422 Transceivers}},
+	year=2009,
+	note={\\\url{http://datasheets.maxim-ic.com/en/ds/MAX1487-MAX491.pdf}}
 }
 
 @MISC{ATMEL1,
