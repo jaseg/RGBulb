@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  17 JAN 2011 18:08
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  18 JAN 2011 10:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -43,9 +43,8 @@ File: uni-global.def 2004/10/17 UCS: Unicode global data
 \uc@combtoks=\toks16
 \uc@combtoksb=\toks17
 \uc@temptokena=\toks18
-)
-(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
-Package: geometry 2008/12/21 v4.2 Page Geometry
+) (./geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
 
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
@@ -59,6 +58,9 @@ Package ifpdf Info: pdfTeX in pdf mode not detected.
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
 \Gm@cnth=\count88
 \Gm@cntv=\count89
 \c@Gm@tempcnt=\count90
@@ -66,23 +68,19 @@ Package ifvtex Info: VTeX not detected.
 \Gm@wd@mp=\dimen104
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks20
-
-(/usr/share/texmf-texlive/tex/xelatex/xetexconfig/geometry.cfg))
+ (./geometry.cfg))
 (/usr/share/texmf-texlive/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box26
 )
-(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
 (/usr/share/texmf-texlive/tex/generic/german/ngerman.sty v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
-\grmnU@D=\dimen107
+\grmnU@D=\dimen111
 ngerman -- \language number for naustrian undefined, default 4 used.
 ngerman -- \language number for French undefined, default 255 used.
 )
@@ -112,11 +110,11 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks22
-\ex@=\dimen108
+\ex@=\dimen112
 ))
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen109
+\pmbraise@=\dimen113
 )
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
@@ -133,7 +131,7 @@ LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
-\big@size=\dimen110
+\big@size=\dimen114
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count96
@@ -146,12 +144,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \column@=\count101
 \maxfields@=\count102
 \andhelp@=\toks24
-\eqnshift@=\dimen111
-\alignsep@=\dimen112
-\tagshift@=\dimen113
-\tagwidth@=\dimen114
-\totwidth@=\dimen115
-\lineht@=\dimen116
+\eqnshift@=\dimen115
+\alignsep@=\dimen116
+\tagshift@=\dimen117
+\tagwidth@=\dimen118
+\totwidth@=\dimen119
+\lineht@=\dimen120
 \@envbody=\toks25
 \multlinegap=\skip44
 \multlinetaggap=\skip45
@@ -175,7 +173,7 @@ Package: fancybox 2000/09/19 1.3
 
 Style option: `fancybox' v1.3 <2000/09/19> (tvz)
 \@fancybox=\box29
-\shadowsize=\dimen117
+\shadowsize=\dimen121
 \@Sbox=\box30
 \do@VerbBox=\toks27
 \the@fancyput=\toks28
@@ -226,7 +224,7 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTpre=\skip50
 \LTpost=\skip51
 \LTchunksize=\count105
-\LTcapwidth=\dimen118
+\LTcapwidth=\dimen122
 \LT@head=\box31
 \LT@firsthead=\box32
 \LT@foot=\box33
@@ -246,20 +244,20 @@ Package: glossary-super 2009/05/30 v2.01 (NLCT)
 (/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count110
-\ST@wd=\dimen119
+\ST@wd=\dimen123
 \ST@rightskip=\skip54
 \ST@leftskip=\skip55
 \ST@parfillskip=\skip56
-\ST@pageleft=\dimen120
-\ST@headht=\dimen121
-\ST@tailht=\dimen122
-\ST@pagesofar=\dimen123
-\ST@pboxht=\dimen124
-\ST@lineht=\dimen125
-\ST@stretchht=\dimen126
-\ST@prevht=\dimen127
-\ST@toadd=\dimen128
-\ST@dimen=\dimen129
+\ST@pageleft=\dimen124
+\ST@headht=\dimen125
+\ST@tailht=\dimen126
+\ST@pagesofar=\dimen127
+\ST@pboxht=\dimen128
+\ST@lineht=\dimen129
+\ST@stretchht=\dimen130
+\ST@prevht=\dimen131
+\ST@toadd=\dimen132
+\ST@dimen=\dimen133
 \ST@pbox=\box35
 )))
 (/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
@@ -267,17 +265,17 @@ Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 
 (/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen130
-\extrarowheight=\dimen131
+\col@sep=\dimen134
+\extrarowheight=\dimen135
 \NC@list=\toks35
 \extratabsurround=\skip57
 \backup@length=\skip58
 )
-\TX@col@width=\dimen132
-\TX@old@table=\dimen133
-\TX@old@col=\dimen134
-\TX@target=\dimen135
-\TX@delta=\dimen136
+\TX@col@width=\dimen136
+\TX@old@table=\dimen137
+\TX@old@col=\dimen138
+\TX@target=\dimen139
+\TX@delta=\dimen140
 \TX@cols=\count111
 \TX@ftn=\toks36
 )
@@ -285,16 +283,16 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \c@tracingmulticols=\count112
 \mult@box=\box36
-\multicol@leftmargin=\dimen137
+\multicol@leftmargin=\dimen141
 \c@unbalance=\count113
 \c@collectmore=\count114
 \doublecol@number=\count115
 \multicoltolerance=\count116
 \multicolpretolerance=\count117
-\full@width=\dimen138
-\page@free=\dimen139
-\premulticols=\dimen140
-\postmulticols=\dimen141
+\full@width=\dimen142
+\page@free=\dimen143
+\premulticols=\dimen144
+\postmulticols=\dimen145
 \multicolsep=\skip59
 \multicolbaselineskip=\skip60
 \partial@page=\box37
@@ -322,18 +320,15 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box59
 \c@columnbadness=\count118
 \c@finalcolumnbadness=\count119
-\last@try=\dimen142
-\multicolovershoot=\dimen143
-\multicolundershoot=\dimen144
+\last@try=\dimen146
+\multicolovershoot=\dimen147
+\multicolundershoot=\dimen148
 \mult@nat@firstbox=\box60
 \colbreak@box=\box61
 )
 (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
 
-(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
-)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
 Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
 O)
@@ -341,7 +336,7 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen145
+\@linkdim=\dimen149
 \Hy@linkcounter=\count120
 \Hy@pagecounter=\count121
 
@@ -409,8 +404,8 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
 \Fld@menulength=\count122
-\Field@Width=\dimen146
-\Fld@charsize=\dimen147
+\Field@Width=\dimen150
+\Fld@charsize=\dimen151
 \Field@toks=\toks37
 Package hyperref Info: Hyper figures OFF on input line 4377.
 Package hyperref Info: Link nesting OFF on input line 4382.
@@ -442,9 +437,9 @@ File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip61
 \subfigcapskip=\skip62
-\subfigcaptopadj=\dimen148
+\subfigcaptopadj=\dimen152
 \subfigbottomskip=\skip63
-\subfigcapmargin=\dimen149
+\subfigcapmargin=\dimen153
 \subfiglabelskip=\skip64
 \c@subfigure=\count126
 \c@lofdepth=\count127
@@ -501,11 +496,11 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
+\Gin@req@height=\dimen154
+\Gin@req@width=\dimen155
 )
-\epsfxsize=\dimen152
-\epsfysize=\dimen153
+\epsfxsize=\dimen156
+\epsfysize=\dimen157
 )
 (/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
@@ -526,74 +521,67 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \glo@main@file=\write6
 \openout6 = `rgbulb.glo'.
 
-Package glossaries Info: Writing glossary file rgbulb.glo on input line 49.
+Package glossaries Info: Writing glossary file rgbulb.glo on input line 50.
 \glo@acronym@file=\write7
 \openout7 = `rgbulb.acn'.
 
-Package glossaries Info: Writing glossary file rgbulb.acn on input line 49.
+Package glossaries Info: Writing glossary file rgbulb.acn on input line 50.
  (./rgbulb.aux (./log_lut_gen.rb.aux))
 \openout1 = `rgbulb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
-LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
 
 (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 )
-*geometry auto-detecting driver*
-*geometry detected driver: dvips*
--------------------- Geometry parameters
-paper: a4paper
-landscape: --
-twocolumn: --
-twoside: --
-asymmetric: --
-h-parts: 56.90552pt, 483.69684pt, 56.90552pt
-v-parts: 56.9055pt, 688.5567pt, 99.58464pt
-hmarginratio: 1:1
-vmarginratio: --
-lines: --
-heightrounded: --
-bindingoffset: 0.0pt
-truedimen: --
-includehead: --
-includefoot: --
-includemp: --
-driver: dvips
--------------------- Page layout dimensions and switches
-\paperwidth  597.50787pt
-\paperheight 845.04684pt
-\textwidth  483.69684pt
-\textheight 688.5567pt
-\oddsidemargin  -15.36447pt
-\evensidemargin -15.36447pt
-\topmargin  -52.36449pt
-\headheight 12.0pt
-\headsep    25.0pt
-\footskip   30.0pt
-\marginparwidth 35.0pt
-\marginparsep   10.0pt
-\columnsep  10.0pt
-\skip\footins  10.8pt plus 4.0pt minus 2.0pt
-\hoffset 0.0pt
-\voffset 0.0pt
-\mag 1000
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+*geometry* verbose mode - [ preamble ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.90552pt, 483.69684pt, 56.90552pt)
+* v-part:(T,H,B)=(56.9055pt, 688.5567pt, 99.58464pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69684pt
+* \textheight=688.5567pt
+* \oddsidemargin=-15.36447pt
+* \evensidemargin=-15.36447pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(1in=72.27pt, 1cm=28.45pt)
------------------------
-Package hyperref Info: Link coloring OFF on input line 54.
+Package hyperref Info: Link coloring OFF on input line 55.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -602,70 +590,114 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count134
 )
-LaTeX Info: Redefining \ref on input line 54.
-LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
  (./rgbulb.out)
 (./rgbulb.out)
 \@outlinefile=\write8
 \openout8 = `rgbulb.out'.
 
 \AtBeginShipoutBox=\box64
-LaTeX Font Info:    Try loading font information for U+msa on input line 55.
- (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: dvips
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=540.60239pt
+* \textheight=591.5302pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
+* \topmargin=-7.86334pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
+File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 55.
+LaTeX Font Info:    Try loading font information for U+msb on input line 65.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 55.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 65.
 
 (/usr/share/texmf-texlive/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-(/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
-) [1
+Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
+[][][][][][][] 
+ []
+
+[1
 
 
 
 \openout4 = `rgbulb.ist'.
 
+
 ] (./rgbulb.toc)
 \tf@toc=\write9
 \openout9 = `rgbulb.toc'.
 
+ [1
 
-[1] [2]
+]
+Overfull \hbox (11.61331pt too wide) in paragraph at lines 83--86
+\OT1/cmr/m/n/12 Der mensch-li-che K[]orper ben[]otigt auf der cir-ca-dia-nen Rh
+yth-mik ba-siert in re-gelm[]a^^Yi-gen Abst[]anden
+ []
+
+[2]
 File: images/led_closeup.eps Graphic file (type eps)
  <images/led_closeup.eps>
 File: images/diode-iv-curve_bw.eps Graphic file (type eps)
  <images/diode-iv-curve_bw.eps> [3] [4]
-File: images/delta-sigma-adc.eps Graphic file (type eps)
+File: images/pwm_schematic.eps Graphic file (type eps)
 
-<images/delta-sigma-adc.eps> [5]
+<images/pwm_schematic.eps> [5]
+File: images/delta-sigma-adc.eps Graphic file (type eps)
+ <images/delta-sigma-adc.eps> [6]
 \openout2 = `log_lut_gen.rb.aux'.
 
- (./log_lut_gen.rb.tex
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
 
-(/usr/share/texmf-texlive/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)) [6] [7
+(./log_lut_gen.rb.tex)
+File: images/led_driver_rev1_02.eps Graphic file (type eps)
+ <images/led_driver_rev1_02.eps>
+File: images/led_driver_rev3_02.eps Graphic file (type eps)
+
+<images/led_driver_rev3_02.eps>
+Underfull \hbox (badness 1371) in paragraph at lines 216--216
+[]\OT1/cmr/m/n/10 (b) Ein Ent-wurf von Re-vi-si-on 3 des LED-
+ []
+
+[7] [8
 
 
 ]
-File: images/led_driver_rev1_02.eps Graphic file (type eps)
-
-<images/led_driver_rev1_02.eps>
-File: images/led_driver_rev3_02.eps Graphic file (type eps)
- <images/led_driver_rev3_02.eps>
-Underfull \hbox (badness 1377) in paragraph at lines 191--191
-[]\T1/cmr/m/n/10 (b) Ein Ent-wurf von Re-vi-si-on 3 des LED-
- []
-
-[8]
 File: images/dual_core_controller_top_small.eps Graphic file (type eps)
  <images/dual_core_controller_top_small.eps>
 File: images/dual_core_controller_bottom_small.eps Graphic file (type eps)
@@ -675,89 +707,79 @@ File: images/ethersex_top_small.eps Graphic file (type eps)
  <images/ethersex_top_small.eps>
 File: images/ethersex_bottom_small.eps Graphic file (type eps)
 
-<images/ethersex_bottom_small.eps> [9] [10]
+<images/ethersex_bottom_small.eps> [9] [10] [11]
 File: images/chips_smaller.eps Graphic file (type eps)
- <images/chips_smaller.eps> [11]
-[12]
+ <images/chips_smaller.eps>
+[12] [13]
 File: images/adc_schematic_02.eps Graphic file (type eps)
  <images/adc_schematic_02.eps>
 
-LaTeX Warning: Float too large for page by 0.79718pt on input line 280.
+LaTeX Warning: Float too large for page by 0.79773pt on input line 310.
 
-[13]
+[14]
 File: images/adc_board_03.eps Graphic file (type eps)
- <images/adc_board_03.eps> [14
+ <images/adc_board_03.eps> [15
 
 
 ]
 No file rgbulb.gls.
-(./rgbulb.acr) (./rgbulb.bbl [15]
-Overfull \hbox (12.59996pt too wide) in paragraph at lines 63--68
-[][][][]\T1/cmr/m/n/12 . 
+(./rgbulb.acr) (./rgbulb.bbl [16]
+Overfull \hbox (12.71971pt too wide) in paragraph at lines 63--68
+[][][][]\OT1/cmr/m/n/12 . 
  []
 
-[16]
-Overfull \hbox (111.87584pt too wide) in paragraph at lines 116--121
-[][][][]\T1/cmr/m/n/12 . 
+[17]
+Overfull \hbox (83.6875pt too wide) in paragraph at lines 116--122
+[][][][]\OT1/cmr/m/n/12 check. 
  []
 
-
-Overfull \hbox (83.55066pt too wide) in paragraph at lines 123--129
-[][][][]\T1/cmr/m/n/12 check. 
- []
-
-[17] [18] [19] [20] (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
+[18] [19] (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
 )
-Overfull \hbox (234.84569pt too wide) in paragraph at lines 537--543
-[][][][]\T1/cmr/m/n/12 . 
+Overfull \hbox (235.01982pt too wide) in paragraph at lines 326--332
+[][][][]\OT1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (117.54933pt too wide) in paragraph at lines 552--557
-[][][][]\T1/cmr/m/n/12 . 
+Overfull \hbox (117.69476pt too wide) in paragraph at lines 341--346
+[][][][]\OT1/cmr/m/n/12 . 
  []
 
-[21]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 639.
+[20]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 433.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 639.
- [22]
-Overfull \hbox (154.59029pt too wide) in paragraph at lines 663--668
-[][][][]\T1/cmr/m/n/12 . 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 433.
+ [21]
+Overfull \hbox (154.74478pt too wide) in paragraph at lines 457--462
+[][][][]\OT1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (173.11076pt too wide) in paragraph at lines 670--676
-[][][][]\T1/cmr/m/n/12 . 
+Overfull \hbox (173.26979pt too wide) in paragraph at lines 464--470
+[][][][]\OT1/cmr/m/n/12 . 
  []
 
-[23])
-LaTeX Font Info:    Try loading font information for T1+cmss on input line 335.
+[22])
 
- (/usr/share/texmf-texlive/tex/latex/base/t1cmss.fd
-File: t1cmss.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 384.
 
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 347.
-
-[24]
-Underfull \hbox (badness 10000) in alignment at lines 353--353
+[23]
+Underfull \hbox (badness 10000) in alignment at lines 390--390
 [][] 
  []
 
-[25] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
+[24] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
 Here is how much of TeX's memory you used:
- 9917 strings out of 495022
- 138473 string characters out of 1181058
- 231177 words of memory out of 3000000
- 12845 multiletter control sequences out of 15000+50000
- 23567 words of font info for 68 fonts, out of 3000000 for 9000
- 28 hyphenation exceptions out of 8191
- 38i,10n,51p,2181b,655s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 9732 strings out of 495022
+ 136372 string characters out of 1181058
+ 240478 words of memory out of 3000000
+ 12678 multiletter control sequences out of 15000+50000
+ 15292 words of font info for 60 fonts, out of 3000000 for 9000
+ 30 hyphenation exceptions out of 8191
+ 38i,11n,51p,1551b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rgbulb.dvi (26 pages, 178960 bytes).
+Output written on rgbulb.dvi (25 pages, 168364 bytes).

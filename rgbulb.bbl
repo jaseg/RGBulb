@@ -112,13 +112,6 @@ Analog Devices.
 \newblock
   \\\url{http://www.analog.com/static/imported-files/tutorials/MT-101.pdf}.
 
-\bibitem{ANALOG3}
-Analog Devices.
-\newblock {Getting Started With SHARC Processors}, 2010.
-\newblock
-  \\\url{http://www.analog.com/static/imported-files/tech_docs/GettingStartedw%
-ithSharcProcessors.pdf}.
-
 \bibitem{STELTZ1}
 S.~Avadhanula E.~Steltz, M.~Seeman and R.S. Fearing.
 \newblock {Power Electronics Design Choice for Piezoelectric Microrobots},
@@ -148,42 +141,16 @@ Maxim IC.
 \newblock {ADC and DAC Glossary}, 2000.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN641.pdf}.
 
-\bibitem{MAXIM5}
-Maxim IC.
-\newblock {Operational Amplifier Inputs}, 2000.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN717.pdf}.
-
-\bibitem{MAXIM2}
-Maxim IC.
-\newblock {Programmable-Gain Amplifier, Using the MAX532 DAC}, 2000.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN429.pdf}.
-
 \bibitem{MAXIM6}
 Maxim IC.
 \newblock {Understanding Voltage-Reference Topologies and Specifications},
   2000.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN719.pdf}.
 
-\bibitem{MAXIM15}
-Maxim IC.
-\newblock {A Quick Guide To Voltage References}, 2001.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1182.pdf}.
-
 \bibitem{MAXIM75}
 Maxim IC.
 \newblock {Automatic Test Equipment on a Budget}, 2001.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN761.pdf}.
-
-\bibitem{MAXIM11}
-Maxim IC.
-\newblock {Force/Sense DAC Applications}, 2001.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN807.pdf}.
-
-\bibitem{MAXIM8}
-Maxim IC.
-\newblock {Minimizing Component-Variation Sensitivity in Single Op Amp
-  Filters}, 2001.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN738.pdf}.
 
 \bibitem{MAXIM9}
 Maxim IC.
@@ -191,72 +158,15 @@ Maxim IC.
   Performance}, 2001.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN748.pdf}.
 
-\bibitem{MAXIM14}
-Maxim IC.
-\newblock {DAC and Op Amp Generate Variable Negative Control Voltage}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1074.pdf}.
-
-\bibitem{MAXIM13}
-Maxim IC.
-\newblock {Digital-Analog Converters Are a ``Bit'' Analog}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1055.pdf}.
-
-\bibitem{MAXIM16}
-Maxim IC.
-\newblock {Effects of Digital Crosstalk in Data Converters}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1842.pdf}.
-
-\bibitem{MAXIM19}
-Maxim IC.
-\newblock {Effects of Digital Crosstalk in Data Converters Part 2: Crosstalk on
-  the Clock}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1841.pdf}.
-
-\bibitem{MAXIM20}
-Maxim IC.
-\newblock {Effects of Digital Crosstalk in Data Converters Part 3: Digital Data
-  Signal Crosstalk on the Clock}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1842.pdf}.
-
-\bibitem{MAXIM12}
-Maxim IC.
-\newblock {Filter Basics: Anti-Aliasing}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN928.pdf}.
-
-\bibitem{MAXIM4}
-Maxim IC.
-\newblock {Proper Layout and Component Selection Controls EMI}, 2002.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN716.pdf}.
-
-\bibitem{MAXIM17}
-Maxim IC.
-\newblock {A Beginner's Guide to Filter Topologies}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1762.pdf}.
-
-\bibitem{MAXIM18}
-Maxim IC.
-\newblock {Analog Filter Design Demystified}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1795.pdf}.
-
 \bibitem{MAXIM24}
 Maxim IC.
 \newblock {Boost Converter Generates Three Analog Rails}, 2003.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN2026.pdf}.
 
-\bibitem{MAXIM22}
-Maxim IC.
-\newblock {Building a Power Supply That Works}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1897.pdf}.
-
 \bibitem{MAXIM21}
 Maxim IC.
 \newblock {Demystifying Sigma-Delta ADCs}, 2003.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1870.pdf}.
-
-\bibitem{MAXIM26}
-Maxim IC.
-\newblock {Introduction to Common Printed Circuit Transmission Lines}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN2093.pdf}.
 
 \bibitem{MAXIM70}
 Maxim IC.
@@ -270,47 +180,10 @@ Maxim IC.
   Instrumentation Amplifiers}, 2003.
 \newblock \\\url{http://datasheets.maxim-ic.com/en/ds/MAX4194-MAX4197.pdf}.
 
-\bibitem{MAXIM28}
-Maxim IC.
-\newblock {Selecting the Optimum Voltage Reference}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN2879.pdf}.
-
-\bibitem{MAXIM25}
-Maxim IC.
-\newblock {Simple Methods Reduce Input Ripple for All Charge Pumps}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN2027.pdf}.
-
 \bibitem{MAXIM23}
 Maxim IC.
 \newblock {Tips to Remember When Designing with Digital Potentiometers}, 2003.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1956.pdf}.
-
-\bibitem{MAXIM27}
-Maxim IC.
-\newblock {Understanding Integral Non-Linearity Errors}, 2003.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN2395.pdf}.
-
-\bibitem{MAXIM29}
-Maxim IC.
-\newblock {Basic Switching-Regulator-Layout Techniques}, 2004.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN2997.pdf}.
-
-\bibitem{MAXIM31}
-Maxim IC.
-\newblock {Digital-to-Analog Converters (DACs) for High-Performance
-  Communications}, 2004.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3176.pdf}.
-
-\bibitem{MAXIM32}
-Maxim IC.
-\newblock {Exposed Pads: A Brief Introduction}, 2004.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3273.pdf}.
-
-\bibitem{MAXIM30}
-Maxim IC.
-\newblock {How to Increase the Bandwidth of Digital Potentiometers 10x to
-  100x}, 2004.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3081.pdf}.
 
 \bibitem{MAXIM66}
 Maxim IC.
@@ -318,53 +191,10 @@ Maxim IC.
   2004.
 \newblock \\\url{http://datasheets.maxim-ic.com/en/ds/MAX6143.pdf}.
 
-\bibitem{MAXIM35}
-Maxim IC.
-\newblock {Add USB to Anything}, 2005.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3637.pdf}.
-
-\bibitem{MAXIM36}
-Maxim IC.
-\newblock {Choosing a Low-Noise Amplifier}, 2005.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3642.pdf}.
-
-\bibitem{MAXIM37}
-Maxim IC.
-\newblock {How to Divide and Conquer the Divider: Practical Resistive Dividers,
-  Made Easy}, 2005.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3646.pdf}.
-
 \bibitem{MAXIM34}
 Maxim IC.
 \newblock {Integrated DC Logarithmic Amplifiers}, 2005.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3611.pdf}.
-
-\bibitem{MAXIM33}
-Maxim IC.
-\newblock {The Basics of Anti-Aliasing: Using Switched-Capacitor Filters},
-  2005.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3494.pdf}.
-
-\bibitem{MAXIM39}
-Maxim IC.
-\newblock {Equalizing Techniques Flatten DAC Frequency Response}, 2006.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3853.pdf}.
-
-\bibitem{MAXIM40}
-Maxim IC.
-\newblock {Isolating USB}, 2006.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3891.pdf}.
-
-\bibitem{MAXIM1}
-Maxim IC.
-\newblock {MAX4238/MAX4239 Ultra-Low Offset/Drift, Low-Noise, Precision SOT23
-  Amplifiers}, 2006.
-\newblock \\\url{http://datasheets.maxim-ic.com/en/ds/MAX4238-MAX4239.pdf}.
-
-\bibitem{MAXIM38}
-Maxim IC.
-\newblock {Practical USB Terminology}, 2006.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN3803.pdf}.
 
 \bibitem{MAXIM71}
 Maxim IC.
@@ -415,22 +245,6 @@ Maxim IC.
   (DACs) Demystified}, 2007.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4053.pdf}.
 
-\bibitem{MAXIM44}
-Maxim IC.
-\newblock {Three is a Crowd for Instrumentation Amplifiers}, 2007.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4034.pdf}.
-
-\bibitem{MAXIM7}
-Maxim IC.
-\newblock {A Filter Primer}, 2008.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN733.pdf}.
-
-\bibitem{MAXIM43}
-Maxim IC.
-\newblock {Analog Multiplier Improves the Accuracy of High-Side-Sense
-  Measurements}, 2008.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4030.pdf}.
-
 \bibitem{MAXIM53}
 Maxim IC.
 \newblock {Calculating the Error Budget in Precision Digital-to-Analog
@@ -447,11 +261,6 @@ Maxim IC.
 Maxim IC.
 \newblock {Rail Splitter, from Abraham Lincoln to Virtual Ground}, 2008.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4344.pdf}.
-
-\bibitem{MAXIM74}
-Maxim IC.
-\newblock {Wafer-level packaging (WLP) and its applications}, 2008.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN1891.pdf}.
 
 \bibitem{MAXIM56}
 Maxim IC.
@@ -486,16 +295,6 @@ Maxim IC.
   Components}, 2009.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4459.pdf}.
 
-\bibitem{MAXIM60}
-Maxim IC.
-\newblock {Integrated Solutions Make Analog Filter Design Easy}, 2009.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4422.pdf}.
-
-\bibitem{MAXIM63}
-Maxim IC.
-\newblock {Logarithmic LED Panel Display Has 72dB Range}, 2009.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4442.pdf}.
-
 \bibitem{MAXIM69}
 Maxim IC.
 \newblock {MAX4208/MAX4209 Ultra-Low Offset/Drift, Precision Instrumentation
@@ -513,20 +312,10 @@ Maxim IC.
 \newblock {Methods for Calibrating Gain Error in Data-Converter Systems}, 2009.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4494.pdf}.
 
-\bibitem{MAXIM58}
-Maxim IC.
-\newblock {Minimize Voltage Offsets in Precision Amplifiers}, 2009.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4348.pdf}.
-
 \bibitem{MAXIM62}
 Maxim IC.
 \newblock {Murphy's Law and the Risks of Designing ``Off Data Sheet''}, 2009.
 \newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4429.pdf}.
-
-\bibitem{MAXIM61}
-Maxim IC.
-\newblock {Same? Really the Same? Maybe? The Cross-Reference Challenge}, 2009.
-\newblock \\\url{http://pdfserv.maxim-ic.com/en/an/AN4425.pdf}.
 
 \bibitem{MAXIM54}
 Maxim IC.
@@ -602,6 +391,11 @@ ST~Microelectronics.
   Schottky Diode}, 2004.
 \newblock \\\url{http://www.st.com/stonline/books/pdf/docs/10312.pdf}.
 
+\bibitem{NATIONAL4}
+{National Semiconductor}.
+\newblock {Switching Regulators}.
+\newblock \\\url{http://www.national.com/appinfo/power/files/f5.pdf}.
+
 \bibitem{NATIONAL3}
 {National Semiconductor}.
 \newblock {LM117/LM317A/LM137 3-Terminal Adjustable Regulator}, 2010.
@@ -639,11 +433,6 @@ Philips.
 \newblock {LUXEON® Rebel ES Technical Datasheet DS61}, 2010.
 \newblock \\\url{http://www.philipslumileds.com/uploads/17/DS61-pdf}.
 
-\bibitem{NATIONAL1}
-National Semiconductor.
-\newblock {Current-Feedback Myths Debunked}, 1992.
-\newblock \\\url{http://www.national.com/an/OA/OA-20.pdf}.
-
 \bibitem{NATIONAL2}
 National Semiconductor.
 \newblock {LMF100 High Performance Dual Switched Capacitor Filter}, 1999.
@@ -653,6 +442,11 @@ National Semiconductor.
 Uwe Siart.
 \newblock {Das Dezibel -- Definition und Anwendung}, 2009.
 \newblock \\\url{http://www.siart.de/lehre/dezibel.pdf}.
+
+\bibitem{SPRUT1}
+{sprut}.
+\newblock {Schaltregler-Grundlagen}, 2003.
+\newblock \\\url{http://www.sprut.de/electronic/switch/schalt.html}.
 
 \bibitem{LINEAR6}
 Linear Technology.
@@ -678,11 +472,6 @@ ber=ina116&fileType=pdf&track=no}.
 {Texas Instruments (former Burr Brown)}.
 \newblock {OPA128 Difet Electrometer-Grade Operational Amplifier}, 1995.
 \newblock \\\url{http://focus.ti.com/lit/ds/symlink/opa128.pdf}.
-
-\bibitem{TEXAS10}
-{Texas Instruments (former Burr Brown)}.
-\newblock {TMS320F243/TMS320F241 DSP Controllers}, 2006.
-\newblock \\\url{http://focus.ti.com/lit/ds/symlink/tms320f243.pdf}.
 
 \bibitem{TEXAS7}
 {Texas Instruments (former Burr Brown)}.
@@ -738,13 +527,6 @@ Wikipedia.
 Wikipedia.
 \newblock {Hidden Markov Model}, 2011.
 \newblock \\\url{http://en.wikipedia.org/wiki/Hidden_Markov_model}.
-
-\bibitem{WP4}
-Wikipedia.
-\newblock {Koffein: Pharmakologische Wirkungen}, 2011.
-\newblock
-  \\\url{http://tinyurl.com/5vf8ukj}(\url{http://de.wikipedia.org/wiki/Koffein%
-}).
 
 \bibitem{WP9}
 Wikipedia.
