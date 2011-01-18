@@ -49,6 +49,12 @@
 \newblock
   \\\url{http://www.analog.com/static/imported-files/tutorials/MT-031.pdf}.
 
+\bibitem{LIBC1}
+{AVR libc documentation}.
+\newblock {util/crc16.h: CRC Computations}, 2010.
+\newblock
+  \\\url{http://www.nongnu.org/avr-libc/user-manual/group__util__crc.html}.
+
 \bibitem{TEXAS3}
 {Bonnie Baker (Texas Instruments, former Burr Brown)}.
 \newblock {Tuning in Amplifiers}, 1996.
@@ -547,6 +553,11 @@ Wikipedia.
 Wikipedia.
 \newblock {Neuron}, 2011.
 \newblock \\\url{http://en.wikipedia.org/wiki/Neuron}.
+
+\bibitem{WP20}
+Wikipedia.
+\newblock {Nyquist-Shannon-Abtasttheorem}, 2011.
+\newblock \\\url{http://de.wikipedia.org/wiki/Nyquist-Theorem}.
 
 \bibitem{WP1}
 Wikipedia.

@@ -11,45 +11,45 @@ Warning--to sort, need author or key in WERBUNG5
 Warning--to sort, need author or key in WERBUNG6
 Warning--to sort, need author or key in WERBUNG7
 Warning--to sort, need author or key in WERBUNG8
-You've used 107 entries,
+You've used 109 entries,
             2118 wiz_defined-function locations,
-            965 strings with 17229 characters,
-and the built_in function-call counts, 21702 in all, are:
-= -- 1986
-> -- 713
+            974 strings with 17458 characters,
+and the built_in function-call counts, 22114 in all, are:
+= -- 2024
+> -- 727
 < -- 0
-+ -- 309
-- -- 202
-* -- 639
-:= -- 3514
-add.period$ -- 313
-call.type$ -- 107
-change.case$ -- 414
++ -- 315
+- -- 206
+* -- 651
+:= -- 3582
+add.period$ -- 319
+call.type$ -- 109
+change.case$ -- 422
 chr.to.int$ -- 0
-cite$ -- 115
-duplicate$ -- 749
-empty$ -- 2363
-format.name$ -- 202
-if$ -- 4769
+cite$ -- 117
+duplicate$ -- 763
+empty$ -- 2407
+format.name$ -- 206
+if$ -- 4859
 int.to.chr$ -- 0
-int.to.str$ -- 107
+int.to.str$ -- 109
 missing$ -- 0
-newline$ -- 530
-num.names$ -- 198
-pop$ -- 983
+newline$ -- 540
+num.names$ -- 202
+pop$ -- 1001
 preamble$ -- 1
-purify$ -- 315
+purify$ -- 321
 quote$ -- 0
-skip$ -- 744
+skip$ -- 758
 stack$ -- 0
-substring$ -- 535
-swap$ -- 107
+substring$ -- 545
+swap$ -- 109
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 428
+type$ -- 436
 warning$ -- 8
-while$ -- 198
-width$ -- 110
-write$ -- 1043
+while$ -- 202
+width$ -- 112
+write$ -- 1063
 (There were 8 warnings)

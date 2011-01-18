@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  18 JAN 2011 10:43
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  18 JAN 2011 20:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -513,6 +513,27 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count132
 \FV@StepNumber=\count133
 \FV@OutFile=\write5
+) (/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen158
+\captionmargin@=\dimen159
+\captionwidth=\dimen160
+\caption@indent=\dimen161
+\caption@parindent=\dimen162
+\caption@hangindent=\dimen163
+)
+\c@ContinuedFloat=\count134
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texmf-texlive/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2008/03/28 v1.2 longtable captions (AR)
+)
+Package caption Info: subfigure package is loaded.
+Package caption Info: supertabular package is loaded.
 )
 \@input{pygmentizedefs.aux}
 \openout2 = `pygmentizedefs.aux'.
@@ -521,28 +542,28 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \glo@main@file=\write6
 \openout6 = `rgbulb.glo'.
 
-Package glossaries Info: Writing glossary file rgbulb.glo on input line 50.
+Package glossaries Info: Writing glossary file rgbulb.glo on input line 51.
 \glo@acronym@file=\write7
 \openout7 = `rgbulb.acn'.
 
-Package glossaries Info: Writing glossary file rgbulb.acn on input line 50.
+Package glossaries Info: Writing glossary file rgbulb.acn on input line 51.
  (./rgbulb.aux (./log_lut_gen.rb.aux))
 \openout1 = `rgbulb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
@@ -581,23 +602,25 @@ File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 55.
+Package hyperref Info: Link coloring OFF on input line 56.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count135
 )
-LaTeX Info: Redefining \ref on input line 55.
-LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
  (./rgbulb.out)
 (./rgbulb.out)
 \@outlinefile=\write8
 \openout8 = `rgbulb.out'.
 
 \AtBeginShipoutBox=\box64
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: dvips
 * paper: a4paper
@@ -633,23 +656,23 @@ LaTeX Info: Redefining \pageref on input line 55.
  (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 65.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 65.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 65.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 66.
 
 (/usr/share/texmf-texlive/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
-[][][][][][][] 
+Overfull \hbox (6.0pt too wide) in paragraph at lines 66--68
+[][][][][][][]
  []
 
 [1
@@ -663,38 +686,38 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 65--66
 \tf@toc=\write9
 \openout9 = `rgbulb.toc'.
 
- [1
+ [2
 
 ]
-Overfull \hbox (11.61331pt too wide) in paragraph at lines 83--86
+Overfull \hbox (16.36337pt too wide) in paragraph at lines 86--89
 \OT1/cmr/m/n/12 Der mensch-li-che K[]orper ben[]otigt auf der cir-ca-dia-nen Rh
-yth-mik ba-siert in re-gelm[]a^^Yi-gen Abst[]anden
+yth-mik[] ba-siert in re-gelm[]a^^Yi-gen Abst[]anden
  []
 
-[2]
+[1]
 File: images/led_closeup.eps Graphic file (type eps)
  <images/led_closeup.eps>
 File: images/diode-iv-curve_bw.eps Graphic file (type eps)
- <images/diode-iv-curve_bw.eps> [3] [4]
+ <images/diode-iv-curve_bw.eps> [2] [3]
 File: images/pwm_schematic.eps Graphic file (type eps)
 
-<images/pwm_schematic.eps> [5]
+<images/pwm_schematic.eps> [4]
 File: images/delta-sigma-adc.eps Graphic file (type eps)
- <images/delta-sigma-adc.eps> [6]
+ <images/delta-sigma-adc.eps>
 \openout2 = `log_lut_gen.rb.aux'.
 
 
-(./log_lut_gen.rb.tex)
+(./log_lut_gen.rb.tex) [5]
 File: images/led_driver_rev1_02.eps Graphic file (type eps)
  <images/led_driver_rev1_02.eps>
 File: images/led_driver_rev3_02.eps Graphic file (type eps)
 
 <images/led_driver_rev3_02.eps>
-Underfull \hbox (badness 1371) in paragraph at lines 216--216
+Underfull \hbox (badness 1371) in paragraph at lines 219--219
 []\OT1/cmr/m/n/10 (b) Ein Ent-wurf von Re-vi-si-on 3 des LED-
  []
 
-[7] [8
+[6] [7
 
 
 ]
@@ -707,79 +730,80 @@ File: images/ethersex_top_small.eps Graphic file (type eps)
  <images/ethersex_top_small.eps>
 File: images/ethersex_bottom_small.eps Graphic file (type eps)
 
-<images/ethersex_bottom_small.eps> [9] [10] [11]
+<images/ethersex_bottom_small.eps> [8] [9] [10] [11]
 File: images/chips_smaller.eps Graphic file (type eps)
- <images/chips_smaller.eps>
-[12] [13]
+
+<images/chips_smaller.eps> [12]
 File: images/adc_schematic_02.eps Graphic file (type eps)
- <images/adc_schematic_02.eps>
-
-LaTeX Warning: Float too large for page by 0.79773pt on input line 310.
-
-[14]
+ <images/adc_schematic_02.eps> [13]
 File: images/adc_board_03.eps Graphic file (type eps)
- <images/adc_board_03.eps> [15
+
+<images/adc_board_03.eps> [14
 
 
-]
-No file rgbulb.gls.
-(./rgbulb.acr) (./rgbulb.bbl [16]
-Overfull \hbox (12.71971pt too wide) in paragraph at lines 63--68
+] (./rgbulb.acr) (./rgbulb.gls
+Overfull \hbox (10.21808pt too wide) in paragraph at lines 6--9
+[]\OT1/cmr/m/n/12 Unerw[]unsch-ter, h[]aufi-ge gef[]ahr-li-cher, auf nicht in-t
+en-dier-tem We-ge flie-^^Yen-der Strom,
+ []
+
+[15]) (./rgbulb.bbl [16]
+Overfull \hbox (12.71971pt too wide) in paragraph at lines 69--74
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
 [17]
-Overfull \hbox (83.6875pt too wide) in paragraph at lines 116--122
+Overfull \hbox (83.6875pt too wide) in paragraph at lines 122--128
 [][][][]\OT1/cmr/m/n/12 check. 
  []
 
 [18] [19] (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2004/10/17 UCS: Unicode data U+2000..U+20FF
 )
-Overfull \hbox (235.01982pt too wide) in paragraph at lines 326--332
+Overfull \hbox (235.01982pt too wide) in paragraph at lines 332--338
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (117.69476pt too wide) in paragraph at lines 341--346
+Overfull \hbox (117.69476pt too wide) in paragraph at lines 347--352
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
 [20]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 433.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 439.
 
  (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 433.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
  [21]
-Overfull \hbox (154.74478pt too wide) in paragraph at lines 457--462
+Overfull \hbox (154.74478pt too wide) in paragraph at lines 463--468
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
 
-Overfull \hbox (173.26979pt too wide) in paragraph at lines 464--470
+Overfull \hbox (173.26979pt too wide) in paragraph at lines 470--476
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
 [22])
 
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 384.
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 390.
 
 [23]
-Underfull \hbox (badness 10000) in alignment at lines 390--390
+Underfull \hbox (badness 10000) in alignment at lines 396--396
 [][] 
  []
 
 [24] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
 Here is how much of TeX's memory you used:
- 9732 strings out of 495022
- 136372 string characters out of 1181058
- 240478 words of memory out of 3000000
- 12678 multiletter control sequences out of 15000+50000
+ 10680 strings out of 495022
+ 153452 string characters out of 1181058
+ 256009 words of memory out of 3000000
+ 13615 multiletter control sequences out of 15000+50000
  15292 words of font info for 60 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,11n,51p,1551b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 53i,11n,92p,1562b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rgbulb.dvi (25 pages, 168364 bytes).
+Output written on rgbulb.dvi (26 pages, 175468 bytes).

@@ -1027,3 +1027,10 @@
 	title={{Switching Regulators}},
 	note={\\\url{http://www.national.com/appinfo/power/files/f5.pdf}}
 }
+
+@MISC{LIBC1,
+	year=2010,
+	author={{AVR libc documentation}},
+	title={{util/crc16.h: CRC Computations}},
+	note={\\\url{http://www.nongnu.org/avr-libc/user-manual/group__util__crc.html}}
+}

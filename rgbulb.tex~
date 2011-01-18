@@ -25,6 +25,7 @@
 \usepackage{epsfig}
 \usepackage{fancyvrb}
 %\usepackage{minted}
+\usepackage[labelformat=simple]{caption}
 \definecolor{p-green}{rgb}{0.12,0.57,0.11}
 \newcommand{\bitem}{\item[--]}
 \newcommand{\litem}[2]{\item[#1 --] #2}
@@ -56,64 +57,67 @@
 %\maketitle
 \newgeometry{left=1cm,right=1cm}
 \thispagestyle{empty}
-\vspace*{7cm}
+\vspace*{4cm}
 {\center\colorbox{titlepagelightgray}{\begin{minipage}{\textwidth}\flushright{\parbox{12cm}{
 \flushright{\Huge\textsf{Die Intelligente Lampe}}
 \flushright{\LARGE\textsf{Jan Sebastian Götte}}
 \flushright{\LARGE\textsf{Landesschule Pforta}}
 \flushright{\large\textsf{8. Januar 2011}}}\hspace{1cm}\vspace{5mm}}
 \end{minipage}}}
-\thispagestyle{empty}
+\vspace{6cm}
+{\center\begin{minipage}{\textwidth}\flushleft{\textsf{Die Lampe der Zukunft muss nicht nur hell sein, sie muss auf den Benutzer reagieren und mit dem Benutzer interagieren. Das bisherige Konzept, dass eine Lampe nur einen Raum beleuchten soll, missachtet die Möglichkeiten, die eine intelligente Elektronik der Lampe bezüglich der Anpassung an den Nutzer und des Sparens von Energie bietet. Ich habe eine solche intelligente Lampe gebaut, die sich dem Benutzer anpasst und ihn an seinen Biorhythmus angepasst wecken kann, sich automatisch abhängig von seiner Präsenz ein- und ausschaltet und deren Lichtfarbe sich dem Harmoniebedürfnis des Benutzers anpassen lässt.}}\end{minipage}}
 \restoregeometry
+\thispagestyle{empty}
+\newpage
+\tableofcontents
+\textcolor{red}{Die aktuellste Version dieser Arbeit ist stets online unter \url{http://github.com/jaseg/RGBulb}}
 \newpage
 \pagenumbering{arabic}
-\tableofcontents
-\newpage
 \hyphenation{kog-ni-tiv}
 \hyphenation{kog-ni-tiv-en}
 \newacronym{EEG}{EEG}{Elektroenzephalograph}
 \section{Konzept}
 %In meinem Alltag sehe ich mich mit einem meiner Meinung unangenehmen Tagesrhythmus konfrontiert. Die von Schulseiten forcierte Zeit des Aufstehens liegt zwischen 06:00 ME(S)Z und 06:30 ME(S)Z. Angesichts der unangenehmen Erfahrung, für die mein Wecker jeden Morgen sorgt sowie der Unzulänglichkeit des Behelfs mit 1,3,7-Trimethyl-3,7-dihydro-2H-purin-2,6-dion\cite{WP4}, war ich auf der Suche nach alternativen Weckmöglichkeiten. 
-Der normale Tagesrhythmus eines Schülers unserer Schule beginnt um 6 Uhr morgens mit dem Aus-dem-Bett-zum-Frühstück-wälzen. Da ich damit bisher hauptsächlich eher negative Erfahrungen gemacht habe, überlegte ich, was wohl die am wenigsten unangenehme Möglichkeit ist, morgens aufzuwachen und kam zu dem Schluss, dass ein Wecken durch Licht, besonders durch solches, das langsam mehr wird, am ehestem dem natürlichen Tagesrhythmus entspricht. Wenn man der Werbung glauben schenkt (\cite{WERBUNG1}\cite{WERBUNG2}\cite{WERBUNG3}\cite{WERBUNG4}\cite{WERBUNG5}\cite{WERBUNG6}\cite{WERBUNG7}\cite{WERBUNG8})
-ist ein solcher \glqq Lichtwecker\grqq\ \annot{so ziemlich} das gesündeste und sanfteste und produktivitätsförderndste Weckmittel auf Erden\cite{SIESTA1}. Nicht gewillt, eine fertige, teure und wahrscheinlich suboptimale sowie schwer anpassbare Lösung zu kaufen, die noch nicht einmal über einen Ethernetanschluss verfügt, machte ich mich an die Planung einer eigenen Konfiguration. \annot{Der zweite} grundlegede Teil meines Konzeptes basiert auf dem Einfall, dass ein solcher Lichtwecker in der herkömmlichen Bauweise nur eine unidirektionale Kommunikation möglich macht, die nämlich, dass der Lichtwecker durch die Modulation der Lichtquelle auf den Schlafzustand des Schlafenden Einfluss nimmt. Damit der Wecker nicht nur sanft weckt, sondern sich auch intelligent an meinen Schlaf anpasst, wird der bei keiner mir bekannten komerziell verfügbaren Lösung vorhandene Rückkanal durch eine Schlafphasendetektion gebildet. Ich entschied mich dabei für eine Detektion anhand eines \glslink{EEG}{Elektroenzephalogrammes} anstelle der zweiten verfügbaren Möglichkeit, der Messung von Körperbewegungen, da sich der Schlaf durch das EEG wesentlich höher aufgelöst charakterisieren lässt und die Genauigkeit somit viel höher ist. Außerdem ist ein EEG etwas, was ich herausfordernd fand.
+Der normale Tagesrhythmus eines Schülers unserer Schule beginnt um 6 Uhr morgens mit dem Aus-dem-Bett-zum-Frühstück-wälzen. Da ich damit bisher hauptsächlich eher negative Erfahrungen gemacht habe, überlegte ich, was wohl die am wenigsten unangenehme Möglichkeit ist, morgens aufzuwachen und kam zu dem Schluss, dass ein Wecken durch Licht, besonders durch solches, das langsam heller wird, am ehestem dem natürlichen Tagesrhythmus entspricht. Wenn man der Werbung glauben schenkt (\cite{WERBUNG1}\cite{WERBUNG2}\cite{WERBUNG3}\cite{WERBUNG4}\cite{WERBUNG5}\cite{WERBUNG6}\cite{WERBUNG7}\cite{WERBUNG8})
+ist ein solcher \glqq Lichtwecker\grqq\ das gesündeste und sanfteste und produktivitätsförderndste Weckmittel auf Erden\cite{SIESTA1}. Nicht gewillt, eine fertige, teure und wahrscheinlich suboptimale sowie schwer anpassbare Lösung zu kaufen, die noch nicht einmal über einen Ethernetanschluss verfügt, machte ich mich an die Planung einer eigenen Konfiguration. Der zweite grundlegende Teil meines Konzeptes basiert auf dem Einfall, dass ein solcher Lichtwecker in der herkömmlichen Bauweise nur eine unidirektionale Kommunikation möglich macht, die nämlich, dass der Lichtwecker durch die Modulation der Lichtquelle auf den Schlafzustand des Schlafenden Einfluss nimmt. Damit der Wecker nicht nur sanft weckt, sondern sich auch intelligent an meinen Schlaf anpasst, wird der bei keiner mir bekannten kommerziell verfügbaren Lösung vorhandene Rückkanal durch eine Schlafphasendetektion gebildet. Ich entschied mich dabei für eine Detektion anhand eines \glslink{EEG}{Elektroenzephalogrammes} anstelle der zweiten verfügbaren Möglichkeit, der Messung von Körperbewegungen, da sich der Schlaf durch das EEG wesentlich höher aufgelöst charakterisieren lässt und die Genauigkeit somit viel höher ist. Außerdem ist ein EEG etwas, was ich herausfordernd fand.
 
 %Unzufrieden mit diesem eingeschränkten Design plante ich zur Steuerung des Lichtweckers ein Brain-Computer-Interface, in diesem Fall einen \glslink{EEG}{Elektroenzephalographen}. Dieser ist ein Gerät zum Messen der Hirnströme des schlafenden.
 %Auf Basis jener Messungen kann mit einem Prozessor dezenter Rechenleistung der Schlaf- bzw.\ Wachheitszustand des Trägers deduziert werden, was den Rückkanal bietet, über den keine der bisher auf dem Markt befindlichen Lösungen verfügt.
 \section{Biologische Grundlagen}
-Der menschliche Körper benötigt auf der circadianen Rhythmik basiert in regelmäßigen Abständen Schlaf. Die benötigte Schlafdauer ist weitgehend konstant und wenig beeinflussbar, es ist lediglich eine gewisse Synchronisation des Rhythmus mit dem natürlichen Tag-Nacht-Rhythmus festzustellen. Das Schalfbedürfnis ist vom Hormonhaushalt abhängig\cite{WP9}, der wiederum seinerseits vom Tageslicht beeinflusst wird. Die maximale spektrale Empfindlichkeit dieser biologischen Mechanismen liegt im blauen Wellenlängenbereich.
+Der menschliche Körper benötigt auf der circadianen Rhythmik\footnote{Biologischer innerer Rhythmus mit einer Periode von 24 Stunden} basiert in regelmäßigen Abständen Schlaf. Die benötigte Schlafdauer ist weitgehend konstant und wenig beeinflussbar, es ist lediglich eine gewisse Synchronisation des Rhythmus mit dem natürlichen Tag-Nacht-Rhythmus festzustellen. Das Schlafbedürfnis ist vom Hormonhaushalt abhängig\cite{WP9}, der wiederum seinerseits vom Tageslicht beeinflusst wird. Die maximale spektrale Empfindlichkeit dieser biologischen Mechanismen liegt im blauen Wellenlängenbereich.
 \cite{WP5, WP6, WP7, WP8}
-Durch die Stimulation mit einem sanft heller werdenden Licht kann die Hormonproduktion und somit der Tagesrhythmus in gewissen Grenzen verschoben werden---\annot{zumindest jedoch} ist Licht (selbst wenn es blinkt und flackert) ein angenehmerer Reiz als ein schriller Ton.
+Durch die Stimulation mit einem sanft heller werdenden Licht kann die Hormonproduktion und somit der Tagesrhythmus in gewissen Grenzen verschoben werden---zumindest jedoch ist Licht (selbst wenn es blinkt und flackert) ein angenehmerer Reiz als ein schriller Ton.
 
 \newacronym{LED}{LED}{Light Emmiting Diode, Leuchtdiode}
 \section{Technische Umsetzung}
 Zum sanften Wecken mit Licht ist die wichtigste Voraussetzung eine regelbare Lichtquelle. Da das System durch eine Schlafphasenerkennung gesteuert werden soll, muss die Regelschaltung eine digitale Schnittstelle bieten. Die Leuchtstärke sollte möglichst groß sein, um zum einen mit realem Tageslicht konkurrieren zu können und zum anderen nach Möglichkeit auch als herkömmliche Lampe arbeiten zu können. Das verwendete Leuchtmittel sollte eine dem Tageslicht möglichst ähnliche Farbtemperatur haben, bevorzugt jedoch ein Maximum im blauen Spektralbereich zur möglichst großen Übereinstimmung mit der natürlichen Empfindlichkeit des menschlichen Körpers.
 
-Bei der Wahl des Leuchtmittels gibt drei grobe Kategorien: Glühlampen, Leuchtstofflampen und \glslink{LED}{LEDs (Leuchtdioden)}. Glühlampen sind aufgrund ihrer geringen Effizienz und komplizierter werdenden Verfügbarkeit sowie des eher im rötlichen liegenden Spektrums unattraktiv. Leuchtstofflampen -- also Leuchtstoffröhren sowie verschiedene \glqq Energiesparlampen\grqq\ sind in einem weiten Bereich von Farbtemperaturen zu bekommen und recht effizient, jedoch sind nicht alle Typen dimmbar, die Ansteuerung von nicht als Energiesparlampen ausgeführten Leuchtmitteln mit externer Startelektronik ist kompliziert und es muss mit Netzspannung gearbeitet werden.
+Bei der Wahl des Leuchtmittels gibt es drei grobe Kategorien: Glühlampen, Leuchtstofflampen und \glslink{LED}{LEDs (Leuchtdioden)}. Glühlampen sind aufgrund ihrer geringen Effizienz und komplizierter werdenden Verfügbarkeit sowie des eher im Rötlichen liegenden Spektrums unattraktiv. Leuchtstofflampen -- also Leuchtstoffröhren sowie verschiedene \glqq Energiesparlampen\grqq\ sind in einem weiten Bereich von Farbtemperaturen zu bekommen und recht effizient, jedoch sind nicht alle Typen dimmbar, die Ansteuerung von nicht als Energiesparlampen ausgeführten Leuchtmitteln mit externer Startelektronik ist kompliziert und es muss mit Netzspannung gearbeitet werden.
 
 \begin{figure}
 \centering
 \includegraphics[width=7.5cm]{images/led_closeup.eps}
-\label{rgb_led}
 \caption{Eine der RGB-LEDs, auf einen Kühlkörper montiert.}
+\label{rgb_led}
 \end{figure}
 
-Ich entschied mich für \glslink{LED}{LEDs} als Leuchtmittel, da diese mit Kleinspannungen arbeiten, nach Belieben dimmbar sind und letztlich im abgestrahlten Farbspektrum bei Verwendung von RGB-LEDs -- technisch gesehen drei separate LEDs für rot, grün und blau -- nach der additiven Farbmischung\cite{WP10} sogar im Betrieb vollständig einstellbar.
+Ich entschied mich für \glslink{LED}{LEDs} als Leuchtmittel, da diese mit Kleinspannungen arbeiten, nach Belieben dimmbar sind und letztlich im abgestrahlten Farbspektrum bei Verwendung von RGB-LEDs -- technisch gesehen drei separate LEDs für rot, grün und blau -- nach der additiven Farbmischung\cite{WP10} sogar im Betrieb vollständig einstellbar sind.
 %LED-Spektrum: Bild, Quelle.
 
 \newglossaryentry{Sperrschicht}{name={Sperrschicht}, description={Übergang von positiv zu negativ dotiertem Halbleitermaterial}}
-\newglossaryentry{Flussspannung}{name={Flusspannung}, description={Spannungsabfall innerhalb der LED in Durchlassrichtung}} %Hier auch \gls{LED}
+\newglossaryentry{Flussspannung}{name={Flussspannung}, description={Spannungsabfall innerhalb der LED in Durchlassrichtung}} %Hier auch \gls{LED}
 \subsection{LED-Ansteuerung}
 \subsubsection{Notwendigkeit der Stromregelung}
 \begin{figure}
 \begin{center}
 \includegraphics{images/diode-iv-curve_bw.eps}
-\label{diode-iv-curve}
 \caption{Die Strom-Spannungs-Kennlinie einer LED}
+\label{diode-iv-curve}
 \end{center}
 \end{figure}
-Die Strom-Spannungs-Kennlinie (Abbildung \ref{diode-iv-curve}) einer \gls{LED} zeigt recht deutlich, dass es nicht möglich ist, diese ohne externe Regelung an einer Spannungsquelle -- wie den meisten handelsüblichen Netzteilen -- zu betreiben. Eine direkt an eine niederohmige Spannungsquelle angeschlossene \gls{LED} würde sofort von einem extrem hohem Strom durchflossen werden, durch den bei gegebener \gls{Flussspannung} $\Delta U$ der \gls{LED} nach $P=U\cdot I$ eine große Leistung an der \gls{LED} anfallen würde, die die \gls{LED} erhitzen und letztlich innerhalb eines Sekundenbruchteils thermisch zerstören würde, da auch die \gls{Sperrschicht} einer Hochleistungs-\gls{LED} nicht über 150°C erhitzt werden darf\cite{PHILIPS1,PHILIPS2}.
+Die Strom-Spannungs-Kennlinie (Abbildung \ref{diode-iv-curve}) einer \glslink{LED}{LED (Leuchtdiode)} zeigt recht deutlich, dass es nicht möglich ist, diese ohne externe Regelung an einer Spannungsquelle -- wie den meisten handelsüblichen Netzteilen -- zu betreiben. Eine direkt an eine niederohmige Spannungsquelle angeschlossene \gls{LED} würde sofort von einem extrem hohen Strom durchflossen werden, durch den bei gegebener \gls{Flussspannung} $\Delta U$ der \gls{LED} nach $P=U\cdot I$ eine große Leistung an der \gls{LED} anfallen würde, die die \gls{LED} erhitzen und letztlich innerhalb eines Sekundenbruchteils thermisch zerstören würde, da auch die \gls{Sperrschicht} einer Hochleistungs-\gls{LED} nicht über 150°C erhitzt werden darf\cite{PHILIPS1,PHILIPS2}.
 
-Die zwei gängigsten Methoden der Stromregelung sind Vorwiderstände und Konstantstromquellen. Vorwiderstände werden nach $R=\frac{U}{I}$ bemessen, wobei $I$ der gewünschte Strom an der \gls{LED} ist und sich $U$ als Differenz der Betriebsspannung $V_{CC}$ und der \gls{Flussspannung} der \gls{LED}:
+Die zwei gängigsten Methoden der Stromregelung sind Vorwiderstände und Konstantstromquellen. Vorwiderstände werden nach $R=\frac{U}{I}$ bemessen, wobei $I$ der gewünschte Strom an der \gls{LED} ist und $U$ die Differenz der Betriebsspannung $V_{CC}$ und der \gls{Flussspannung} der \gls{LED}:
 \begin{equation}
 R=\frac{V_{CC}-\Delta U_{LED}}{I_{LED}}
 \end{equation}
@@ -123,18 +127,18 @@ P_{R_v,tot}=\left(V_{CC}-\Delta U_{LED}\right)\cdot I_{LED}
 \end{equation}
 Beim Betrieb einer weißen $2,1W$-Hochleistungs-\gls{LED} mit einer Flussspannung von $3,0V$ bei $700mA$ an einer Spannungsquelle von $V_{CC}=24V$ mit Vorwiderstand fielen an diesem knapp $15W$ Verlustleistung an.
 %FIXME Schaltplan
-Weitere Nachteile der Verwendung von Vorwiderständen sind, dass Hochleistungswiderstände zum einen reltaiv teuer sind und zum anderen üblicherweise mit Toleranzen zwischen $5$ und $10\%$ gefertigt werden. Eine solche Toleranz stört bei der Ansteuerung einer einzelnen \gls{LED} nicht weiter, sollen jedoch mehrere \glspl{LED} als Array betrieben werden, merkt man selbst Helligkeitsunterschiede von $1\%$ bereits.
+Weitere Nachteile der Verwendung von Vorwiderständen sind, dass Hochleistungswiderstände zum einen relativ teuer sind und zum anderen üblicherweise mit Toleranzen zwischen $5$ und $10\%$ gefertigt werden. Eine solche Toleranz stört bei der Ansteuerung einer einzelnen \gls{LED} nicht weiter, sollen jedoch mehrere \glspl{LED} als Array betrieben werden, merkt man bereits Helligkeitsunterschiede von $1\%$.
 
 \newglossaryentry{Shunt}{name={Shunt}, description={Niederohmiger ($0.01-1\Omega$) Messwiderstand, der zur Strommessung verwendet wird. Der durch den Widerstand fließende Strom wird indirekt durch die am Widerstand abfallende Spannung gemessen. Der Widerstand sollte möglichst klein -- gegenüber dem Lastwiderstand in jedem Falle klein -- sein, um den Spannungsabfall am Widerstand und den Messfehler sowie die Verlustleistung (bei hohen Strömen) gering zu halten.}}
 Alternativ und bei der Ansteuerung von Hochleistungs-\glspl{LED} weiter verbreitet ist die Konstantstromquelle. Eine Konstantstromquelle besteht aus einem Strom-Spannungs-Wandler, einem Stromregler, einer Referenz und einem Fehlerverstärker. Unabhängig von Last und Betriebsspannung sowie Innenwiderstand der Spannungsquelle stellt sich durch die Konstantstromquelle dem Namen gemäß ein sehr konstanter, von der Genauigkeit des Strom-Spannungs-Wandlers (meist ein spezieller, niederohmiger Messwiderstand, der auch durch eine Leiterbahn von genau definierten Abmaßen gebildet werden kann -- \gls{Shunt} genannt) abhängiger Strom ein. Im Gegensatz zum Vorwiderstand lässt sich die Konstantstromquelle relativ einfach mit einem Trimmpotentiometer kalibrieren.
 %FIXME Wikipedia (source/bibtex), schematics
 
 \newglossaryentry{DAC}{name={DAC}, description={Digital Analog Converter, Digital-Analog-Umsetzer, in deutscher Fachliteratur teilweise als DAU bezeichnet}, first={Digital-Analog-Umsetzer (DAC)}, firstplural={Digital-Analog-Umsetzer (DACs)}, text={DAC}, plural={DACs}, type=\acronymtype}
-\subsubsection{Dimmen - Techniken}
-Das Dimmen bezeichent die Einstellung der Helligkeit der Lampe. \glspl{LED} lassen sich gut dimmen, indem man den Strom reguliert. Man kann den Strom prinzipiell analog oder digital steuern. Eine analoge Regelung besteht aus einer Modifikation der Stromquelle, im Falle der Konstantstromquelle kann dies durch ein analoges oder digitales Potentiometer\footnote{So genannte digitale Potentiometer verhalten sich genau genommen nicht wie Potentiometer. Technisch sind sie \glspl{DAC} geringer Auflösung, die einen digitalen Wert in einen Widerstand umwandeln.} im Feedback-Loop sein oder das \annot{Inkorporieren} eines einem \gls{DAC} entnommenen analogen Signals im Fehlerverstärker\cite{MAXIM23,MAXIM41,MAXIM42,ANALOG4,ANALOG5}.
+\subsubsection{Dimmen -- Techniken}
+Das Dimmen bezeichent die Einstellung der Helligkeit der Lampe. \glspl{LED} lassen sich gut dimmen, indem man den Strom reguliert. Man kann den Strom prinzipiell analog oder digital steuern. Eine analoge Regelung besteht aus einer Modifikation der Stromquelle, im Falle der Konstantstromquelle kann dies durch ein analoges oder digitales Potentiometer\footnote{So genannte digitale Potentiometer verhalten sich genau genommen nicht wie Potentiometer. Technisch sind sie \glspl{DAC} geringer Auflösung, die einen digitalen Wert in einen Widerstand umwandeln.} im Feedback-Loop sein oder das Inkorporieren eines einem \gls{DAC} entnommenen analogen Signals im Fehlerverstärker\cite{MAXIM23,MAXIM41,MAXIM42,ANALOG4,ANALOG5}.
 %Quellen
 
-Beide Techniken sind relativ Störanfällig (da analoge Signale wesentlich aufmerksamerem Schaltungsdesigns bedürfen) und haben das Problem, dass \glspl{DAC} und besonders digitale Potentiometer relativ teuer sind.
+Beide Techniken sind relativ störanfällig (da analoge Signale wesentlich aufmerksameren Schaltungsdesigns bedürfen) und haben das Problem, dass \glspl{DAC} und besonders digitale Potentiometer relativ teuer sind.
 
 \newglossaryentry{PWM}{name={PWM}, description={Pulse Width Modulation, Pulsweitenmodulation}, first={Pulsweitenmodulation (PWM)}, text={PWM}, type=\acronymtype}
 \newglossaryentry{PDM}{name={PDM}, description={Pulse Density Modulation, Pulsdichtemodulation}, first={Pulsdichtemodulation (PDM)}, text={PDM}, type=\acronymtype}
@@ -143,50 +147,50 @@ Digital lässt sich eine Helligkeitsregelung durch so genannte \gls{PWM} oder \g
 \newglossaryentry{Hertz}{name={Hertz}, description={Einheit der Frequenz, entspricht nach dem SI (Système Internationale) $\frac{1}{s}$}, text={Hertz}}
 %gls-entry: akzente auf S...I...?!
 \subsubsection{Funktionsweise der PWM}
-\glslink{PWM}{Pulsweitenmodulation} beschreibt eine Gruppe von Verfahren, bei denen die an einer Last anliegende Leistung eingestellt wird, indem die Last, die bei konstanter Stromzufuhr eine als konstant anzunehmende Leistung zeigt, mit hoher Frequenz ein- und ausgeschaltet wird. \annot{Im konkreten Fall} wird die \gls{LED} mit einer Frequenz von einigen hundert \gls{Hertz} angesteuert. Sie wird am Anfang jeder Periode der Dauer $T$ ausgeschaltet und nach einer bestimmten Zeit $t_E$ wieder eingeschaltet. Über die Periode gemittelt beträgt die Leistung der \gls{LED} $P_{LED}$ bei gegebener Volllast-Leistung $P_V$ gemittelt $P_{LED}=\frac{t_E}{T}\cdot P_{V}$. Durch die hohe Schaltfrequenz ist das die Leistung, die die \gls{LED} für ein menschliches Auge scheinbar abstrahlt.
+\glslink{PWM}{Pulsweitenmodulation} beschreibt eine Gruppe von Verfahren, bei denen die an einer Last anliegende Leistung eingestellt wird, indem die Last, die bei konstanter Stromzufuhr eine als konstant anzunehmende Leistung zeigt, mit hoher Frequenz ein- und ausgeschaltet wird. Im konkreten Fall wird die \gls{LED} mit einer Frequenz von einigen hundert \gls{Hertz} angesteuert. Sie wird am Anfang jeder Periode der Dauer $T$ ausgeschaltet und nach einer bestimmten Zeit $t_E$ wieder eingeschaltet. Über die Periode gemittelt beträgt die Leistung der \gls{LED} $P_{LED}$ bei gegebener Volllast-Leistung $P_V$ gemittelt $P_{LED}=\frac{t_E}{T}\cdot P_{V}$. Durch die hohe Schaltfrequenz ist das die Leistung, die die \gls{LED} für ein menschliches Auge scheinbar abstrahlt.
 %``leistung abstrahlen'', sprache?!
 %Graphik
 
-Eine \gls{PWM} kann überall dort zur Leistungsregelung verwendet werden, wo zwischen dem Ausgangssignal der \gls{PWM}-Steuerung und dem letztendlich durch den Aktor beeinflussten System ein Tiefpass mit einer hinreichend unterhalb der PWM-Frequenz $f_{PWM}$ liegenden Grenzfrequenz ist --- wie im Falle der \gls{LED} das Auge, das zwischen der rein technisch gesehen \glqq flackernden\grqq\ \gls{LED} und der weiteren Signalverarbeitung im Gehirn als Tiefpass mit einer Grenzfrequenz im Bereich $20$ - $30$ Hz liegt.
+Eine \gls{PWM} kann überall dort zur Leistungsregelung verwendet werden, wo zwischen dem Ausgangssignal der \gls{PWM}-Steuerung und dem letztendlich durch den Aktor beeinflussten System ein Tiefpass mit einer hinreichend unterhalb der PWM-Frequenz $f_{PWM}$ liegenden Grenzfrequenz ist --- wie im Falle der \gls{LED} das Auge, das zwischen der rein technisch gesehen \glqq flackernden\grqq\ \gls{LED} und der weiteren Signalverarbeitung im Gehirn als Tiefpass mit einer Grenzfrequenz im Bereich $20$ - $30Hz$ liegt.
 
-\newglossaryentry{Flipflop}{name={Flipflop}, description={Eine elektronische Speicherschaltung, siehe hierzu \annot{FIXME}}, text={Flipflop}, plural={Flipflops}}
+\newglossaryentry{Flipflop}{name={Flipflop}, description={Eine elektronische Speicherschaltung}, text={Flipflop}, plural={Flipflops}}
 \newglossaryentry{Ueberlauf}{name={Überlauf}, description={Aktion eines Zählers oder einer Variable, beim Inkrement über sein/ihr Maximum auf sein/ihr Minimum zu Springen}, text={Überlauf}, plural={Überläufe}}
 %Wikipedia, etc. (Webquellen!)
 \begin{figure}
 \centering
 \includegraphics{images/pwm_schematic.eps}
-\label{pwm_schematic}
 \caption{Vereinfachtes Schaubild einer generischen PWM-Steuerung}
+\label{pwm_schematic}
 \end{figure}
 
-Die Technische Umsetzung der Pulsweitenmodulation mit einem digitalen Eingangssignal sieht meist wie in Abbildung \ref{pwm_schematic}
+Die technische Umsetzung der Pulsweitenmodulation mit einem digitalen Eingangssignal sieht meist wie in Abbildung \ref{pwm_schematic}
 gezeigt aus: Ein Zähler zählt von 0 zu seinem Maximum, das der Auflösung der \gls{PWM} entspricht, im Falle eines digitalen Systems üblicherweise $2^n$, wobei $n$ die Anzahl der Bits des \gls{PWM}-Steuersignals ist. Der Wert des Zählers wird durch einen digitalen Komparator kontinuierlich mit dem eingestellten Wert verglichen, und bei einem \glqq Match\grqq, also in dem Fall, dass Zählerstand und eingestellter Leistungswert übereinstimmen, wird ein ausgangsseitiges \gls{Flipflop} getriggert. Beim \gls{Ueberlauf} des Zählers wird dieses Flipflop wieder zurückgesetzt. Die Frequenz des Ausgangssignals liegt bei $f_O=\frac{f_{clk}}{2^n}$, was für $f_{clk}=16MHz$ bei einer 16-Bit-PWM $244Hz$ entspricht---einer Frequenz, die das menschliche Auge nicht mehr als Flackern wahrnehmen kann.
 
-Die oben beschriebene \gls{PWM}-Technik ist nur eine mehrere möglicher Varianten. Da es eine große Anzahl derselben gibt und deren Theorie sehr komplex ist und diese Arbeit keine Abhandlung über Pulsweitenmodulationen sein soll, seien dem geneigten Leser die im Literaturverzeichnis aufgezählten Quellen wärmstens empfohlen \cite{ATMEL1, ATMEL2, ATMEL3}. Zur Helligkeitsregelung der LEDs zählen hauptsächlich zwei Kriterien: Die Auflösung der PWM, die möglichst hoch sein sollte, und die Periodendauer der PWM, die möglichst gering sein sollte.
+Die oben beschriebene \gls{PWM}-Technik ist nur eine mehrere möglicher Varianten. Da es eine große Anzahl derselben gibt und deren Theorie sehr komplex ist und diese Arbeit keine Abhandlung über Pulsweitenmodulationen sein soll, seien dem geneigten Leser die im Literaturverzeichnis aufgezählten Quellen wärmstens empfohlen \cite{ATMEL1, ATMEL2, ATMEL3}. Zur Helligkeitsregelung der LEDs zählen hauptsächlich zwei Kriterien: die Auflösung der PWM, die möglichst hoch sein sollte, und die Periodendauer der PWM, die möglichst gering sein sollte.
 
 \subsubsection{Pulsdichtemodulation}
-Bei der \gls{PDM} wird wie bei der \gls{PWM} die durchschnittliche Einschaltzeit -- im englischen \glqq on time\grqq\ -- der Last moduliert, indem die Leistung zwischen $0\%$ und $100\%$ oszilliert. Bei der Pulsdichtenmodulation ist das Steuersignal im Gegensatz zu dem der PWM wesentlich hochfrequenter. Ein Pulsdichtenmoduliertes Signal kann analog mit einem Delta-Sigma-Modulator gewonnen werden, ein Verfahren, dass in $\Delta$-$\Sigma$-ADCs zum Einsatz kommt. \cite{MAXIM21, MAXIM10} Digital kann ein solches Signal durch ein digitales Modell des $\Delta$-$\Sigma$-ADCs generiert werden \cite{WP1, WP3}.
+Bei der \gls{PDM} wird wie bei der \gls{PWM} die durchschnittliche Einschaltzeit -- im Englischen \glqq on time\grqq\ -- der Last moduliert, indem die Leistung zwischen $0\%$ und $100\%$ oszilliert. Bei der Pulsdichtenmodulation ist das Steuersignal im Gegensatz zu dem der PWM wesentlich hochfrequenter. Ein pulsdichtenmoduliertes Signal kann analog mit einem Delta-Sigma-Modulator gewonnen werden, ein Verfahren, dass in $\Delta$-$\Sigma$-ADCs zum Einsatz kommt. \cite{MAXIM21, MAXIM10} Digital kann ein solches Signal durch ein digitales Modell des $\Delta$-$\Sigma$-ADCs generiert werden \cite{WP1, WP3}.
 \begin{figure}
 \begin{center}
 \includegraphics{images/delta-sigma-adc.eps}
-\label{delta-sigma-modulator}
 \caption{Schematische Zeichnung eines Delta-Sigma-Modulators nach \cite{MAXIM21}}
+\label{delta-sigma-modulator}
 \end{center}
 \end{figure}
 %Quellen, Delta-Sigma-DAC/ADC
 
-\subsubsection{Generierung scheinbar linearer Helligkeitverläufe}
+\subsubsection{Generierung scheinbar linearer Helligkeitsverläufe}
 Das menschliche Auge hat eine nichtlineare Wahrnehmungscharakteristik. Nicht nur werden verschiedene Wellenlängen mit unterschiedlicher Empfindlichkeit wahrgenommen, es werden auch verschiedene Strahlungsintensitäten mit unterschiedlicher Empfindlichkeit wahrgenommen, es ist auch der Zusammenhang zwischen realer und wahrgenommener Helligkeit nicht linear. Bei relativ geringer absoluter Helligkeit ist die Empfindlichkeit für kleinste Helligkeitsänderungen wesentlich größer als bei großen absoluten Helligkeiten. Zeichnet man die ungefähre Kennlinie auf ergibt sich eine logarithmische Kurve.
 
-Effekt dieser nichtlinearen Kennlinie ist, dass eine einfache lineare Steigerung der abgestrahlten Leistung, wie sie bei einer nach dem oben beschriebenen Prinzip arbeitenden \gls{PWM} durch ein sukzessives Erhöhen des Leistungswertes um einen konstanten Summanden erreicht werden könnte, in dunkleren Bereichen als wesentlich schneller ändernd als in helleren erscheint. Während die Helligkeitsänderung im Bereich maximaler Helligkeit über einen gegebenen Zeitraum kaum zu erkennen ist, dimmt dieser Algorithmus im gleichen Zeitraum von $0\%$ auf scheinbar halbe Helligkeit.
+Effekt dieser nichtlinearen Kennlinie ist, dass eine einfache lineare Steigerung der abgestrahlten Leistung (wie sie bei einer nach dem oben beschriebenen Prinzip arbeitenden \gls{PWM} durch ein sukzessives Erhöhen des Leistungswertes um einen konstanten Summanden erreicht werden könnte) in dunkleren Bereichen als wesentlich schneller ändernd als in helleren erscheint. Während die Helligkeitsänderung im Bereich maximaler Helligkeit über einen gegebenen Zeitraum kaum zu erkennen ist, dimmt dieser Algorithmus im gleichen Zeitraum von $0\%$ auf scheinbar halbe Helligkeit.
 
 \begin{figure}
 \include{log_lut_gen.rb}
-\label{log_lut_gen}
 \caption{Ein Ruby-Script, dass auf Basis dieser Formel eine C-Headerdatei mit einer Lookup-Tabelle für alle Eingabehelligkeitswerte generiert}
+\label{log_lut_gen}
 \end{figure}
 
-Abhilfe für diesen Umstand lässt sich durch die Transformation eines rohen Helligkeitswertes, der der optisch wahrgenommenen Helligkeit entspricht, gemäß einer logarithmischen Skala auf den Wertebereich der \gls{PWM}. Dies kann z.B.\ nach folgender Formel geschehen:
+Abhilfe für diesen Umstand lässt sich durch die Transformation eines rohen Helligkeitswertes, der der optisch wahrgenommenen Helligkeit entspricht, gemäß einer logarithmischen Skala auf den Wertebereich der \gls{PWM} schaffen. Dies kann z.B.\ nach folgender Formel geschehen:
 \begin{equation}
 2^{\left(\frac{v}{2^n}\cdot k\right)}
 \end{equation}
@@ -196,7 +200,7 @@ n&:=\text{\glqq Breite\grqq\ des Eingabewertes in Bit}\\
 k&:=\text{\glqq Breite\grqq\  des Ausgabewertes in Bit}
 \end{align}
 Hierzu siehe auch \cite{MAXIM41,MAXIM57,SIART1}. Abbildung \ref{log_lut_gen} %Listing draus machen?
-zeigt ein Ruby-Script, dass ich für die Generierung der Logarithmischen Helligkeitstabellen verwende.
+zeigt ein Ruby-Script, das ich für die Generierung der logarithmischen Helligkeitstabellen verwende.
 %Diagramm
 
 \subsubsection{Umsetzung}
@@ -214,8 +218,8 @@ eine gemeinsame Anode besitzen.
 \includegraphics[scale=0.8]{images/led_driver_rev3_02.eps}%scale=2.2
 \label{driver_rev3}
 }
-\label{driver_revs}
 \caption{Die Designs der regelbaren Stromquelle}
+\label{driver_revs}
 \end{figure}
 
 Für Details der Pulsweitenmodulation ist das Datenblatt der AT90PWM-Reihe sehr hilfreich, da dieser speziell für solcherlei Einsatzzwecke designt wurde\cite{ATMEL2}. Die konkret verwendeten Controller sind in der ersten Version der Steuerplatine (Abbildung \ref{controller_rev1}) zwei ATMega8-AVRs, die jeweils über zwei 16-bit-PWM-Kanäle verfügen und die per serieller Schnittstelle (TTL-Pegel) koordiniert werden. Die Auflösung der PWM habe ich auf 16 Bit festgelegt, da die benötigte logarithmische Kurve bei einer 8-Bit-PWM erkennbare Abstufungen zeigt. Die Firmware unterstützt nach der im vorherigen Abschnitt %TODO NOTE: this could be incorrect since the arrangement could be changed.
@@ -232,8 +236,8 @@ niedrigen Helligkeitseinstellungen keine Stufen sichtbar sind.
 \includegraphics[width=8cm]{images/dual_core_controller_bottom_small.eps}
 \label{controller_rev1_bottom}
 }
-\label{controller_rev1}
 \caption{Revision 1 der Steuerplatine mit zwei AVR-Mikrocontrollern, die über einen seriellen Bus kommunizieren}
+\label{controller_rev1}
 \end{figure}
 
 \begin{figure}
@@ -246,21 +250,21 @@ niedrigen Helligkeitseinstellungen keine Stufen sichtbar sind.
 \includegraphics[width=8cm]{images/ethersex_bottom_small.eps}
 \label{buz2_converter_ethernet_bottom}
 }
-\label{buz2_converter_ethernet}
 \caption{Die Converterplatine von BUZ2 auf Ethernet}
+\label{buz2_converter_ethernet}
 \end{figure}
 
-Revision 2 der Prototypenhardware sieht einen ATMega16U4-Mikrocontroller vor, der über vier nutzbare 16-Bit-PWM-Kanäle verfügt und somit die Serielle Koordination beider Prozessoren überflüssig macht. Außerdem verfügt er neben zwei seriellen Schnittstellen (die zur Kommunikation mit anderen Systemen genutzt werden) auch über eine USB-Schnitstelle, sodass die Lampe auch direkt an einen modernen Computer angeschlossen werden kann.
+Revision 2 der Prototypenhardware sieht einen ATMega16U4-Mikrocontroller vor, der über vier nutzbare 16-Bit-PWM-Kanäle verfügt und somit die serielle Koordination von zwei Prozessoren überflüssig macht. Außerdem verfügt er neben zwei seriellen Schnittstellen (die zur Kommunikation mit anderen Systemen genutzt werden) auch über eine USB-Schnitstelle, sodass die Lampe auch direkt an einen modernen Computer angeschlossen werden kann.
 
 Für Revision 3 der Prototypenhardware habe ich eine rein \glqq digitale\grqq\ Stromregelung geplant (Abbildung \ref{driver_rev3}). Diese bestünde aus einem Step-Down-Wandler (Buck Converter)\cite{MAXIM24,MAXIM70,NATIONAL4,SPRUT1,MAXIM49},%Note: include the NATIONAL4 reference?, Glossary.
-der durch eine vom AVR generierte 16-Bit-PWM angesteuert wird. Der Strom durch die LED wird mit einem der in den AVR-µC integrierten 10-Bit-ADCs gemessen. Das Messignal wird aus dem Spannungsabfall über einen Shunt %glossary
+der durch eine vom AVR generierte 16-Bit-PWM angesteuert wird. Der Strom durch die LED wird mit einem der in den AVR-µC integrierten 10-Bit-ADCs gemessen. Das Messsignal wird aus dem Spannungsabfall über einen Shunt %glossary
 mit einem logarithmischen Differenzverstärker generiert\cite{MAXIM34}.
 
 \newglossaryentry{Halbduplex}{name={Halbduplex}, description={Zeitlich gemultiplexte Verwendung desselben Kommunikationskanals in Sende- und Empfangsrichtung}}
 \subsection{Kommunikationsprotokoll}
-Zur Kommunikation verschiedener Beleuchtungsmodule untereinander entwickelte ich einen Bus mit dem Namen BUZ2, der auf Basis eindeutiger 16-bittiger Geräteadressen die durch einen Master koordinierte, kollisionsfreie Kommunikation auf einem im \gls{Halbduplex} betriebenen RS-485-Bus\footnote{Auch EIA-485. Die elektrische Spezifikation eines differentiellen Bus der hohe Leitungslängen bei einer großen topologischen Flexibilität erlaubt und für den günstige Treiberbausteine verfügbar sind}\cite{MAXIM76} erlaubt. Das Kommunikationsprotokoll ist paketbasiert, wobei Pakete durch vom Master ausgesendete Escapesequenzen eingeleitet werden. Die Verwendung solcher Escapesequenzen erspart die Verwendung eines dedizierten Steuerkanals oder eines neunten Datenbits zur Übertragung von Kommandos. Ein an den Bus angeschlossenes Gerät kann eine Transaktion nicht selbstständig beginnen, stattdessen wird es periodisch vom Master adressiert. Nach dem Standardalgorithmus wird es so lange erneut adressiert, bis es keine zu übertragenden Daten mehr in der Queue hat. Bisher stellte dieses Verhalten kein Problem dar, sollte das Bussystem jedoch später für größere Netzwerke Verwendung finden, wäre hier ein intelligenterer Scheduling-Algorithmus angebracht. Die Datenintegrität wird durch eine CRC-16-Prüfsumme sichergesteellt. Kann der Empfänger ein Paket nicht als fehlerfrei empfangen quittieren, wird der Sendevorgang bis zum Erreichen einer einstellbaren maximalen Anzahl der Versuche wiederholt.
+Zur Kommunikation verschiedener Beleuchtungsmodule untereinander entwickelte ich einen Bus mit dem Namen BUZ2, der auf Basis eindeutiger 16-bittiger Geräteadressen die durch einen Master koordinierte, kollisionsfreie Kommunikation auf einem im \gls{Halbduplex} betriebenen RS-485-Bus\footnote{Auch EIA-485. Die elektrische Spezifikation eines differentiellen Bus der hohe Leitungslängen bei einer großen topologischen Flexibilität erlaubt und für den günstige Treiberbausteine verfügbar sind}\cite{MAXIM76} erlaubt. Das Kommunikationsprotokoll ist paketbasiert, wobei Pakete durch vom Master ausgesendete Escapesequenzen eingeleitet werden. Die Verwendung solcher Escapesequenzen erspart die Verwendung eines dedizierten Steuerkanals oder eines neunten Datenbits zur Übertragung von Kommandos. Ein an den Bus angeschlossenes Gerät kann eine Transaktion nicht selbstständig beginnen, stattdessen wird es periodisch vom Master adressiert. Nach dem Standardalgorithmus wird es so lange erneut adressiert, bis es keine zu übertragenden Daten mehr in der Queue hat. Bisher stellte dieses Verhalten kein Problem dar, sollte das Bussystem jedoch später für größere Netzwerke Verwendung finden, wäre hier ein intelligenterer Scheduling-Algorithmus angebracht. Die Datenintegrität wird durch eine CRC-16-Prüfsumme sichergestellt. Kann der Empfänger ein Paket nicht als fehlerfrei empfangen quittieren, wird der Sendevorgang bis zum Erreichen einer einstellbaren maximalen Anzahl der Versuche wiederholt\cite{LIBC1}.
 
-Die Software ist in C für AVR-Mikrocontroller geschrieben, sollte jedoch relativ einfach auf andere Plattformen portierbar sein insofern diese C oder Assembler bzw.\ eine andere Sprache, in die sich C einfach konvertieren lässt, wie z.B.\ Java unterstützen. Das Softwaremodul kann in jede Anwendung einkompiliert werden und es ist möglich, Kommandos selbst nach Belieben zu spezifizieren.
+Die Software ist in C für AVR-Mikrocontroller geschrieben, sollte jedoch relativ einfach auf andere Plattformen portierbar sein, sofern diese C oder Assembler bzw.\ eine andere Sprache, in die sich C einfach konvertieren lässt, wie z.B.\ Java, unterstützen. Das Softwaremodul kann in jede Anwendung einkompiliert werden und es ist möglich, Kommandos selbst nach Belieben zu spezifizieren.
 
 Der Master ist das einzige Device auf dem Bus, das eigenständig Transaktionen beginnen darf. Der Master gibt für die Pakete aller anderen Devices die \glqq Rahmen\grqq\ vor und adressiert reihum das jeweils sendende Device. Der Master übernimmt zudem die Entdeckung neuer Devices mit einem speziellem Paket, dem \glqq Discovery Packet\grqq. Die Daten werden mit einer State Machine geparsed.
 %TODO TO BE CONTINUED!
@@ -269,29 +273,29 @@ Der Master ist das einzige Device auf dem Bus, das eigenständig Transaktionen b
 %\subsubsection{Slave}
 
 \subsection{Kompatible Steuergeräte}
-Außer über das Brain-Computer-Interface kann die Lampe auch über ein Webinterface von einem normalen Computer oder einem internetfähigen Mobiltelefon gesteuert werden. Herkömmliche Lichtschalter können mit etwas Elektronik zum Anschluss an den BUZ2-Bus oder Ethernet zur Steuerung verwendet werden. Eine Converterplatine, die einen normalen Lichtschalter an den BUZ2-Bus anbindet ist klein genug machbar, um zusätzlich zu einem Schalter in eine standard-Unterputzdose zu passen. Wenn man an einen AVR mit BUZ2-Firmware einen IR-Empfänger anschließt könnte man sogar die IR-Codes gewöhnlicher Fernbedienungen zur Steuerung verwenden.
+Außer über das Brain-Computer-Interface kann die Lampe auch über ein Webinterface von einem normalen Computer oder einem internetfähigen Mobiltelefon gesteuert werden. Herkömmliche Lichtschalter können mit etwas Elektronik zum Anschluss an den BUZ2-Bus oder Ethernet zur Steuerung verwendet werden. Eine Converterplatine, die einen normalen Lichtschalter an den BUZ2-Bus anbindet, ist klein genug machbar, um zusätzlich zu einem Schalter in eine Standard-Unterputzdose zu passen. Wenn man an einen AVR mit BUZ2-Firmware einen IR-Empfänger anschließt könnte man sogar die IR-Codes gewöhnlicher Fernbedienungen zur Steuerung verwenden. Eine z.B.\ über die Signalstärke eines Mobiltelefons ermittelte Messung des Abstands des Benutzers zur Lampe könnte zum automatischen Ein- und Ausschalten verwendet werden.
 
 Ich habe bereits ein Interfaceboard für die Übersetzung zwischen BUZ2 und Ethernet auf Basis des ENC28J60-Ethernet-Controllers der Firma Microchip gebaut (Abbildung \ref{buz2_converter_ethernet}) \cite{MICROCHIP1}.
 %Color-chooser?
 \section{Grundlagen der Elektroenzephalographie}
 \subsection{Biologisch}
-Das menschliche Gehirn ist eine Ansammlung von schätzungsweise $10^{11}$ Nervenzellen, die über $10^{14}$ Synapsen untereinander vernetzt sind. Die Kommunikation der Neuronen geschieht mithilfe von elektrischen Impulsen, deren Amplitude um $100mV$ liegt und als \glqq Aktionsopotential\grqq\ bezeichnet wird. Die Summe der Aktionspotentiale der Nervenzellen in einzelnen Regionen des Gehirns hat eine periodische Charakteristik. Anhand der vorherrschenden Frequenzen und einiger charakteristischer Merkmale der Wellenform kann man Rückschlüsse auf den generellen kognitiven Zustand des untersuchten Gehirns ziehen. Anhand des Spektrums der Hirnströme lässt sich zwischen verschiedenen Schlafphasen und Wachheit unterscheiden\cite{WP14,WP15,WP16,WP17,WP18,WP19}.
+Das menschliche Gehirn ist eine Ansammlung von schätzungsweise $10^{11}$ Nervenzellen, die über $10^{14}$ Synapsen untereinander vernetzt sind. Die Kommunikation der Neuronen geschieht mithilfe von elektrischen Impulsen, deren Amplitude um $100mV$ liegt und als \glqq Aktionspotential\grqq\ bezeichnet wird. Die Summe der Aktionspotentiale der Nervenzellen in einzelnen Regionen des Gehirns hat eine periodische Charakteristik. Anhand der vorherrschenden Frequenzen und einiger charakteristischer Merkmale der Wellenform kann man Rückschlüsse auf den generellen kognitiven Zustand des untersuchten Gehirns ziehen. Anhand des Spektrums der Hirnströme lässt sich zwischen verschiedenen Schlafphasen und Wachheit unterscheiden\cite{WP14,WP15,WP16,WP17,WP18,WP19}.
 \subsection{Elektrisch}
-Hirnströme lassen sich als Summe der Aktionspotentiale von Millionen von Nervenezllen auf der Kopfhaut noch mit einer Amplitude von ca.\ $10$-$100\mu V$ messen\cite{MAYER1}. Die Messung solcher Spannungen ist kein \annot{allzu} einfaches Unterfangen. Problematisch an der Messung solch kleiner Hirnströme ist noch, dass durch den hohen scheinbaren Innenwiderstand die zur Messung nutzbare Stromstärke extrem gering ist ($nA$-Bereich) und somit der Innenwiderstand der Messschaltung extrem hoch sein muss.
+Hirnströme lassen sich als Summe der Aktionspotentiale von Millionen von Nervenzellen auf der Kopfhaut noch mit einer Amplitude von ca.\ $10$-$100\mu V$ messen\cite{MAYER1}. Die Messung solcher Spannungen ist kein allzu einfaches Unterfangen. Problematisch an der Messung solch kleiner Hirnströme ist noch, dass durch den hohen scheinbaren Innenwiderstand die zur Messung nutzbare Stromstärke extrem gering ist ($nA$-Bereich) und somit der Innenwiderstand der Messschaltung extrem hoch sein muss.
 
 %TODO gls entry
 \newglossaryentry{Fehlerstrom}{name={Fehlerstrom}, description={Unerwünschter, häufige gefährlicher, auf nicht intendiertem Wege fließender Strom, meist durch Lebewesen}}
-Da an besagter Messschaltung ein Mensch angeschlossen ist\footnote{dessen Schaltbild in \annot{eingängiger} Fachliteratur tatsächlich ein Strichmännchen ist} sind besondere---\annot{wiewohl} nicht unbedingt notwendige---Schutzschaltungen einzuplanen. In der konkreten Umsetzung sind das einige $100k\Omega$-Schutzwiderstände, die den maximalen \gls{Fehlerstrom} auf unbedenkliche Werte begrenzen. Im Schaltplan des EEGs sind diese als \glqq Patient Protection Resistors\grqq\ gekennzeichnet.
+Da an besagter Messschaltung ein Mensch angeschlossen ist\footnote{dessen Schaltbild in einschlägiger Fachliteratur tatsächlich ein Strichmännchen ist} sind besondere---wenn auch nicht unbedingt notwendige---Schutzschaltungen einzuplanen. In der konkreten Umsetzung sind das einige $100k\Omega$-Schutzwiderstände, die den maximalen \gls{Fehlerstrom} auf unbedenkliche Werte begrenzen. Im Schaltplan des EEGs sind diese als \glqq Patient Protection Resistors\grqq\ gekennzeichnet.
 
 %Schaltplan
 \newglossaryentry{ADC}{name={ADC}, description={Analog Digital Converter, Analog-Digital-Umsetzer, in deutscher Fachliteratur teilweise als ADU bezeichnet}, first={Analog-Digital-Wandler (ADC)}, firstplural={Analog-Digital-Umsetzer (ADCs)}, text={ADC}, plural={ADCs}, type=\acronymtype}
 Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signale zur Weiterverarbeitung umwandelt wird als \glqq analoges Front-End\grqq\ bezeichnet. Das analoge Front-End eines \gls{EEG} sieht prinzipiell folgendermaßen aus: Auf die Elektroden folgt zunächst eine Schutzschaltung, die verhindert, dass auf den Benutzer des Gerätes bedenkliche Spannungen respektive Ströme einwirken. Auf diese Schutzschaltung folgt der Vorverstärker, der das Messsignal konditioniert und auf ein zur Weiterverarbeitung fähiges Spannungslevel bei geringem Spannungsquelleninnenwiderstand transformiert. Im Vorverstärker integriert sowie unmittelbar dahinter folgen analoge Filter, die das Signal auf die für die weitere Analyse interessante Bandbreite reduzieren. Schließlich folgt noch der \gls{ADC}, durch den die abschließende Umwandlung des aufbereiteten Messsignals in eine Folge digitaler Werte erfolgt.\cite{LINEAR3,MAXIM3,MAXIM9,MAXIM21,MAXIM59,TEXAS12,LINEAR1,LINEAR2,LINEAR4,LINEAR5}
 
 \newglossaryentry{IC}{name={IC}, description={Integrated Circuit, Integrierter Schaltkreis, umgangssprachlich Mikrochip}, first={Mikrochip (IC)}, firstplural={Mikrochips (ICs)}, text={IC}, plural={ICs}, type=\acronymtype}
-\newglossaryentry{LSB}{name={LSB}, description={\annot{FIXME}}}
+\newglossaryentry{LSB}{name={LSB}, description={Bit bzw.\ Byte mit der geringsten Wertigkeit},type=\acronymtype}
 Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen. Nach dem Datenblatt des Herstellers liegt die maximal mögliche Auflösung bei einem PGA\footnote{PGA steht für \glqq Programmable Gain Amplifier\grqq\ und bezeichnet einen im ADC integrierten Verstärker mit digital einstellbarer Verstärkung}-Wert von 12 bei ca. 2 \gls{LSB}. Ich verwende in meinem Design die interne Referenz des ADS1194, der Anschluss einer externen Referenz ist aber noch möglich\cite{TEXAS1,TEXAS11,ANALOG6,LINEAR6,MAXIM6}.
 
-Je nach beobachtbarer Signalqualität werde ich externe Vorverstärker an den Elektroden sowie einen zusätzlicher ESD-Schutz ergänzen. Auch ein Analoger Filter vor dem Eingang des ADC ist unter Beachtung der Isolationswerte moderner Kondensatoren falls nötig durchaus machbar\cite{PHILIPS3,PHILIPS4,PHILIPS5,PHILIPS6,WIMA1,STM1,CHEEVER1,NATIONAL2,MAXIM45}.
+Je nach beobachtbarer Signalqualität werde ich externe Vorverstärker an den Elektroden sowie einen zusätzlicher ESD-Schutz ergänzen. Auch ein analoger Filter vor dem Eingang des ADC ist unter Beachtung der Isolationswerte moderner Kondensatoren durchaus machbar\cite{PHILIPS3,PHILIPS4,PHILIPS5,PHILIPS6,WIMA1,STM1,CHEEVER1,NATIONAL2,MAXIM45}.
 
 \begin{figure}
 \centering
@@ -304,8 +308,8 @@ Je nach beobachtbarer Signalqualität werde ich externe Vorverstärker an den El
 \begin{figure}
 \begin{center}
 \includegraphics{images/adc_schematic_02.eps}
-\label{adc_schematic}
 \caption{Der Schaltplan des EEG-Moduls}
+\label{adc_schematic}
 \end{center}
 \end{figure}
 \end{landscape}
@@ -313,15 +317,15 @@ Je nach beobachtbarer Signalqualität werde ich externe Vorverstärker an den El
 \begin{figure}
 \centering
 \includegraphics{images/adc_board_03.eps}%[width=128.6mm,height=107.77mm]
-\label{adc_board}
 \caption{Das Platinenlayout der EEG-Moduls}
+\label{adc_board}
 \end{figure}
 
 \newglossaryentry{Sampling}{name={Sampling}, description={Umwandlung eines kontinuierlichen, meist analogen Signals in diskrete Werte und -- im Falle eines ADC oder DAC -- die Umwandlung desselben in digitale Signale}}
-\newglossaryentry{Nyquist-Theorem}{name={Nyquist-Theorem}, description={}}
-\newglossaryentry{Offsetkorrektur}{name={Offsetkorrektur}, description={}}
+\newglossaryentry{Nyquist-Theorem}{name={Nyquist-Theorem}, description={Mit vollem Namen Nyquist-Shannonsches Abtasttheorem, Theorem, das besagt, dass ein Signal mit der Maximalfrequenz $f$ mit einer Frequenz größer als $2\cdot f$ abgetastet werden muss, um das Ursprungssignal ohne Informationsverlust wiederherstellen zu können\cite{WP20}}}
+\newglossaryentry{Offsetkorrektur}{name={Offsetkorrektur}, description={Korrekturmechanismus, bei dem ein konstanter, als \glqq Offset\grqq\ bezeichneter Summand vom Eingangssignal abgezogen wird.}}
 %TODO: gls entries
-Die \gls{Sampling}-Rate liegt im Bereich einiger hundert bis tausend $\frac{Sp}{s}$ während die höchste für die Messung signifikante Frequenz weit unter $100Hz$ liegt. Das \glslink{Nyquist-Theorem}{Nyquist-Shannonsche Abtasttheorem} ist somit erfüllt und es sind bei den gegebenen Frequenzen keine Probleme zu erwarten.
+Die \gls{Sampling}-Rate liegt im Bereich einiger hundert bis tausend $\frac{Sp}{s}$, während die höchste für die Messung signifikante Frequenz weit unter $100Hz$ liegt. Das \glslink{Nyquist-Theorem}{Nyquist-Shannonsche Abtasttheorem} ist somit erfüllt und es sind bei den gegebenen Frequenzen keine Probleme zu erwarten.
 Die Auflösung des \gls{ADC} ist mit 16 Bit groß genug, um \gls{Offsetkorrektur} und weitere Filtermaßnahmen in Software zu implementieren, wodurch keine weiteren analogen eingangsseitigen Filter notwendig sind.
 %Quelle: Nyquist
 
@@ -336,15 +340,16 @@ Die Auflösung des \gls{ADC} ist mit 16 Bit groß genug, um \gls{Offsetkorrektur
 %Incorporate a MAX5490 or similar calibrated R-R ladder as reference voltage divider
 %Input decoupling necessary?
 %END OF TODOS
-\newglossaryentry{FFT}{name={FFT}, description={FIXME}}
+\newglossaryentry{FFT}{name={FFT}, description={Fast Fourier Transformation, zu deutsch Schnelle Fouriertransformation}, type=\acronymtype}
+\newglossaryentry{FFTgls}{name={Fouriertransformation}, description={Effizienter Algorithmus zur Umwandlung eines Signals in den Frequenzraum durch Zerlegung in einzelne Frequenzen}}
 \subsection{Mathematisch und Informatisch}
 Die Auswertung der Messergebnisse kann auf verschiedene Arten geschehen. Da die Messelektronik noch nicht funktioniert, habe ich noch keinen Algorithmus umgesetzt.
-Grundsätzlich bietet es sich an, das Messignal z.B.\ mit einer \gls{FFT} in den Frequenzraum zu übertragen. Zur Erkennung der einzelnen Schlafphasen ist ein einfacher schwellwertbasierter Algorithmus möglich, jedoch erscheinen mir aus der automatischen Spracherkennung bekannte Methoden für den Fall interessant, dass dieser nicht die gewünschten Ergebnisse liefert
+Grundsätzlich bietet es sich an, das Messsignal z.B.\ mit einer \glslink{FFT}{FFT} in den Frequenzraum zu übertragen. Zur Erkennung der einzelnen Schlafphasen ist ein einfacher schwellwertbasierter Algorithmus möglich, jedoch erscheinen mir aus der automatischen Spracherkennung bekannte Methoden für den Fall interessant, dass dieser nicht die gewünschten Ergebnisse liefert
 \cite{WP2,WP11,WP12,WP13}.
 
-Eine FFT lässt sich bei nicht zu hoher Anzahl der Stützstellen sogar auf einem 8-Bit-AVR\footnote{RISC-Architektur, in den \glqq ATMega\grqq-Varianten mit in Hardware ausgeführtem Multiplizierer} bei den mit einem solchen Controller möglichen Taktfrequenzen (z.B.\ 16MHz) noch berechnen\cite{LOMBARD1}. Sollte die Rechenleistung des in das EEG-Board integrierten AVRs (der eine standardmäßig mit der in Abhängigkeit der Betriebsspannung maximal möglichen Taktfrequenz von 8MHz getaktete Low-Voltage-Version ist) nicht ausreichen, können die Daten über die Erweiterungsschnitstelle des Boards auch roh herausgeführt werden und in der Versuchsphase zunächst per serieller Schnittstelle z.B.\ an einen Computer weitergereicht werden oder im \glqq produktiven Einsatz\grqq\ z.B.\ über ein Bluetooth-Modul mit serieller Schnittstelle an die Außenwelt übertragen werden.
+Eine FFT lässt sich bei nicht zu hoher Anzahl der Stützstellen sogar auf einem 8-Bit-AVR\footnote{RISC-Architektur, in den \glqq ATMega\grqq-Varianten mit in Hardware ausgeführtem Multiplizierer} bei den mit einem solchen Controller möglichen Taktfrequenzen (z.B.\ 16MHz) noch berechnen\cite{LOMBARD1}. Sollte die Rechenleistung des in das EEG-Board integrierten AVRs (der eine standardmäßig mit der in Abhängigkeit der Betriebsspannung maximal möglichen Taktfrequenz von 8MHz getaktete Low-Voltage-Version ist) nicht ausreichen, können die Daten über die Erweiterungsschnittstelle des Boards auch roh herausgeführt werden und in der Versuchsphase zunächst per serieller Schnittstelle z.B.\ an einen Computer weitergereicht werden oder im \glqq produktiven Einsatz\grqq\ z.B.\ über ein Bluetooth-Modul mit serieller Schnittstelle an die Außenwelt übertragen werden.
 
-Für einen Computer stellt die Datenmenge von ca.\ 1kSps bei 1-4 Kanälen selbst bei rechenzeitintensiver Weiterverarbeitung keinerlei Probleme dar.
+Für einen Computer stellt die Datenmenge von ca.\ $1\frac{kSp}{s}$ bei 1-4 Kanälen selbst bei rechenzeitintensiver Weiterverarbeitung keinerlei Probleme dar.
 
 \section{Arbeitsprozess der Platinenherstellung}
 Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen machen. Ich verwendete für Version 1 der Prototypenboards der Lampe Loch- und Streifenrasterplatinen, da ich noch nie zuvor selbst Platinen hergestellt habe und angesichts der geringen Komplexität der Schaltungen auch nicht die Notwendigkeit dazu sah. Der EEG wird aufgrund der feinen Strukturen und der empfindlichen Signale auf einer eigenen Platine aufgebaut, die ich selbst herstelle. Ich verwende dazu doppelseitiges, fotopositiv beschichtetes Bungard-FR4-Basismaterial mit 35µm-Kupferauflage. Die bei diesem Material zu erwartenden Leckströme sind durch den Einsatz von Guards wahrscheinlich gering\cite{BUNGARD1,ANALOG1,ANALOG2,MAXIM56,MAXIM55,MAXIM52}.
@@ -352,7 +357,9 @@ Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen m
 \section{Glossar}
 %FIXME
 \glsaddall
-\printglossaries
+\printglossary[type=\acronymtype,title={Abkürzungen}]
+\printglossary[title={Begriffserklärungen}]
+%\printglossary[type=\acronymtype]
 \section{Literatur, Quellen etc.}
 \nocite{STELTZ1}
 \nocite{TEXAS2,TEXAS3,TEXAS4,TEXAS5,TEXAS6,TEXAS7,TEXAS8,TEXAS9}
@@ -364,14 +371,14 @@ Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen m
 \renewcommand{\refname}{}
 %TODO \footnotesize
 \bibliography{rgbulb}
-\section{Updates}
+\section{Updates und Quelltext}
 \begin{center}
 \Ovalbox{
 \begin{minipage}{11cm}
 \begin{center}
 \sffamily%\color{red}
 \vspace{2mm}
-Die jeweils aktuellte Version dieser Arbeit, der Quelltexte und der Hardwaredokumentation ist unter der Adresse 
+Die jeweils aktuellste Version dieser Arbeit, der Quelltexte und der Hardwaredokumentation ist unter der Adresse 
 \url{http://github.com/jaseg/RGBulb} zu finden. Die Repositories der einzelnen Unterprojekte sind unter den folgenden Adressen zu finden:
 \begin{description}
 \item \url{https://github.com/jaseg/OpenMind}
