@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  18 JAN 2011 20:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  18 JAN 2011 20:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -689,7 +689,7 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 66--68
  [2
 
 ]
-Overfull \hbox (16.36337pt too wide) in paragraph at lines 86--89
+Overfull \hbox (16.36337pt too wide) in paragraph at lines 88--91
 \OT1/cmr/m/n/12 Der mensch-li-che K[]orper ben[]otigt auf der cir-ca-dia-nen Rh
 yth-mik[] ba-siert in re-gelm[]a^^Yi-gen Abst[]anden
  []
@@ -713,7 +713,7 @@ File: images/led_driver_rev1_02.eps Graphic file (type eps)
 File: images/led_driver_rev3_02.eps Graphic file (type eps)
 
 <images/led_driver_rev3_02.eps>
-Underfull \hbox (badness 1371) in paragraph at lines 219--219
+Underfull \hbox (badness 1371) in paragraph at lines 221--221
 []\OT1/cmr/m/n/10 (b) Ein Ent-wurf von Re-vi-si-on 3 des LED-
  []
 
@@ -789,21 +789,21 @@ Overfull \hbox (173.26979pt too wide) in paragraph at lines 470--476
 
 [22])
 
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 390.
+LaTeX Warning: \oval, \circle, or \line size unavailable on input line 392.
 
 [23]
-Underfull \hbox (badness 10000) in alignment at lines 396--396
+Underfull \hbox (badness 10000) in alignment at lines 398--398
 [][] 
  []
 
 [24] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
 Here is how much of TeX's memory you used:
- 10680 strings out of 495022
- 153452 string characters out of 1181058
+ 10687 strings out of 495022
+ 153563 string characters out of 1181058
  256009 words of memory out of 3000000
- 13615 multiletter control sequences out of 15000+50000
- 15292 words of font info for 60 fonts, out of 3000000 for 9000
+ 13622 multiletter control sequences out of 15000+50000
+ 16921 words of font info for 67 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  53i,11n,92p,1562b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rgbulb.dvi (26 pages, 175468 bytes).
+Output written on rgbulb.dvi (26 pages, 176060 bytes).
