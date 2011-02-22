@@ -15,7 +15,8 @@
 \contentsline {subsection}{\numberline {4.2}Elektrisch}{11}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Mathematisch und Informatisch}{14}{subsection.4.3}
 \contentsline {section}{\numberline {5}Arbeitsprozess der Platinenherstellung}{15}{section.5}
+\contentsline {section}{\numberline {6}Fazit}{15}{section.6}
 \contentsline {section}{\numberline {A}Glossar}{15}{appendix.A}
-\contentsline {section}{\numberline {B}Literatur, Quellen etc.}{16}{appendix.B}
+\contentsline {section}{\numberline {B}Literatur, Quellen etc.}{17}{appendix.B}
 \contentsline {section}{\numberline {C}Updates und Quelltext}{24}{appendix.C}
 \contentsline {section}{\numberline {D}Changelog}{24}{appendix.D}

@@ -10,6 +10,7 @@
 %\usepackage{fourier}
 \usepackage{amssymb,amsmath}
 \usepackage{wasysym}
+\usepackage{picinpar}
 \usepackage{cite}
 \usepackage{fancybox}
 %\usepackage{marvosym}
@@ -55,7 +56,7 @@
 \title{Die intelligente Lampe}
 \begin{document}
 %\maketitle
-\newgeometry{left=1cm,right=1cm}
+\newgeometry{left=1cm,right=1cm,bottom=2.5cm}
 \thispagestyle{empty}
 \vspace*{4cm}
 {\center\colorbox{titlepagelightgray}{\begin{minipage}{\textwidth}\flushright{\parbox{12cm}{
@@ -66,12 +67,17 @@
 \end{minipage}}}
 \vspace{6cm}
 {\center\begin{minipage}{\textwidth}\flushleft{\textsf{Die Lampe der Zukunft muss nicht nur hell sein, sie muss auf den Benutzer reagieren und mit dem Benutzer interagieren. Das bisherige Konzept, dass eine Lampe nur einen Raum beleuchten soll, missachtet die Möglichkeiten, die eine intelligente Elektronik der Lampe bezüglich der Anpassung an den Nutzer und des Sparens von Energie bietet. Ich habe eine solche intelligente Lampe gebaut, die sich dem Benutzer anpasst und ihn an seinen Biorhythmus angepasst wecken kann, sich automatisch abhängig von seiner Präsenz ein- und ausschaltet und deren Lichtfarbe sich dem Harmoniebedürfnis des Benutzers anpassen lässt.}}\end{minipage}}
+\vfill
+{\center\copyright 2011 by Jan Sebastian Götte -- released under CC-BY-SA\\
+\vspace*{2mm}\includegraphics{images/cc-by-sa.eps}\hspace{2mm}}
 \restoregeometry
 \thispagestyle{empty}
 \newpage
 \tableofcontents
 \vspace*{1cm}
-\noindent\textsf{\textcolor{red}{\large Die aktuellste Version dieser Arbeit ist stets online unter\\\url{http://github.com/jaseg/RGBulb} zu finden.}}
+\begin{center}
+\textsf{\textcolor{red}{\large Die aktuellste Revision dieser Arbeit ist stets online unter\\\url{http://github.com/jaseg/RGBulb} zu finden.}}
+\end{center}
 \newpage
 \pagenumbering{arabic}
 \hyphenation{kog-ni-tiv}
@@ -85,7 +91,7 @@ ist ein solcher \glqq Lichtwecker\grqq\ das gesündeste und sanfteste und produk
 %Unzufrieden mit diesem eingeschränkten Design plante ich zur Steuerung des Lichtweckers ein Brain-Computer-Interface, in diesem Fall einen \glslink{EEG}{Elektroenzephalographen}. Dieser ist ein Gerät zum Messen der Hirnströme des schlafenden.
 %Auf Basis jener Messungen kann mit einem Prozessor dezenter Rechenleistung der Schlaf- bzw.\ Wachheitszustand des Trägers deduziert werden, was den Rückkanal bietet, über den keine der bisher auf dem Markt befindlichen Lösungen verfügt.
 \section{Biologische Grundlagen}
-Der menschliche Körper benötigt auf der circadianen Rhythmik\footnote{Biologischer innerer Rhythmus mit einer Periode von 24 Stunden} basiert in regelmäßigen Abständen Schlaf. Die benötigte Schlafdauer ist weitgehend konstant und wenig beeinflussbar, es ist lediglich eine gewisse Synchronisation des Rhythmus mit dem natürlichen Tag-Nacht-Rhythmus festzustellen. Das Schlafbedürfnis ist vom Hormonhaushalt abhängig\cite{WP9}, der wiederum seinerseits vom Tageslicht beeinflusst wird. Die maximale spektrale Empfindlichkeit dieser biologischen Mechanismen liegt im blauen Wellenlängenbereich.
+Der menschliche Körper benötigt auf der circadianen Rhythmik\footnote{Biologischer innerer Rhythmus mit einer Periode von 24 Stunden} basiert in regelmäßigen Ab-stän-den Schlaf. Die benötigte Schlafdauer ist weitgehend konstant und wenig beeinflussbar, es ist lediglich eine gewisse Synchronisation des Rhythmus mit dem natürlichen Tag-Nacht-Rhythmus festzustellen. Das Schlafbedürfnis ist vom Hormonhaushalt abhängig\cite{WP9}, der wiederum seinerseits vom Tageslicht beeinflusst wird. Die maximale spektrale Empfindlichkeit dieser biologischen Mechanismen liegt im blauen Wellenlängenbereich.
 \cite{WP5, WP6, WP7, WP8}
 Durch die Stimulation mit einem sanft heller werdenden Licht kann die Hormonproduktion und somit der Tagesrhythmus in gewissen Grenzen verschoben werden---zumindest jedoch ist Licht (selbst wenn es blinkt und flackert) ein angenehmerer Reiz als ein schriller Ton.
 
@@ -354,6 +360,10 @@ Für einen Computer stellt die Datenmenge von ca.\ $1\frac{kSp}{s}$ bei 1-4 Kan�
 
 \section{Arbeitsprozess der Platinenherstellung}
 Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen machen. Ich verwendete für Version 1 der Prototypenboards der Lampe Loch- und Streifenrasterplatinen, da ich noch nie zuvor selbst Platinen hergestellt habe und angesichts der geringen Komplexität der Schaltungen auch nicht die Notwendigkeit dazu sah. Der EEG wird aufgrund der feinen Strukturen und der empfindlichen Signale auf einer eigenen Platine aufgebaut, die ich selbst herstelle. Ich verwende dazu doppelseitiges, fotopositiv beschichtetes Bungard-FR4-Basismaterial mit 35µm-Kupferauflage. Die bei diesem Material zu erwartenden Leckströme sind durch den Einsatz von Guards wahrscheinlich gering\cite{BUNGARD1,ANALOG1,ANALOG2,MAXIM56,MAXIM55,MAXIM52}.
+
+\section{Fazit}
+Die Arbeit an diesem Projekt ist noch nicht abgeschlossen, und wie bereits unter dem Inhaltsverzeichnis angemerkt werde ich auch an dieser Form der Dokumentation weiterarbeiten. Als nächstes werde ich die Hardware bauen und debuggen sowie die Firmware schreiben.
+
 \appendix
 \section{Glossar}
 %FIXME
@@ -374,12 +384,12 @@ Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen m
 \bibliography{rgbulb}
 \section{Updates und Quelltext}
 \begin{center}
-\Ovalbox{
+
 \begin{minipage}{11cm}
 \begin{center}
 \sffamily%\color{red}
 \vspace{2mm}
-Die jeweils aktuellste Version dieser Arbeit, der Quelltexte und der Hardwaredokumentation ist unter der Adresse 
+Die jeweils aktuellste Revision dieser Arbeit, der Quelltexte und der Hardwaredokumentation ist unter der Adresse 
 \url{http://github.com/jaseg/RGBulb} zu finden. Die Repositories der einzelnen Unterprojekte sind unter den folgenden Adressen zu finden:
 \begin{description}
 \item \url{https://github.com/jaseg/OpenMind}
@@ -389,11 +399,12 @@ Die jeweils aktuellste Version dieser Arbeit, der Quelltexte und der Hardwaredok
 \vspace{2mm}
 \end{center}
 \end{minipage}
-}
+
 \end{center}
 \section{Changelog}
 \begin{tabularx}{\textwidth}{l|l}
 \textbf{Version}&\textbf{Anmerkungen}\\\hline
-0.1&Arbeitsversion
+0.1&Arbeitsversion\\
+0.2&BLL Abgabe
 \end{tabularx}
 \end{document}

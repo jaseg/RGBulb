@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  18 JAN 2011 20:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2011.2.18)  22 FEB 2011 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -163,7 +163,49 @@ Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(/usr/share/texmf-texlive/tex/latex/cite/cite.sty
+(/usr/share/texmf-texlive/tex/latex/picinpar/picinpar.sty
+Pictures in Paragraphs. Version 1.2a, July 13, 1993
+\br=\count103
+\bl=\count104
+\na=\count105
+\nb=\count106
+\tcdsav=\count107
+\tcl=\count108
+\tcd=\count109
+\tcn=\count110
+\cumtcl=\count111
+\cumpartcl=\count112
+\lftside=\dimen121
+\rtside=\dimen122
+\hpic=\dimen123
+\vpic=\dimen124
+\strutilg=\dimen125
+\picwd=\dimen126
+\topheight=\dimen127
+\ilg=\dimen128
+\lpic=\dimen129
+\lwindowsep=\dimen130
+\rwindowsep=\dimen131
+\cumpar=\dimen132
+\twa=\toks27
+\la=\toks28
+\ra=\toks29
+\ha=\toks30
+\pictoc=\toks31
+\rawtext=\box29
+\holder=\box30
+\windowbox=\box31
+\wartext=\box32
+\finaltext=\box33
+\aslice=\box34
+\bslice=\box35
+\wbox=\box36
+\wstrutbox=\box37
+\picbox=\box38
+\waslice=\box39
+\wbslice=\box40
+\fslice=\box41
+) (/usr/share/texmf-texlive/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 285.
 LaTeX Info: Redefining \nocite on input line 356.
 Package: cite 2009/08/29  v 5.2
@@ -172,13 +214,13 @@ Package: cite 2009/08/29  v 5.2
 Package: fancybox 2000/09/19 1.3
 
 Style option: `fancybox' v1.3 <2000/09/19> (tvz)
-\@fancybox=\box29
-\shadowsize=\dimen121
-\@Sbox=\box30
-\do@VerbBox=\toks27
-\the@fancyput=\toks28
-\this@fancyput=\toks29
-\EndVerbatimTokens=\toks30
+\@fancybox=\box42
+\shadowsize=\dimen133
+\@Sbox=\box43
+\do@VerbBox=\toks32
+\the@fancyput=\toks33
+\this@fancyput=\toks34
+\EndVerbatimTokens=\toks35
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read1
 ) (/usr/share/texmf-texlive/tex/latex/glossaries/base/glossaries.sty
@@ -191,9 +233,9 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 Package: xkeyval 2008/08/13 v2.6a package option processing (HA)
 
 (/usr/share/texmf-texlive/tex/generic/xkeyval/xkeyval.tex
-\XKV@toks=\toks31
-\XKV@tempa@toks=\toks32
-\XKV@depth=\count103
+\XKV@toks=\toks36
+\XKV@tempa@toks=\toks37
+\XKV@depth=\count113
 File: xkeyval.tex 2008/08/13 v2.6a key=value parser (HA)
 ))
 (/usr/share/texmf-texlive/tex/latex/glossaries/base/mfirstuc.sty
@@ -202,8 +244,8 @@ Package: mfirstuc 2008/12/22 v1.03 (NLCT)
 (/usr/share/texmf-texlive/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-\gls@level=\count104
-\@gls@tmpb=\toks33
+\gls@level=\count114
+\@gls@tmpb=\toks38
 \gls@tmplen=\skip46
 \istfile=\write4
 
@@ -223,17 +265,17 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTright=\skip49
 \LTpre=\skip50
 \LTpost=\skip51
-\LTchunksize=\count105
-\LTcapwidth=\dimen122
-\LT@head=\box31
-\LT@firsthead=\box32
-\LT@foot=\box33
-\LT@lastfoot=\box34
-\LT@cols=\count106
-\LT@rows=\count107
-\c@LT@tables=\count108
-\c@LT@chunks=\count109
-\LT@p@ftn=\toks34
+\LTchunksize=\count115
+\LTcapwidth=\dimen134
+\LT@head=\box44
+\LT@firsthead=\box45
+\LT@foot=\box46
+\LT@lastfoot=\box47
+\LT@cols=\count116
+\LT@rows=\count117
+\c@LT@tables=\count118
+\c@LT@chunks=\count119
+\LT@p@ftn=\toks39
 )
 \glsdescwidth=\skip52
 \glspagelistwidth=\skip53
@@ -243,88 +285,88 @@ Package: glossary-super 2009/05/30 v2.01 (NLCT)
 
 (/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count110
-\ST@wd=\dimen123
+\c@tracingst=\count120
+\ST@wd=\dimen135
 \ST@rightskip=\skip54
 \ST@leftskip=\skip55
 \ST@parfillskip=\skip56
-\ST@pageleft=\dimen124
-\ST@headht=\dimen125
-\ST@tailht=\dimen126
-\ST@pagesofar=\dimen127
-\ST@pboxht=\dimen128
-\ST@lineht=\dimen129
-\ST@stretchht=\dimen130
-\ST@prevht=\dimen131
-\ST@toadd=\dimen132
-\ST@dimen=\dimen133
-\ST@pbox=\box35
+\ST@pageleft=\dimen136
+\ST@headht=\dimen137
+\ST@tailht=\dimen138
+\ST@pagesofar=\dimen139
+\ST@pboxht=\dimen140
+\ST@lineht=\dimen141
+\ST@stretchht=\dimen142
+\ST@prevht=\dimen143
+\ST@toadd=\dimen144
+\ST@dimen=\dimen145
+\ST@pbox=\box48
 )))
 (/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
 
 (/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen134
-\extrarowheight=\dimen135
-\NC@list=\toks35
+\col@sep=\dimen146
+\extrarowheight=\dimen147
+\NC@list=\toks40
 \extratabsurround=\skip57
 \backup@length=\skip58
 )
-\TX@col@width=\dimen136
-\TX@old@table=\dimen137
-\TX@old@col=\dimen138
-\TX@target=\dimen139
-\TX@delta=\dimen140
-\TX@cols=\count111
-\TX@ftn=\toks36
+\TX@col@width=\dimen148
+\TX@old@table=\dimen149
+\TX@old@col=\dimen150
+\TX@target=\dimen151
+\TX@delta=\dimen152
+\TX@cols=\count121
+\TX@ftn=\toks41
 )
 (/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count112
-\mult@box=\box36
-\multicol@leftmargin=\dimen141
-\c@unbalance=\count113
-\c@collectmore=\count114
-\doublecol@number=\count115
-\multicoltolerance=\count116
-\multicolpretolerance=\count117
-\full@width=\dimen142
-\page@free=\dimen143
-\premulticols=\dimen144
-\postmulticols=\dimen145
+\c@tracingmulticols=\count122
+\mult@box=\box49
+\multicol@leftmargin=\dimen153
+\c@unbalance=\count123
+\c@collectmore=\count124
+\doublecol@number=\count125
+\multicoltolerance=\count126
+\multicolpretolerance=\count127
+\full@width=\dimen154
+\page@free=\dimen155
+\premulticols=\dimen156
+\postmulticols=\dimen157
 \multicolsep=\skip59
 \multicolbaselineskip=\skip60
-\partial@page=\box37
-\last@line=\box38
-\mult@rightbox=\box39
-\mult@grightbox=\box40
-\mult@gfirstbox=\box41
-\mult@firstbox=\box42
-\@tempa=\box43
-\@tempa=\box44
-\@tempa=\box45
-\@tempa=\box46
-\@tempa=\box47
-\@tempa=\box48
-\@tempa=\box49
-\@tempa=\box50
-\@tempa=\box51
-\@tempa=\box52
-\@tempa=\box53
-\@tempa=\box54
-\@tempa=\box55
+\partial@page=\box50
+\last@line=\box51
+\mult@rightbox=\box52
+\mult@grightbox=\box53
+\mult@gfirstbox=\box54
+\mult@firstbox=\box55
 \@tempa=\box56
 \@tempa=\box57
 \@tempa=\box58
 \@tempa=\box59
-\c@columnbadness=\count118
-\c@finalcolumnbadness=\count119
-\last@try=\dimen146
-\multicolovershoot=\dimen147
-\multicolundershoot=\dimen148
-\mult@nat@firstbox=\box60
-\colbreak@box=\box61
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\c@columnbadness=\count128
+\c@finalcolumnbadness=\count129
+\last@try=\dimen158
+\multicolovershoot=\dimen159
+\multicolundershoot=\dimen160
+\mult@nat@firstbox=\box73
+\colbreak@box=\box74
 )
 (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
@@ -336,9 +378,9 @@ O)
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
-\@linkdim=\dimen149
-\Hy@linkcounter=\count120
-\Hy@pagecounter=\count121
+\@linkdim=\dimen161
+\Hy@linkcounter=\count130
+\Hy@pagecounter=\count131
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
@@ -354,7 +396,7 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )
-(/etc/texmf/tex/latex/config/hyperref.cfg
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 (/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
@@ -403,10 +445,10 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count122
-\Field@Width=\dimen150
-\Fld@charsize=\dimen151
-\Field@toks=\toks37
+\Fld@menulength=\count132
+\Field@Width=\dimen162
+\Fld@charsize=\dimen163
+\Field@toks=\toks42
 Package hyperref Info: Hyper figures OFF on input line 4377.
 Package hyperref Info: Link nesting OFF on input line 4382.
 Package hyperref Info: Hyper index ON on input line 4385.
@@ -418,8 +460,8 @@ Package hyperref Info: PDF/A mode OFF on input line 4407.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count123
-\c@Item=\count124
+\Hy@abspage=\count133
+\c@Item=\count134
 )
 *hyperref using driver hdvips*
 (/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
@@ -427,24 +469,24 @@ File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
 File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
-\pdf@docset=\toks38
-\pdf@box=\box62
-\pdf@toks=\toks39
-\pdf@defaulttoks=\toks40
-\Fld@listcount=\count125
+\pdf@docset=\toks43
+\pdf@box=\box75
+\pdf@toks=\toks44
+\pdf@defaulttoks=\toks45
+\Fld@listcount=\count135
 ))
 (/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip61
 \subfigcapskip=\skip62
-\subfigcaptopadj=\dimen152
+\subfigcaptopadj=\dimen164
 \subfigbottomskip=\skip63
-\subfigcapmargin=\dimen153
+\subfigcapmargin=\dimen165
 \subfiglabelskip=\skip64
-\c@subfigure=\count126
-\c@lofdepth=\count127
-\c@subtable=\count128
-\c@lotdepth=\count129
+\c@subfigure=\count136
+\c@lofdepth=\count137
+\c@subtable=\count138
+\c@lotdepth=\count139
 
 ****************************************
 * Local config file subfigure.cfg used *
@@ -455,8 +497,8 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 )
 (/usr/share/texmf-texlive/tex/latex/todo/todo.sty
 Package: todo 2002/07/25 v1.1 To-do list (Federico Garcia)
-\@todotoks=\toks41
-\c@todo=\count130
+\@todotoks=\toks46
+\c@todo=\count140
 )
 (/usr/share/texmf-texlive/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Landscape pages in PDF (HO)
@@ -496,42 +538,43 @@ Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
 (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
-\Gin@req@height=\dimen154
-\Gin@req@width=\dimen155
+\Gin@req@height=\dimen166
+\Gin@req@width=\dimen167
 )
-\epsfxsize=\dimen156
-\epsfysize=\dimen157
+\epsfxsize=\dimen168
+\epsfysize=\dimen169
 )
 (/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count131
+\FV@CodeLineNo=\count141
 \FV@InFile=\read2
-\FV@TabBox=\box63
-\c@FancyVerbLine=\count132
-\FV@StepNumber=\count133
+\FV@TabBox=\box76
+\c@FancyVerbLine=\count142
+\FV@StepNumber=\count143
 \FV@OutFile=\write5
 ) (/usr/share/texmf-texlive/tex/latex/caption/caption.sty
 Package: caption 2009/10/09 v3.1k Customizing captions (AR)
 
 (/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
 Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
-\captionmargin=\dimen158
-\captionmargin@=\dimen159
-\captionwidth=\dimen160
-\caption@indent=\dimen161
-\caption@parindent=\dimen162
-\caption@hangindent=\dimen163
+\captionmargin=\dimen170
+\captionmargin@=\dimen171
+\captionwidth=\dimen172
+\caption@indent=\dimen173
+\caption@parindent=\dimen174
+\caption@hangindent=\dimen175
 )
-\c@ContinuedFloat=\count134
+\c@ContinuedFloat=\count144
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
 (/usr/share/texmf-texlive/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2008/03/28 v1.2 longtable captions (AR)
 )
+Package caption Info: picinpar package is loaded.
 Package caption Info: subfigure package is loaded.
 Package caption Info: supertabular package is loaded.
 )
@@ -542,28 +585,28 @@ Package caption Info: supertabular package is loaded.
 \glo@main@file=\write6
 \openout6 = `rgbulb.glo'.
 
-Package glossaries Info: Writing glossary file rgbulb.glo on input line 51.
+Package glossaries Info: Writing glossary file rgbulb.glo on input line 52.
 \glo@acronym@file=\write7
 \openout7 = `rgbulb.acn'.
 
-Package glossaries Info: Writing glossary file rgbulb.acn on input line 51.
+Package glossaries Info: Writing glossary file rgbulb.acn on input line 52.
  (./rgbulb.aux (./log_lut_gen.rb.aux))
 \openout1 = `rgbulb.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 (/usr/share/texmf-texlive/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
@@ -602,23 +645,23 @@ File: ucsencs.def 2003/11/29 Fixes to fontencodings LGR, T3
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring OFF on input line 57.
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count145
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
  (./rgbulb.out)
 (./rgbulb.out)
 \@outlinefile=\write8
 \openout8 = `rgbulb.out'.
 
-\AtBeginShipoutBox=\box64
+\AtBeginShipoutBox=\box77
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 *geometry* verbose mode - [ newgeometry ] result:
@@ -628,11 +671,11 @@ Package caption Info: End \AtBeginDocument code.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
+* v-part:(T,H,B)=(101.40665pt, 672.50832pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
 * \textwidth=540.60239pt
-* \textheight=591.5302pt
+* \textheight=672.50832pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-7.86334pt
@@ -656,25 +699,33 @@ Package caption Info: End \AtBeginDocument code.
  (/usr/share/texmf-texlive/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2004/10/17 UCS: Unicode data U+0000..U+00FF
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 66.
+LaTeX Font Info:    Try loading font information for U+msa on input line 67.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 66.
+LaTeX Font Info:    Try loading font information for U+msb on input line 67.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 66.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 67.
 
 (/usr/share/texmf-texlive/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
-Overfull \hbox (6.0pt too wide) in paragraph at lines 66--68
+Overfull \hbox (6.0pt too wide) in paragraph at lines 67--69
 [][][][][][][]
  []
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+(/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
+File: images/cc-by-sa.eps Graphic file (type eps)
+ <images/cc-by-sa.eps>
 [1
 
 
@@ -688,32 +739,26 @@ Overfull \hbox (6.0pt too wide) in paragraph at lines 66--68
 
  [2
 
-]
-Overfull \hbox (16.36337pt too wide) in paragraph at lines 88--91
-\OT1/cmr/m/n/12 Der mensch-li-che K[]orper ben[]otigt auf der cir-ca-dia-nen Rh
-yth-mik[] ba-siert in re-gelm[]a^^Yi-gen Abst[]anden
- []
-
-[1]
+] [1]
 File: images/led_closeup.eps Graphic file (type eps)
  <images/led_closeup.eps>
 File: images/diode-iv-curve_bw.eps Graphic file (type eps)
- <images/diode-iv-curve_bw.eps> [2] [3]
-File: images/pwm_schematic.eps Graphic file (type eps)
 
-<images/pwm_schematic.eps> [4]
+<images/diode-iv-curve_bw.eps> [2] [3]
+File: images/pwm_schematic.eps Graphic file (type eps)
+ <images/pwm_schematic.eps> [4]
 File: images/delta-sigma-adc.eps Graphic file (type eps)
- <images/delta-sigma-adc.eps>
+
+<images/delta-sigma-adc.eps>
 \openout2 = `log_lut_gen.rb.aux'.
 
-
-(./log_lut_gen.rb.tex) [5]
+ (./log_lut_gen.rb.tex) [5]
 File: images/led_driver_rev1_02.eps Graphic file (type eps)
- <images/led_driver_rev1_02.eps>
-File: images/led_driver_rev3_02.eps Graphic file (type eps)
 
-<images/led_driver_rev3_02.eps>
-Underfull \hbox (badness 1371) in paragraph at lines 221--221
+<images/led_driver_rev1_02.eps>
+File: images/led_driver_rev3_02.eps Graphic file (type eps)
+ <images/led_driver_rev3_02.eps>
+Underfull \hbox (badness 1371) in paragraph at lines 227--227
 []\OT1/cmr/m/n/10 (b) Ein Ent-wurf von Re-vi-si-on 3 des LED-
  []
 
@@ -741,13 +786,13 @@ File: images/adc_board_03.eps Graphic file (type eps)
 <images/adc_board_03.eps> [14
 
 
-] (./rgbulb.acr) (./rgbulb.gls
+] (./rgbulb.acr [15]) (./rgbulb.gls
 Overfull \hbox (10.21808pt too wide) in paragraph at lines 6--9
 []\OT1/cmr/m/n/12 Unerw[]unsch-ter, h[]aufi-ge gef[]ahr-li-cher, auf nicht in-t
 en-dier-tem We-ge flie-^^Yen-der Strom,
  []
 
-[15]) (./rgbulb.bbl [16]
+) (./rgbulb.bbl [16]
 Overfull \hbox (12.71971pt too wide) in paragraph at lines 69--74
 [][][][]\OT1/cmr/m/n/12 . 
  []
@@ -769,15 +814,7 @@ Overfull \hbox (117.69476pt too wide) in paragraph at lines 347--352
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
-[20]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 439.
-
- (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
-File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 439.
- [21]
+[20] [21]
 Overfull \hbox (154.74478pt too wide) in paragraph at lines 463--468
 [][][][]\OT1/cmr/m/n/12 . 
  []
@@ -787,23 +824,19 @@ Overfull \hbox (173.26979pt too wide) in paragraph at lines 470--476
 [][][][]\OT1/cmr/m/n/12 . 
  []
 
-[22])
-
-LaTeX Warning: \oval, \circle, or \line size unavailable on input line 392.
-
-[23]
-Underfull \hbox (badness 10000) in alignment at lines 398--398
+[22]) [23]
+Underfull \hbox (badness 10000) in alignment at lines 409--409
 [][] 
  []
 
 [24] (./rgbulb.aux (./log_lut_gen.rb.aux)) ) 
 Here is how much of TeX's memory you used:
- 10687 strings out of 495022
- 153563 string characters out of 1181058
- 256009 words of memory out of 3000000
- 13622 multiletter control sequences out of 15000+50000
+ 10753 strings out of 495022
+ 154249 string characters out of 1181058
+ 258970 words of memory out of 3000000
+ 13683 multiletter control sequences out of 15000+50000
  16921 words of font info for 67 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  53i,11n,92p,1562b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on rgbulb.dvi (26 pages, 176060 bytes).
+Output written on rgbulb.dvi (26 pages, 176968 bytes).
