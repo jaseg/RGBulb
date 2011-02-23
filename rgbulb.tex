@@ -8,6 +8,7 @@
 \usepackage{ngerman} 
 \usepackage{setspace}
 %\usepackage{fourier}
+%\usepackage{times}
 \usepackage{amssymb,amsmath}
 \usepackage{wasysym}
 \usepackage{picinpar}
@@ -20,6 +21,7 @@
 \usepackage[dvips]{hyperref}
 \usepackage{subfigure}
 %\usepackage[pdftex]{graphicx,color}
+\usepackage{euler}
 \usepackage{todo}
 \usepackage{pdflscape}
 \usepackage{color}
@@ -68,8 +70,13 @@
 \vspace{6cm}
 {\center\begin{minipage}{\textwidth}\flushleft{\textsf{Die Lampe der Zukunft muss nicht nur hell sein, sie muss auf den Benutzer reagieren und mit dem Benutzer interagieren. Das bisherige Konzept, dass eine Lampe nur einen Raum beleuchten soll, missachtet die Möglichkeiten, die eine intelligente Elektronik der Lampe bezüglich der Anpassung an den Nutzer und des Sparens von Energie bietet. Ich habe eine solche intelligente Lampe gebaut, die sich dem Benutzer anpasst und ihn an seinen Biorhythmus angepasst wecken kann, sich automatisch abhängig von seiner Präsenz ein- und ausschaltet und deren Lichtfarbe sich dem Harmoniebedürfnis des Benutzers anpassen lässt.}}\end{minipage}}
 \vfill
-{\center\copyright 2011 by Jan Sebastian Götte -- released under CC-BY-SA\\
-\vspace*{2mm}\includegraphics{images/cc-by-sa.eps}\hspace{2mm}}
+\begin{center}
+\textsf{\copyright 2011 by Jan Sebastian Götte -- released under CC-BY-SA}
+
+\vspace*{2mm}
+
+\includegraphics{images/cc-by-sa.eps}%\hspace{2mm}
+\end{center}
 \restoregeometry
 \thispagestyle{empty}
 \newpage
@@ -85,17 +92,17 @@
 \newacronym{EEG}{EEG}{Elektroenzephalograph}
 \section{Konzept}
 %In meinem Alltag sehe ich mich mit einem meiner Meinung unangenehmen Tagesrhythmus konfrontiert. Die von Schulseiten forcierte Zeit des Aufstehens liegt zwischen 06:00 ME(S)Z und 06:30 ME(S)Z. Angesichts der unangenehmen Erfahrung, für die mein Wecker jeden Morgen sorgt sowie der Unzulänglichkeit des Behelfs mit 1,3,7-Trimethyl-3,7-dihydro-2H-purin-2,6-dion\cite{WP4}, war ich auf der Suche nach alternativen Weckmöglichkeiten. 
-Der normale Tagesrhythmus eines Schülers unserer Schule beginnt um 6 Uhr morgens mit dem Aus-dem-Bett-zum-Frühstück-wälzen. Da ich damit bisher hauptsächlich eher negative Erfahrungen gemacht habe, überlegte ich, was wohl die am wenigsten unangenehme Möglichkeit ist, morgens aufzuwachen und kam zu dem Schluss, dass ein Wecken durch Licht, besonders durch solches, das langsam heller wird, am ehestem dem natürlichen Tagesrhythmus entspricht. Wenn man der Werbung glauben schenkt (\cite{WERBUNG1}\cite{WERBUNG2}\cite{WERBUNG3}\cite{WERBUNG4}\cite{WERBUNG5}\cite{WERBUNG6}\cite{WERBUNG7}\cite{WERBUNG8})
+Der normale Tagesrhythmus eines Schülers unserer Schule beginnt um 6 Uhr morgens mit dem Aus-dem-Bett-zum-Frühstück-Wälzen. Da ich damit bisher hauptsächlich eher negative Erfahrungen gemacht habe, überlegte ich, was wohl die am wenigsten unangenehme Möglichkeit ist, morgens aufzuwachen und kam zu dem Schluss, dass ein Wecken durch Licht, besonders durch solches, das langsam heller wird, am ehestem mit dem natürlichen Tagesrhythmus konform ist. Wenn man der Werbung glauben schenkt (\cite{WERBUNG1}\cite{WERBUNG2}\cite{WERBUNG3}\cite{WERBUNG4}\cite{WERBUNG5}\cite{WERBUNG6}\cite{WERBUNG7}\cite{WERBUNG8})
 ist ein solcher \glqq Lichtwecker\grqq\ das gesündeste und sanfteste und produktivitätsförderndste Weckmittel auf Erden\cite{SIESTA1}. Nicht gewillt, eine fertige, teure und wahrscheinlich suboptimale sowie schwer anpassbare Lösung zu kaufen, die noch nicht einmal über einen Ethernetanschluss verfügt, machte ich mich an die Planung einer eigenen Konfiguration. Der zweite grundlegende Teil meines Konzeptes basiert auf dem Einfall, dass ein solcher Lichtwecker in der herkömmlichen Bauweise nur eine unidirektionale Kommunikation möglich macht, die nämlich, dass der Lichtwecker durch die Modulation der Lichtquelle auf den Schlafzustand des Schlafenden Einfluss nimmt. Damit der Wecker nicht nur sanft weckt, sondern sich auch intelligent an meinen Schlaf anpasst, wird der bei keiner mir bekannten kommerziell verfügbaren Lösung vorhandene Rückkanal durch eine Schlafphasendetektion gebildet. Ich entschied mich dabei für eine Detektion anhand eines \glslink{EEG}{Elektroenzephalogrammes} anstelle der zweiten verfügbaren Möglichkeit, der Messung von Körperbewegungen, da sich der Schlaf durch das EEG wesentlich höher aufgelöst charakterisieren lässt und die Genauigkeit somit viel höher ist. Außerdem ist ein EEG etwas, was ich herausfordernd fand.
 
 %Unzufrieden mit diesem eingeschränkten Design plante ich zur Steuerung des Lichtweckers ein Brain-Computer-Interface, in diesem Fall einen \glslink{EEG}{Elektroenzephalographen}. Dieser ist ein Gerät zum Messen der Hirnströme des schlafenden.
 %Auf Basis jener Messungen kann mit einem Prozessor dezenter Rechenleistung der Schlaf- bzw.\ Wachheitszustand des Trägers deduziert werden, was den Rückkanal bietet, über den keine der bisher auf dem Markt befindlichen Lösungen verfügt.
 \section{Biologische Grundlagen}
-Der menschliche Körper benötigt auf der circadianen Rhythmik\footnote{Biologischer innerer Rhythmus mit einer Periode von 24 Stunden} basiert in regelmäßigen Ab-stän-den Schlaf. Die benötigte Schlafdauer ist weitgehend konstant und wenig beeinflussbar, es ist lediglich eine gewisse Synchronisation des Rhythmus mit dem natürlichen Tag-Nacht-Rhythmus festzustellen. Das Schlafbedürfnis ist vom Hormonhaushalt abhängig\cite{WP9}, der wiederum seinerseits vom Tageslicht beeinflusst wird. Die maximale spektrale Empfindlichkeit dieser biologischen Mechanismen liegt im blauen Wellenlängenbereich.
+Der menschliche Körper benötigt auf der circadianen Rhythmik\footnote{Biologischer innerer Rhythmus mit einer Periode von 24 Stunden} basiert in regelmäßigen Ab\-stän\-den Schlaf. Die benötigte Schlafdauer ist weitgehend konstant und wenig beeinflussbar, es ist lediglich eine gewisse Synchronisation des Rhythmus mit dem natürlichen Tag-Nacht-Rhythmus festzustellen. Das Schlafbedürfnis ist vom Hormonhaushalt abhängig\cite{WP9}, der wiederum seinerseits vom Tageslicht beeinflusst wird. Die maximale spektrale Empfindlichkeit dieser biologischen Mechanismen liegt im blauen Wellenlängenbereich.
 \cite{WP5, WP6, WP7, WP8}
 Durch die Stimulation mit einem sanft heller werdenden Licht kann die Hormonproduktion und somit der Tagesrhythmus in gewissen Grenzen verschoben werden---zumindest jedoch ist Licht (selbst wenn es blinkt und flackert) ein angenehmerer Reiz als ein schriller Ton.
 
-\newacronym{LED}{LED}{Light Emmiting Diode, Leuchtdiode}
+\newglossaryentry{LED}{name={LED}, description={Light Emitting Diode, Leuchtdiode}, first={LED (Leuchtdiode)}, firstplural={LEDs (Leuchtdioden)}, text={LED}, plural={LEDs}, type=\acronymtype}
 \section{Technische Umsetzung}
 Zum sanften Wecken mit Licht ist die wichtigste Voraussetzung eine regelbare Lichtquelle. Da das System durch eine Schlafphasenerkennung gesteuert werden soll, muss die Regelschaltung eine digitale Schnittstelle bieten. Die Leuchtstärke sollte möglichst groß sein, um zum einen mit realem Tageslicht konkurrieren zu können und zum anderen nach Möglichkeit auch als herkömmliche Lampe arbeiten zu können. Das verwendete Leuchtmittel sollte eine dem Tageslicht möglichst ähnliche Farbtemperatur haben, bevorzugt jedoch ein Maximum im blauen Spektralbereich zur möglichst großen Übereinstimmung mit der natürlichen Empfindlichkeit des menschlichen Körpers.
 
@@ -122,7 +129,7 @@ Ich entschied mich für \glslink{LED}{LEDs} als Leuchtmittel, da diese mit Klein
 \label{diode-iv-curve}
 \end{center}
 \end{figure}
-Die Strom-Spannungs-Kennlinie (Abbildung \ref{diode-iv-curve}) einer \glslink{LED}{LED (Leuchtdiode)} zeigt recht deutlich, dass es nicht möglich ist, diese ohne externe Regelung an einer Spannungsquelle -- wie den meisten handelsüblichen Netzteilen -- zu betreiben. Eine direkt an eine niederohmige Spannungsquelle angeschlossene \gls{LED} würde sofort von einem extrem hohen Strom durchflossen werden, durch den bei gegebener \gls{Flussspannung} $\Delta U$ der \gls{LED} nach $P=U\cdot I$ eine große Leistung an der \gls{LED} anfallen würde, die die \gls{LED} erhitzen und letztlich innerhalb eines Sekundenbruchteils thermisch zerstören würde, da auch die \gls{Sperrschicht} einer Hochleistungs-\gls{LED} nicht über 150°C erhitzt werden darf\cite{PHILIPS1,PHILIPS2}.
+Die Strom-Spannungs-Kennlinie (Abbildung \ref{diode-iv-curve}) einer \gls{LED} zeigt recht deutlich, dass es nicht möglich ist, diese ohne externe Regelung an einer Spannungsquelle -- wie den meisten handelsüblichen Netzteilen -- zu betreiben. Eine direkt an eine niederohmige Spannungsquelle angeschlossene \gls{LED} würde sofort von einem extrem hohen Strom durchflossen werden, durch den bei gegebener \gls{Flussspannung} $\Delta U$ der \gls{LED} nach $P=U\cdot I$ eine große Leistung an der \gls{LED} anfallen würde, die die \gls{LED} erhitzen und letztlich innerhalb eines Sekundenbruchteils thermisch zerstören würde, da auch die \gls{Sperrschicht} einer Hochleistungs-\gls{LED} nicht über 150°C erhitzt werden darf\cite{PHILIPS1,PHILIPS2}.
 
 Die zwei gängigsten Methoden der Stromregelung sind Vorwiderstände und Konstantstromquellen. Vorwiderstände werden nach $R=\frac{U}{I}$ bemessen, wobei $I$ der gewünschte Strom an der \gls{LED} ist und $U$ die Differenz der Betriebsspannung $V_{CC}$ und der \gls{Flussspannung} der \gls{LED}:
 \begin{equation}
@@ -199,7 +206,7 @@ Effekt dieser nichtlinearen Kennlinie ist, dass eine einfache lineare Steigerung
 
 Abhilfe für diesen Umstand lässt sich durch die Transformation eines rohen Helligkeitswertes, der der optisch wahrgenommenen Helligkeit entspricht, gemäß einer logarithmischen Skala auf den Wertebereich der \gls{PWM} schaffen. Dies kann z.B.\ nach folgender Formel geschehen:
 \begin{equation}
-2^{\left(\frac{v}{2^n}\cdot k\right)}
+2^{\left(\frac{\scriptstyle v}{\scriptstyle 2^n}\cdot k\right)}
 \end{equation}
 \begin{align}
 v&:=\text{Eingabewert auf einer linearen Skala}\\
@@ -218,11 +225,11 @@ eine gemeinsame Anode besitzen.
 \begin{figure}
 \centering
 \subfigure[Revision 1 des LED-Treibers einer LED]{
-\includegraphics[scale=0.8]{images/led_driver_rev1_02.eps}%scale=1.7
+\includegraphics[scale=1.1]{images/led_driver_rev1_02.eps}%scale=1.7
 \label{driver_rev1}
 }
 \subfigure[Ein Entwurf von Revision 3 des LED-Treibers einer LED]{
-\includegraphics[scale=0.8]{images/led_driver_rev3_02.eps}%scale=2.2
+\includegraphics[scale=1.1]{images/led_driver_rev3_02.eps}%scale=2.2
 \label{driver_rev3}
 }
 \caption{Die Designs der regelbaren Stromquelle}
@@ -230,7 +237,7 @@ eine gemeinsame Anode besitzen.
 \end{figure}
 
 Für Details der Pulsweitenmodulation ist das Datenblatt der AT90PWM-Reihe sehr hilfreich, da dieser speziell für solcherlei Einsatzzwecke designt wurde\cite{ATMEL2}. Die konkret verwendeten Controller sind in der ersten Version der Steuerplatine (Abbildung \ref{controller_rev1}) zwei ATMega8-AVRs, die jeweils über zwei 16-bit-PWM-Kanäle verfügen und die per serieller Schnittstelle (TTL-Pegel) koordiniert werden. Die Auflösung der PWM habe ich auf 16 Bit festgelegt, da die benötigte logarithmische Kurve bei einer 8-Bit-PWM erkennbare Abstufungen zeigt. Die Firmware unterstützt nach der im vorherigen Abschnitt %TODO NOTE: this could be incorrect since the arrangement could be changed.
-gezeigten Formel generierte Tabellen in einer Eingabebitbreite, die nur durch die auf 16 Bit beschränkte Ausgangsauflösung und den im AVR nur begrenzt vorhandenen Programmspeicher\footnote{in dem die Tabellen architekturbedingt abgelegt würden}  eingeschränkt wird. 12 Bit haben sich hier als sinnvoll erwiesen, da so auch bei %``da sie'' oder ``da dies''
+gezeigten Formel generierte Tabellen in einer Eingabebitbreite, die nur durch die auf 16 Bit beschränkte Ausgangsauflösung und den im AVR nur begrenzt vorhandenen Programmspeicher\footnote{in dem die Tabellen architekturbedingt abgelegt würden.} eingeschränkt wird. 12 Bit haben sich hier als sinnvoll erwiesen, da so auch bei %``da sie'' oder ``da dies''
 niedrigen Helligkeitseinstellungen keine Stufen sichtbar sind.
 
 \begin{figure}
@@ -300,7 +307,7 @@ Den Teil des \gls{EEG}, der die Messsignale von den Elektroden in digitale Signa
 
 \newglossaryentry{IC}{name={IC}, description={Integrated Circuit, Integrierter Schaltkreis, umgangssprachlich Mikrochip}, first={Mikrochip (IC)}, firstplural={Mikrochips (ICs)}, text={IC}, plural={ICs}, type=\acronymtype}
 \newglossaryentry{LSB}{name={LSB}, description={Bit bzw.\ Byte mit der geringsten Wertigkeit},type=\acronymtype}
-Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen und wird in meinem Design eingesetzt, um die Signale von bis zu vier Elektroden aufzunehmen. Nach dem Datenblatt des Herstellers liegt die maximal mögliche Auflösung bei einem PGA\footnote{PGA steht für \glqq Programmable Gain Amplifier\grqq\ und bezeichnet einen im ADC integrierten Verstärker mit digital einstellbarer Verstärkung}-Wert von 12 bei ca. 2 \gls{LSB}. Ich verwende in meinem Design die interne Referenz des ADS1194, der Anschluss einer externen Referenz ist aber noch möglich\cite{TEXAS1,TEXAS11,ANALOG6,LINEAR6,MAXIM6}.
+Das analoge Front-End meiner \emph{OpenMind} getauften Eigenentwicklung enthält als zentrales Element einen speziell für die Anwendung in \glspl{EEG} entwickelten \gls{IC}. Der ADS1194 des Herstellers Texas Instruments enthält analoge Filter, Vorverstärker und ADC\cite{TEXAS1}. Der in meinem Design eingesetzte ADS1194 enthält 4 Eingangsschaltungen, um die Signale von bis zu vier Elektroden aufzunehmen. Nach dem Datenblatt des Herstellers liegt die maximal mögliche Auflösung bei einem PGA\footnote{PGA steht für \glqq Programmable Gain Amplifier\grqq\ und bezeichnet einen im ADC integrierten Verstärker mit digital einstellbarer Verstärkung}-Wert von 12 bei ca. 2 \gls{LSB}. Ich verwende in meinem Design die interne Referenz des ADS1194, der Anschluss einer externen Referenz ist aber noch möglich\cite{TEXAS1,TEXAS11,ANALOG6,LINEAR6,MAXIM6}.
 
 Je nach beobachtbarer Signalqualität werde ich externe Vorverstärker an den Elektroden sowie einen zusätzlicher ESD-Schutz ergänzen. Auch ein analoger Filter vor dem Eingang des ADC ist unter Beachtung der Isolationswerte moderner Kondensatoren durchaus machbar\cite{PHILIPS3,PHILIPS4,PHILIPS5,PHILIPS6,WIMA1,STM1,CHEEVER1,NATIONAL2,MAXIM45}.
 
@@ -311,13 +318,14 @@ Je nach beobachtbarer Signalqualität werde ich externe Vorverstärker an den El
 \caption{Die in EEG und LED-Treiber verwendeten ICs. Vorne links sind zwei ADS1194 zu erkennen, die letzendlich die EEG-Messung durchführen. Vorne mittig ist der mit vier 16-Bit-PWM-Kanälen ausgestattete ATMega32U4 zu sehen (eine größere Variante des ATMega16U4), der die PWM-Regelung übernimmt. Hinten im Bild sind verschiedene Bauformen des ATMega8 zu sehen, der in Revision 1 der PWM-Controllerplatine zum Einsatz kommt.}
 \end{figure}
 
+%Caption in portrait mode while image in landscape??
 \begin{landscape}
 \begin{figure}
 \begin{center}
 \includegraphics{images/adc_schematic_02.eps}
-\caption{Der Schaltplan des EEG-Moduls}
 \label{adc_schematic}
 \end{center}
+\caption{Der Schaltplan des EEG-Moduls}
 \end{figure}
 \end{landscape}
 
@@ -362,7 +370,7 @@ Für einen Computer stellt die Datenmenge von ca.\ $1\frac{kSp}{s}$ bei 1-4 Kan�
 Ich möchte abschließend noch einige Anmerkungen zur Herstellung der Platinen machen. Ich verwendete für Version 1 der Prototypenboards der Lampe Loch- und Streifenrasterplatinen, da ich noch nie zuvor selbst Platinen hergestellt habe und angesichts der geringen Komplexität der Schaltungen auch nicht die Notwendigkeit dazu sah. Der EEG wird aufgrund der feinen Strukturen und der empfindlichen Signale auf einer eigenen Platine aufgebaut, die ich selbst herstelle. Ich verwende dazu doppelseitiges, fotopositiv beschichtetes Bungard-FR4-Basismaterial mit 35µm-Kupferauflage. Die bei diesem Material zu erwartenden Leckströme sind durch den Einsatz von Guards wahrscheinlich gering\cite{BUNGARD1,ANALOG1,ANALOG2,MAXIM56,MAXIM55,MAXIM52}.
 
 \section{Fazit}
-Die Arbeit an diesem Projekt ist noch nicht abgeschlossen, und wie bereits unter dem Inhaltsverzeichnis angemerkt werde ich auch an dieser Form der Dokumentation weiterarbeiten. Als nächstes werde ich die Hardware bauen und debuggen sowie die Firmware schreiben.
+Die Arbeit an diesem Projekt ist noch nicht abgeschlossen, und wie bereits unter dem Inhaltsverzeichnis angemerkt werde ich auch an dieser Form der Dokumentation weiterarbeiten. Als nächstes werde ich die Hardware des \gls{EEG} bauen und debuggen sowie die Firmware schreiben. In Abhängigkeit von der effektiven Auflösung und Empfindlichkeit des analogen Front-Ends werde ich auch probieren, es als Messschaltung für das Aktionspotential an Muskeln zu verwenden. Mit einer derartigen Konfiguration können Muskelbewegungen (z.B. einer Hand) gemessen und als Eingabemethode verwendet werden\cite{WP21,MULDER1}.
 
 \appendix
 \section{Glossar}
