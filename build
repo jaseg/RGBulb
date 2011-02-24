@@ -1,9 +1,9 @@
 #!/bin/bash
 bibtex rgbulb.aux
-latex rgbulb.tex
+pdflatex rgbulb.tex
 bibtex rgbulb.aux
 makeglossaries rgbulb
-latex rgbulb.tex
-dvips rgbulb.dvi
-ps2pdf rgbulb.ps
-cp rgbulb.pdf rgbulb_display.pdf
+pdflatex rgbulb.tex
+#dvips rgbulb.dvi
+#ps2pdf rgbulb.ps
+#cp rgbulb.pdf rgbulb_display.pdf

@@ -20,12 +20,13 @@
 \usepackage{multicol}
 \usepackage[dvips]{hyperref}
 \usepackage{subfigure}
-%\usepackage[pdftex]{graphicx,color}
+\usepackage[pdftex]{graphicx,color}
 \usepackage{euler}
 \usepackage{todo}
 \usepackage{pdflscape}
 \usepackage{color}
 \usepackage{epsfig}
+\usepackage{epstopdf}
 \usepackage{fancyvrb}
 %\usepackage{minted}
 \usepackage[labelformat=simple]{caption}
@@ -227,9 +228,9 @@ zeigt ein Ruby-Script, das ich für die Generierung der logarithmischen Helligke
 %Diagramm
 
 \subsubsection{Umsetzung}
-Für das Dimmen der Hochleistungs-LEDs verwende ich in der ersten Version des Prototyps eine Kombination aus einer analog geregelten Konstantstromquelle auf Basis des LM317\cite{NATIONAL3} (einem linearen Spannungsregler), die den für den Dauerbetrieb maximal möglichen Strom von ca. 330mA pro Kanal/LED einstellt, und der Modulation per 16-Bit-PWM, erzeugt von einem AVR-Mikrocontroller (Abbildung \ref{driver_rev1}).
-Pro LED habe ich drei Kanäle umgesetzt, da die RGB-LEDs, die ich günstig aus China importierte, %note: WTF?!
-eine gemeinsame Anode besitzen.
+Zum Dimmen der Hochleistungs-LEDs verwende ich in der ersten Version des Prototyps eine Kombination aus einer analog geregelten Konstantstromquelle auf Basis des LM317\cite{NATIONAL3} (einem linearen Spannungsregler), die den für den Dauerbetrieb maximal möglichen Strom von ca. 330mA pro Kanal/LED einstellt, und der Modulation per 16-Bit-PWM, erzeugt von einem AVR-Mikrocontroller (Abbildung \ref{driver_rev1}).
+Ich verwende vier LEDs die auf gebogenem Aluminiumblech montiert sind, dass die Wärme abführt\footnote{Die gesamte Anordnung erhitzt sich im Dauerbetrieb unter Volllast auf über 50°C}. Als Diffusor verwende ich die modische Milchglaskugel eine IKEA-Lampe. Die Ansteuerelektronik ist in einem Lampenfuß untergebracht, den ich seinerseits aus dem Schirm einer IKEA-Schreibtischlampe hergestellt habe. Pro LED habe ich drei Kanäle umgesetzt, da die RGB-LEDs, die ich günstig aus China importierte, %note: WTF?!
+eine gemeinsame Anode besitzen. Insgesamt ergeben sich so 12 Kanäle, die durch Zusammenlegen der jeweils vier Rot-, Grün- und Blaukanäle zu drei Signalen reduziert werden.
 
 \begin{figure}
 \centering
@@ -247,7 +248,7 @@ eine gemeinsame Anode besitzen.
 
 Für Details der Pulsweitenmodulation ist das Datenblatt der AT90PWM-Reihe sehr hilfreich, da dieser speziell für solcherlei Einsatzzwecke designt wurde\cite{ATMEL2}. Die konkret verwendeten Controller sind in der ersten Version der Steuerplatine (Abbildung \ref{controller_rev1}) zwei ATMega8-AVRs, die jeweils über zwei 16-bit-PWM-Kanäle verfügen und die per serieller Schnittstelle (TTL-Pegel) koordiniert werden. Die Auflösung der PWM habe ich auf 16 Bit festgelegt, da die benötigte logarithmische Kurve bei einer 8-Bit-PWM erkennbare Abstufungen zeigt. Die Firmware unterstützt nach der im vorherigen Abschnitt %TODO NOTE: this could be incorrect since the arrangement could be changed.
 gezeigten Formel generierte Tabellen in einer Eingabebitbreite, die nur durch die auf 16 Bit beschränkte Ausgangsauflösung und den im AVR nur begrenzt vorhandenen Programmspeicher\footnote{in dem die Tabellen architekturbedingt abgelegt würden.} eingeschränkt wird. 12 Bit haben sich hier als sinnvoll erwiesen, da so auch bei %``da sie'' oder ``da dies''
-niedrigen Helligkeitseinstellungen keine Stufen sichtbar sind.
+niedrigen Helligkeitseinstellungen keine Stufen sichtbar sind\footnote{Hierbei sei vorausgesetzt, dass man \emph{nicht} direkt in die LED blickt und die Diffusorkugel aufgesetzt ist. Man kann durchaus einen Unterschied der einzelnen PWM-Stufen im Bereich bis $\frac{5}{65536}$ erkennen, jedoch nur als schwaches Glimmen der Halbleiterkristalle.}.	
 
 \begin{figure}
 \centering
@@ -279,9 +280,9 @@ niedrigen Helligkeitseinstellungen keine Stufen sichtbar sind.
 
 Revision 2 der Prototypenhardware sieht einen ATMega16U4-Mikrocontroller vor, der über vier nutzbare 16-Bit-PWM-Kanäle verfügt und somit die serielle Koordination von zwei Prozessoren überflüssig macht. Außerdem verfügt er neben zwei seriellen Schnittstellen (die zur Kommunikation mit anderen Systemen genutzt werden) auch über eine USB-Schnitstelle, sodass die Lampe auch direkt an einen modernen Computer angeschlossen werden kann.
 
-Für Revision 3 der Prototypenhardware habe ich eine rein \glqq digitale\grqq\ Stromregelung geplant (Abbildung \ref{driver_rev3}). Diese bestünde aus einem Step-Down-Wandler (Buck Converter)\cite{MAXIM24,MAXIM70,NATIONAL4,SPRUT1,MAXIM49},%Note: include the NATIONAL4 reference?, Glossary.
+Für Revision 3 der Prototypenhardware habe ich eine rein \glqq digitale\grqq\ Stromregelung geplant (Abbildung \ref{driver_rev3}). Diese besteht aus einem Step-Down-Wandler (Buck Converter)\cite{MAXIM24,MAXIM70,NATIONAL4,SPRUT1,MAXIM49},%Note: include the NATIONAL4 reference?, Glossary.
 der durch eine vom AVR generierte 16-Bit-PWM angesteuert wird. Der Strom durch die LED wird mit einem der in den AVR-µC integrierten 10-Bit-ADCs gemessen. Das Messsignal wird aus dem Spannungsabfall über einen Shunt %glossary
-mit einem logarithmischen Differenzverstärker generiert\cite{MAXIM34}.
+mit einem logarithmischen Differenzverstärker generiert\cite{MAXIM34}, wodurch die geringe Auflösung des ADC keine Einschränkung darstellt. Tatsächlich existieren für genau diesen Einsatzzweck konzipierte logarithmische Differenzverstärker\footnote{Der englische Fachterminus lautet \emph{high-side current measurement}}, die sich hier anbieten.
 
 \newglossaryentry{Halbduplex}{name={Halbduplex}, description={Zeitlich gemultiplexte Verwendung desselben Kommunikationskanals in Sende- und Empfangsrichtung}}
 \subsection{Kommunikationsprotokoll}
@@ -290,6 +291,8 @@ Zur Kommunikation verschiedener Beleuchtungsmodule untereinander entwickelte ich
 Die Software ist in C für AVR-Mikrocontroller geschrieben, sollte jedoch relativ einfach auf andere Plattformen portierbar sein, sofern diese C oder Assembler bzw.\ eine andere Sprache, in die sich C einfach konvertieren lässt, wie z.B.\ Java, unterstützen. Das Softwaremodul kann in jede Anwendung einkompiliert werden und es ist möglich, Kommandos selbst nach Belieben zu spezifizieren.
 
 Der Master ist das einzige Device auf dem Bus, das eigenständig Transaktionen beginnen darf. Der Master gibt für die Pakete aller anderen Devices die \glqq Rahmen\grqq\ vor und adressiert reihum das jeweils sendende Device. Der Master übernimmt zudem die Entdeckung neuer Devices mit einem speziellem Paket, dem \glqq Discovery Packet\grqq. Die Daten werden mit einer State Machine geparsed.
+
+Für die Details des Protokolls sei an dieser Stelle auf die in Anhang \ref{buz2_state_diagrams} befindlichen Zustandsdiagramme sowie den Quelltext verwiesen.
 %TODO TO BE CONTINUED!
 
 %\subsubsection{Master}
@@ -416,7 +419,6 @@ Die jeweils aktuellste Revision dieser Arbeit, der Quelltexte und der Hardwaredo
 \vspace{2mm}
 \end{center}
 \end{minipage}
-
 \end{center}
 \section{Changelog}
 \begin{tabularx}{\textwidth}{l|l}
@@ -424,4 +426,19 @@ Die jeweils aktuellste Revision dieser Arbeit, der Quelltexte und der Hardwaredo
 0.1&Arbeitsversion\\
 0.2&BLL Abgabe
 \end{tabularx}
+\newgeometry{left=2cm,right=2cm,bottom=2.5cm,top=2cm}
+\section{Die Zustandsdiagramme der BUZ2-State Machine}
+\label{buz2_state_diagrams}
+\begin{center}
+\includegraphics[width=\textwidth]{images/image2_enhanced_small.png}
+\newpage
+\newgeometry{left=2cm,right=2cm,bottom=2.5cm,top=2.5cm}
+\includegraphics[width=\textwidth]{images/image3_enhanced_small.png}
+\newpage
+\includegraphics[width=\textwidth]{images/image1_enhanced_small.png}
+\newpage
+\includegraphics[width=\textwidth]{images/image4_enhanced_small.png}
+\newpage
+\includegraphics[width=\textwidth]{images/image5_enhanced_small.png}
+\end{center}
 \end{document}
